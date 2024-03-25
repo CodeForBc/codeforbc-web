@@ -56,9 +56,10 @@ function Footer() {
                 height={20}
               />
             </IconButton>
+            {/* @todo
             <IconButton
               className="footer__icon-button"
-              href="https://www.linkedin.com/company/openbc/"
+              href="https://www.linkedin.com/company/codeforbc/"
               aria-label="linkedin account"
             >
               <Image
@@ -68,6 +69,7 @@ function Footer() {
                 height={20}
               />
             </IconButton>
+            */}
           </Box>
           <Box className="footer__links">
             <Link href="#" className="footer__link">
