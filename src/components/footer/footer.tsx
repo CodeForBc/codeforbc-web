@@ -46,7 +46,7 @@ function Footer() {
           <Box className="footer__social-icons">
             <IconButton
               className="footer__icon-button"
-              href="https://github.com/OpenBCca"
+              href="https://github.com/CodeForBC"
               aria-label="github account"
             >
               <Image
