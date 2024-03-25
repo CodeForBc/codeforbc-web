@@ -28,6 +28,7 @@ function Footer() {
               </Link>
             </Box>
           </Box>
+          {/* @todo
           <form className="footer__newsletter">
             <label htmlFor="" className="footer__label">
               Get the latest updates about CodeForBC
@@ -41,6 +42,7 @@ function Footer() {
               <Button className="footer__subscribe-button">Subscribe</Button>
             </Box>
           </form>
+          */}
         </Box>
         <Box className="footer__wrapper">
           <Box className="footer__social-icons">
