@@ -11,7 +11,7 @@ function Footer() {
         <Box className="footer__wrapper">
           <Box className="footer__menu">
             <Link href="/" className="footer__logo">
-              OpenBC
+              CodeForBC
             </Link>
             <Box className="footer__buttons">
               <Link href="/about" className="footer__button">
@@ -30,7 +30,7 @@ function Footer() {
           </Box>
           <form className="footer__newsletter">
             <label htmlFor="" className="footer__label">
-              Get the latest updates about OpenBC
+              Get the latest updates about CodeForBC
             </label>
             <Box className="footer__group">
               <input
