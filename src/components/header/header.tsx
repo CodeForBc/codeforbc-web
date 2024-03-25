@@ -30,7 +30,7 @@ function Header() {
     <Box component={'header'} className="header-outer-box">
       <Box className="header-inner-box">
         <Link href="/" className="title-link">
-          OpenBC
+          CodeForBC
         </Link>
         <Tabs value={currentPath} onChange={handleChange}>
           {headerData.map((tab, index) => (
