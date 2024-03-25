@@ -22,7 +22,7 @@ function Banner() {
               className="banner__button"
               variant="outlined"
               size="large"
-              href="mailto:openbc@gmail.com"
+              href="mailto:codeforbc@gmail.com"
             >
               Become A Partner
             </Button>
@@ -30,7 +30,7 @@ function Banner() {
               className="banner__button"
               variant="contained"
               size="large"
-              href="mailto:openbc@gmail.com"
+              href="mailto:codeforbc@gmail.com"
             >
               Join Us
             </Button>
