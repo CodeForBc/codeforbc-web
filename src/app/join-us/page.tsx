@@ -110,7 +110,7 @@ export default function JoinUs() {
           </Box>
           <Typography className="margin-left-4" variant="body2" paragraph>
             Find you answers in FAQ or email{' '}
-            <Link href="mailto:&#x6f;&#x70;&#x65;&#x6e;&#x62;&#x63;&#x2e;&#x63;&#x61;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">
+            <Link href="mailto:codeforbc@gmail.com">
               codeforbc AT gmail.com
             </Link>{' '}
             with any questions or feedback.

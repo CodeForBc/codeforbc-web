@@ -39,7 +39,7 @@ export default async function ProjectOverview() {
             variant="outlined"
             size="large"
             className="project-overview__cta-button"
-            href="mailto:openbc@gmail.com"
+            href="mailto:codeforbc@gmail.com"
           >
             Propose A Project
           </Button>
