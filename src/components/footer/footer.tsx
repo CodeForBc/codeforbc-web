@@ -11,7 +11,7 @@ function Footer() {
         <Box className="footer__wrapper">
           <Box className="footer__menu">
             <Link href="/" className="footer__logo">
-              OpenBC
+              CodeForBC
             </Link>
             <Box className="footer__buttons">
               <Link href="/about" className="footer__button">
@@ -28,9 +28,10 @@ function Footer() {
               </Link>
             </Box>
           </Box>
+          {/* @todo
           <form className="footer__newsletter">
             <label htmlFor="" className="footer__label">
-              Get the latest updates about OpenBC
+              Get the latest updates about CodeForBC
             </label>
             <Box className="footer__group">
               <input
@@ -41,12 +42,13 @@ function Footer() {
               <Button className="footer__subscribe-button">Subscribe</Button>
             </Box>
           </form>
+          */}
         </Box>
         <Box className="footer__wrapper">
           <Box className="footer__social-icons">
             <IconButton
               className="footer__icon-button"
-              href="https://github.com/OpenBCca"
+              href="https://github.com/CodeForBC"
               aria-label="github account"
             >
               <Image
@@ -58,7 +60,7 @@ function Footer() {
             </IconButton>
             <IconButton
               className="footer__icon-button"
-              href="https://www.linkedin.com/company/openbc/"
+              href=" https://www.linkedin.com/company/code-for-bc/"
               aria-label="linkedin account"
             >
               <Image

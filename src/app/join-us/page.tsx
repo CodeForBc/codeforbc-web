@@ -24,13 +24,13 @@ export default function JoinUs() {
             Our Mission
           </Typography>
           <Typography variant="body2" paragraph>
-            At OpenBC, we&apos;re passionate about leveraging your unique
+            At CodeForBC, we&apos;re passionate about leveraging your unique
             abilities for the advancement of our province.
           </Typography>
           <Typography variant="body2" paragraph>
             <strong>
               Contribute to Open Source Projects for BC, from Anywhere, with
-              OpenBC.
+              CodeForBC.
             </strong>
           </Typography>
         </Box>
@@ -66,7 +66,7 @@ export default function JoinUs() {
             </strong>
           </Typography>
           <Typography variant="body2" paragraph>
-            Join us at OpenBC and become a part of our active and welcoming
+            Join us at CodeForBC and become a part of our active and welcoming
             community.
           </Typography>
         </Box>
@@ -110,8 +110,8 @@ export default function JoinUs() {
           </Box>
           <Typography className="margin-left-4" variant="body2" paragraph>
             Find you answers in FAQ or email{' '}
-            <Link href="mailto:&#x6f;&#x70;&#x65;&#x6e;&#x62;&#x63;&#x2e;&#x63;&#x61;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">
-              openbc.ca AT gmail.com
+            <Link href="mailto:codeforbc@gmail.com">
+              codeforbc AT gmail.com
             </Link>{' '}
             with any questions or feedback.
           </Typography>

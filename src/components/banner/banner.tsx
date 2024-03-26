@@ -15,14 +15,14 @@ function Banner() {
           </Typography>
           <Typography variant="body1" className="banner__text">
             Do you have design, writing, or coding skills? You have the power to
-            elevate British Columbia to new heights through OpenBC.
+            elevate British Columbia to new heights through CodeForBC.
           </Typography>
           <Box className="banner__button-container">
             <Button
               className="banner__button"
               variant="outlined"
               size="large"
-              href="mailto:openbc@gmail.com"
+              href="mailto:codeforbc@gmail.com"
             >
               Become A Partner
             </Button>
@@ -30,7 +30,7 @@ function Banner() {
               className="banner__button"
               variant="contained"
               size="large"
-              href="mailto:openbc@gmail.com"
+              href="mailto:codeforbc@gmail.com"
             >
               Join Us
             </Button>
