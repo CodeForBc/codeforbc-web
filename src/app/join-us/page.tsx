@@ -1,6 +1,6 @@
 import CoreValues from '@/components/core-values/core-values';
 import FrequentlyAskedQuestions from '@/components/faq/faq';
-import { Box, Divider, Link, Paper, Typography } from '@mui/material';
+import { Box, Button, Divider, Link, Paper, Typography } from '@mui/material';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
 import React from 'react';
@@ -8,42 +8,61 @@ import './join-us.scss';
 
 export default function JoinUs() {
   return (
-    <Container maxWidth="lg" className="container">
-      <Box className="sub-container-2-col">
-        <Box className="box-size-50">
+    <Container className="join-us">
+      <Box className="join-us-banner">
+        <Box className="join-us-banner__image-container">
           <Image
             src="https://source.unsplash.com/random?wallpapers"
             alt="Description"
             width={500}
             height={500}
-            style={{ width: '100%' }}
+            className="join-us-banner__image"
           />
         </Box>
-        <Box className="box-size-50__marginX">
-          <Typography className="sub-header" variant="h2">
+        <Box className="join-us-banner__text-container">
+          <Typography
+            className="page-heading join-us__heading--primary"
+            variant="h1"
+          >
             Our Mission
           </Typography>
-          <Typography variant="body2" paragraph>
-            At CodeForBC, we&apos;re passionate about leveraging your unique
-            abilities for the advancement of our province.
+          <Typography variant="body2" paragraph className="join-us__text">
+            At CodeForBC, our mission is to bring together individuals
+            passionate about technology, civic engagement, and community
+            development to address the unique challenges and opportunities faced
+            by our province.
           </Typography>
-          <Typography variant="body2" paragraph>
-            <strong>
-              Contribute to Open Source Projects for BC, from Anywhere, with
-              CodeForBC.
-            </strong>
-          </Typography>
+          <Box className="join-us-banner__button-container">
+            <Button
+              className="join-us__button"
+              variant="outlined"
+              size="large"
+              href="mailto:codeforbc@gmail.com"
+            >
+              Become A Partner
+            </Button>
+            <Button
+              className="join-us__button"
+              variant="contained"
+              size="large"
+              href="mailto:codeforbc@gmail.com"
+            >
+              Join Us
+            </Button>
+          </Box>
         </Box>
       </Box>
-      <Box className="margin-left-4 margin-bottom-4">
-        <Typography className="sub-header" variant="h5">
+      <Box className="join-us__text-container">
+        <Typography
+          className="page-heading page-heading--secondary join-us__heading--secondary"
+          variant="h2"
+        >
           Visions
         </Typography>
-        <Typography variant="body2" paragraph>
-          Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque
-          ornare pharetra faucibs arcu. Mauris blandit egestas nibh. eu et ipsum
-          amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs
-          arcu. Mauris blandit egestas nibh.
+        <Typography variant="body2" paragraph className="join-us__text">
+          Envisioning British Columbia where technology and unity ignite
+          sustainable progress, we&apos;re committed to empowering communities
+          through innovation and collaboration for a brighter, inclusive future.
         </Typography>
       </Box>
       <Box className="box-size-40__center">

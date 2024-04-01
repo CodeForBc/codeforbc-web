@@ -1,3 +1,5 @@
+@use '../globals.scss' as *;
+
 body {
   .container {
     display: flex;
@@ -5,6 +7,7 @@ body {
     height: 100%;
     margin-top: 2%;
   }
+
   .sub-container-2-col {
     display: flex;
     direction: row;
@@ -31,6 +34,7 @@ body {
     font-size: 20px;
     background-color: #878787;
   }
+
   .box-size-30 {
     width: 30%;
   }
@@ -97,5 +101,55 @@ body {
       @extend .display-flex;
       justify-content: space-around;
     }
+  }
+}
+
+.join-us {
+
+  &__heading {
+    font-size: 3.5rem;
+
+    &--primary {
+      font-weight: 700;
+    }
+
+    &--secondary {
+      font-weight: 600;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 33.6px;
+    color: #404040;
+  }
+
+}
+
+.join-us-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem 0;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.25rem;
   }
 }
