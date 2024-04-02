@@ -153,3 +153,30 @@ body {
     margin-top: 2.25rem;
   }
 }
+
+.join-us-tab-section {
+  background-color: #F4F8FC;
+  padding: 96px 0;
+}
+
+.join-us-tab {
+
+  &__header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    border-bottom: 1px solid #BEBEBE;
+    width: 561px;
+  }
+
+  &__button {
+    font-family: inherit;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
