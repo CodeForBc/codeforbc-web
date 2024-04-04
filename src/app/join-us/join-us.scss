@@ -1,109 +1,5 @@
 @use '../globals.scss' as *;
 
-body {
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-top: 2%;
-  }
-
-  .sub-container-2-col {
-    display: flex;
-    direction: row;
-    margin: 2em;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .sub-header {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: inherit;
-    text-decoration: none;
-    transition: opacity 0.25s ease-in-out;
-    margin-bottom: 0.5rem;
-  }
-
-  .square {
-    width: 1.5em;
-    height: 1.5em;
-    display: fixed;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    background-color: #878787;
-  }
-
-  .box-size-30 {
-    width: 30%;
-  }
-
-  .box-size-40 {
-    width: 40%;
-
-    &__center {
-      @extend .box-size-40;
-      align-self: center;
-    }
-  }
-
-  .box-size-50 {
-    width: 50%;
-
-    &__marginX {
-      @extend .box-size-50;
-      margin-left: 2em;
-      margin-right: 2em;
-    }
-  }
-
-  .box-size-70 {
-    width: 70%;
-  }
-
-  .box-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .link-no-decorated {
-    text-decoration: none;
-  }
-
-  .divider {
-    border-radius: 1;
-  }
-
-  .margin-left-1 {
-    margin-left: 1em;
-  }
-
-  .margin-left-4 {
-    margin-left: 4em;
-  }
-
-  .margin-bottom-4 {
-    margin-bottom: 4em;
-  }
-
-  .display-flex {
-    display: flex;
-
-    &__center {
-      @extend .display-flex;
-      justify-content: center;
-    }
-
-    &__space-around {
-      @extend .display-flex;
-      justify-content: space-around;
-    }
-  }
-}
-
 .join-us {
 
   &__heading {
@@ -157,6 +53,7 @@ body {
 .join-us-tab-section {
   background-color: #F4F8FC;
   padding: 96px 0;
+  margin-top: 90px;
 }
 
 .join-us-tab {
@@ -178,5 +75,154 @@ body {
     text-transform: none;
     font-weight: 700;
     font-size: 36px;
+    padding-bottom: 24px;
+  }
+}
+
+
+.volunteer-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 32px;
+
+  &__heading-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+  }
+
+  &__heading {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52.8px;
+    letter-spacing: -0.88px;
+    color: #171717;
+  }
+
+  &__sub-heading {
+    color: #737373;
+    font-family: inherit;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.56px;
+  }
+
+  &__list-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__item-number {
+    padding: 8px 14px;
+    background-color: #B9DDFF;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 600;
+    color: #0D3C6B;
+    text-align: center;
+  }
+
+  &__item-text-container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  &__item-heading {
+    color: #171717;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.56px;
+  }
+
+  &__item-text {
+    color: var(--Neutral-500, #737373);
+    font-family: inherit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.partner-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 32px;
+
+  &__heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__heading {
+    color: #424242;
+    text-align: center;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.56px;
+  }
+
+  &__sub-heading {
+    color: #424242;
+    font-family: inherit;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.88px;
+    text-align: center;
+  }
+
+  &__item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__icon {}
+
+  &__item-title {
+    color: #424242;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
   }
 }
