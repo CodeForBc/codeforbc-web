@@ -1,15 +1,54 @@
-.sub-container-2-col {
+@use '../../app/globals' as *;
+
+.core-value {
   display: flex;
-  direction: row;
-  margin: 2em;
-  align-items: center;
   justify-content: space-between;
-}
+  align-items: center;
+  padding: 96px 0;
 
-.box-size-20 {
-  width: 20%;
-}
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-.box-size-80 {
-  width: 80%;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon {}
+
+  &__item-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item-title {
+    color: #171717;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.56px;
+  }
+
+  &__item-detail {
+    color: #171717;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__image-container {}
+
+  &__image {}
 }
