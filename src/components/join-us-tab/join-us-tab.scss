@@ -179,7 +179,10 @@
     gap: 20px;
   }
 
-  &__icon {}
+  &__icon {
+    width: 80px;
+    height: 80px;
+  }
 
   &__item-title {
     color: #424242;
