@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const basePath = process.env.NODE_ENV === 'production' ? '/openbc-web' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '' : '';
 const output = process.env.NODE_ENV === 'production' ? 'export' : 'standalone';
 const distDir = process.env.NODE_ENV === 'production' ? 'dist' : '.next';
 
