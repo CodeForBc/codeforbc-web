@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Button, Container, IconButton, Link } from '@mui/material';
+import { Box, Container, IconButton, Link } from '@mui/material';
 import Image from 'next/image';
 import './footer.scss';
 
