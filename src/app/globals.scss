@@ -6,8 +6,12 @@ $tertiary-color: #e7e5e4;
 $gray-color: #878787;
 $hover-color: black;
 $text-color-primary: #424242;
+$heading-color-primary: #424242;
+$heading-color-secondary: #404040;
 $text-color-secondary: #707070;
 $divider-color: #E1E1E1;
+$divider-color-secondary: #BEBEBE;
+$background-color-secondary: #F4F8FC;
 
 :root {
   scroll-behavior: smooth;
@@ -30,6 +34,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   letter-spacing: -1.12px;
+  color: $heading-color-primary;
 
   &--secondary {
     font-weight: 600;

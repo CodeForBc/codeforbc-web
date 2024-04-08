@@ -3,8 +3,6 @@
 .join-us {
 
   &__heading {
-    font-size: 3.5rem;
-
     &--primary {
       font-weight: 700;
     }
@@ -22,9 +20,9 @@
 
   &__text {
     font-family: inherit;
-    font-size: 28px;
-    line-height: 33.6px;
-    color: #404040;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+    color: $heading-color-secondary;
   }
 
 }

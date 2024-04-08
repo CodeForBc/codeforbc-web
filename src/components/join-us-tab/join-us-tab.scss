@@ -2,9 +2,9 @@
 
 
 .join-us-tab-section {
-  background-color: #F4F8FC;
-  padding: 96px 0;
-  margin-top: 290px;
+  background-color: $background-color-secondary;
+  padding: 6rem 0;
+  margin-top: 18.125rem;
   position: relative;
 
   &::before {
@@ -29,7 +29,7 @@
   }
 
   &__header {
-    border-bottom: 1px solid #BEBEBE;
+    border-bottom: 1px solid $divider-color-secondary;
     width: 561px;
   }
 
@@ -37,8 +37,8 @@
     font-family: inherit;
     text-transform: none;
     font-weight: 700;
-    font-size: 36px;
-    padding-bottom: 24px;
+    font-size: 2.25rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -62,16 +62,16 @@
   &__heading {
     font-family: inherit;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: 52.8px;
     letter-spacing: -0.88px;
-    color: #171717;
+    color: $heading-color-primary;
   }
 
   &__sub-heading {
-    color: #737373;
+    color: $heading-color-secondary;
     font-family: inherit;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.56px;
@@ -83,20 +83,20 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 32px;
+    gap: 2rem;
   }
 
   &__item {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   &__item-number {
-    padding: 8px 14px;
+    padding: 0.5rem 0.875rem;
     background-color: #B9DDFF;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: inherit;
     font-weight: 600;
     color: #0D3C6B;
@@ -108,24 +108,22 @@
 
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   &__item-heading {
-    color: #171717;
+    color: $heading-color-secondary;
     font-family: inherit;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: -0.56px;
   }
 
   &__item-text {
-    color: var(--Neutral-500, #737373);
+    color: $text-color-secondary;
     font-family: inherit;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: normal;
   }
 }
 
@@ -134,31 +132,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
-  margin-top: 32px;
+  gap: 3rem;
+  margin-top: 2rem;
 
   &__heading-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   &__heading {
-    color: #424242;
+    color: $heading-color-primary;
     text-align: center;
     font-family: inherit;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.56px;
   }
 
   &__sub-heading {
-    color: #424242;
+    color: $heading-color-primary;
     font-family: inherit;
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: 700;
     letter-spacing: -0.88px;
     text-align: center;
@@ -176,7 +174,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   &__icon {
@@ -185,9 +183,9 @@
   }
 
   &__item-title {
-    color: #424242;
+    color: $heading-color-secondary;
     font-family: inherit;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.48px;
   }
