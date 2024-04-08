@@ -4,20 +4,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 96px 0;
-  gap: 32px;
+  gap: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @include tablet {
+    flex-direction: column;
+  }
 
   &__text-container {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 2rem;
+
+    @include tablet {
+      gap: 1.5rem;
+    }
   }
 
   &__item {
@@ -47,21 +56,41 @@
   }
 
   &__item-title {
-    color: #171717;
+    color: $heading-color-secondary;
     font-family: inherit;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: -0.56px;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 
   &__item-detail {
-    color: #171717;
+    color: $text-color-secondary;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
+
+    @include tablet {
+      font-size: 1.125rem;
+    }
   }
 
-  &__image-container {}
+  &__image-container {
+    @include tablet {
+      padding: 1rem;
+      max-width: 565px;
+      max-height: 391px;
+    }
+  }
 
-  &__image {}
+  &__image {
+    @include tablet {
+      width: 100%;
+      height: 100%;
+
+    }
+  }
 }
