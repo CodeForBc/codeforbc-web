@@ -80,6 +80,10 @@
     align-items: center;
     gap: 1rem;
     margin-top: 2.25rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
 

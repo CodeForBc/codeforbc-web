@@ -1,5 +1,12 @@
 import { TabContext, TabList, TabPanel } from '@mui/lab';
-import { Box, Button, Container, Tab, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Container,
+  Tab,
+  Typography,
+  useMediaQuery,
+} from '@mui/material';
 import { useState } from 'react';
 import { partnerTabData, volunteerTabData } from './join-us-tab-data';
 import './join-us-tab.scss';
@@ -10,6 +17,8 @@ export default function JoinUsTab() {
     setValue(newValue);
   };
 
+  const smallScreen = useMediaQuery('(max-width: 480px)');
+
   return (
     <Box className="join-us-tab-section">
       <Container className="join-us-tab">
@@ -17,6 +26,7 @@ export default function JoinUsTab() {
           <Box className="join-us-tab__header-container">
             <Box className="join-us-tab__header">
               <TabList
+                orientation={smallScreen ? 'vertical' : 'horizontal'}
                 onChange={handleChange}
                 centered
                 indicatorColor="primary"
