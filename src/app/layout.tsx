@@ -1,6 +1,7 @@
 import Footer from '@/components/footer/footer';
 import Header from '@/components/header/header';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import { StyledEngineProvider } from '@mui/material/styles';
 import { Lato } from 'next/font/google';
 import React from 'react';
 import './globals.scss';
@@ -15,9 +16,11 @@ export default function RootLayout({ children }: any) {
     <html lang="en">
       <body className={lato.className}>
         <Header />
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          {children}
-        </AppRouterCacheProvider>
+        <StyledEngineProvider injectFirst>
+          <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+            {children}
+          </AppRouterCacheProvider>
+        </StyledEngineProvider>
         <Footer />
       </body>
     </html>
