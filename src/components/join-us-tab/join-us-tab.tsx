@@ -1,3 +1,4 @@
+import TabOptionsEnum from '@/enum/tab-options-enum';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import {
   Box,
@@ -12,8 +13,11 @@ import { partnerTabData, volunteerTabData } from './join-us-tab-data';
 import './join-us-tab.scss';
 
 export default function JoinUsTab() {
-  const [value, setValue] = useState('Volunteers');
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const [value, setValue] = useState<TabOptionsEnum>(TabOptionsEnum.volunteers);
+  const handleChange = (
+    event: React.SyntheticEvent,
+    newValue: TabOptionsEnum
+  ) => {
     setValue(newValue);
   };
 
