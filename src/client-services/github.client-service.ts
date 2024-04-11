@@ -19,7 +19,7 @@ export function getAxiosInstance(): AxiosInstance {
 
 export async function getRepositoryList(): Promise<AxiosResponse> {
   const response: AxiosResponse = await getAxiosInstance().get(
-    '/orgs/OpenBCca/repos'
+    '/orgs/CodeForBc/repos'
   );
   return response;
 }
@@ -29,7 +29,7 @@ export async function getRepositoryInformation(
   parameter = ''
 ): Promise<AxiosResponse> {
   const response = await getAxiosInstance().get(
-    `/repos/OpenBCca/${repositoryName}${parameter}`
+    `/repos/CodeForBc/${repositoryName}${parameter}`
   );
   return response;
 }
