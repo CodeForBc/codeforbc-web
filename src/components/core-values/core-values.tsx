@@ -1,27 +1,47 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
+import coreValueData from './core-values-data';
 import './core-values.scss';
 
 export default function CoreValues() {
   return (
-    <Box className="sub-container-2-col">
-      <Box className="box-size-20">
+    <Container className="core-value">
+      <Box className="core-value__text-container">
+        <Typography className="page-heading page-heading--secondary">
+          Core Value
+        </Typography>
+        <Box className="core-value__list">
+          {coreValueData.map((coreValueItem) => (
+            <Box key={coreValueItem.icon_id} className="core-value__item">
+              <Box className="core-value__icon-container">
+                <svg className="core-value__icon">
+                  <use
+                    xlinkHref={`/assets/core-values-sprite.svg#${coreValueItem.icon_id}`}
+                  ></use>
+                </svg>
+              </Box>
+              <Box className="core-value__item-text-container">
+                <Typography className="core-value__item-title">
+                  {coreValueItem.title}
+                </Typography>
+                <Typography className="core-value__item-detail">
+                  {coreValueItem.description}
+                </Typography>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box className="core-value__image-container">
         <Image
-          src="https://source.unsplash.com/random?wallpapers"
+          src="./assets/core-values.png"
           alt="Description"
-          width={500}
-          height={500}
-          style={{ width: '80%', height: 'auto' }}
+          width={562}
+          height={422}
+          className="core-value__image"
         />
       </Box>
-      <Box className="box-size-80">
-        <Typography variant="h6">Innovation</Typography>
-        <Typography variant="body2" paragraph>
-          We are committed to continuous improvement, embracing new ideas that
-          drive both technological and societal advancement.
-        </Typography>
-      </Box>
-    </Box>
+    </Container>
   );
 }
