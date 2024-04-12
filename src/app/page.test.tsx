@@ -19,7 +19,7 @@ describe('Home component', () => {
   });
 
   it('checks metadata', () => {
-    expect(metadata).toHaveProperty('title', 'Home | OpenBC');
+    expect(metadata).toHaveProperty('title', 'Home | CodeForBC');
     expect(metadata).toHaveProperty(
       'description',
       'Be a Force for Good in BC!'

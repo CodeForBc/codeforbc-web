@@ -10,7 +10,7 @@ jest.mock('axios');
 describe('Github client service test', () => {
   const accessToken = 'testToken';
   const mockResponse = {
-    data: [{ name: 'openbc-web' }],
+    data: [{ name: 'codeforbc-web' }],
     headers: {
       Authorization: `token ${accessToken}`,
       'Content-Type': 'application/json',
@@ -66,8 +66,8 @@ describe('Github client service test', () => {
   });
 
   describe('getRepositoryInformation', () => {
-    it('should get openbc-web repo info', async () => {
-      const repositoryName = 'openbc-web';
+    it('should get codeforbc-web repo info', async () => {
+      const repositoryName = 'codeforbc-web';
       const parameter = '';
 
       axios.create = jest.fn().mockReturnValue({

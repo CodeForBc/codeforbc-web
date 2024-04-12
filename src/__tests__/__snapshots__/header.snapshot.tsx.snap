@@ -12,7 +12,7 @@ exports[`Header snapshot test should render header unchanged 1`] = `
         class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways title-link css-1xylxj1-MuiTypography-root-MuiLink-root"
         href="/"
       >
-        OpenBC
+        CodeForBC
       </a>
       <div
         class="MuiTabs-root css-1ujnqem-MuiTabs-root"
