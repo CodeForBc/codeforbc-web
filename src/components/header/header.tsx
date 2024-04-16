@@ -2,6 +2,7 @@
 
 import headerData from '@/components/header/header-data';
 import { Box, Link, Tab, Tabs } from '@mui/material';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import HeaderEnum from '../../enum/header-enum';
@@ -30,7 +31,12 @@ function Header() {
     <Box component={'header'} className="header-outer-box">
       <Box className="header-inner-box">
         <Link href="/" className="title-link">
-          CodeForBC
+          <Image
+            src="./assets/logo.webp"
+            alt="Description"
+            width={64}
+            height={64}
+          />
         </Link>
         <Tabs value={currentPath} onChange={handleChange}>
           {headerData.map((tab, index) => (
