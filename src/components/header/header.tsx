@@ -45,7 +45,6 @@ function Header() {
             />
           ))}
         </Tabs>
-        <Box component={'nav'} className="header-nav"></Box>
       </Box>
     </Box>
   );
