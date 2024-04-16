@@ -1,11 +1,16 @@
 @use '../../app/globals';
 
 body {
+  header {
+    // box-shadow property will have an offset on either side if the header
+    // element is not 105% width
+    width: 105%;
+  }
+
   .header-outer-box {
-    width: 100vw;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid;
+    box-shadow: -1em 1em 0.5em -1em rgba(0, 0, 0, 0.125);
     padding: 1.2rem 0;
     border-color: globals.$tertiary-color;
 
