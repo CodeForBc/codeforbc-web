@@ -1,12 +1,6 @@
 @use '../../app/globals';
 
 body {
-  header {
-    // box-shadow property will have an offset on either side if the header
-    // element is not 105% width
-    
-  }
-
   .header-outer-box {
     display: flex;
     justify-content: center;
