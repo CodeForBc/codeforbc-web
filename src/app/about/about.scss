@@ -1,13 +1,38 @@
-body {
-  .container {
+@use '../globals.scss' as *;
+
+.about-page {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  &__heading-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
 
-    .about-header {
-      font-family: inherit;
-      font-weight: 700;
+  &__heading {}
+
+  &__text {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.48px;
+    color: #424242;
+    font-family: inherit;
+
+    @include tablet {
+      font-size: 1.5rem;
     }
+  }
+
+  &__card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
   }
 }
