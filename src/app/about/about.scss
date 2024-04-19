@@ -36,3 +36,44 @@
     flex-wrap: wrap;
   }
 }
+
+.join-us-cta-card {
+  max-width: 560px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 6px;
+  background-color: #f4f8fc;
+  margin: 60px auto 0;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  &__title {
+    color: #0d3c6b;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+  }
+
+  &__text {
+    color: #575757;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__button {
+    text-transform: none;
+  }
+}
