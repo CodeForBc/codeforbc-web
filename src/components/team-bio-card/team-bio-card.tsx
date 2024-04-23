@@ -15,37 +15,48 @@ interface TeamBioCardProps {
   data: TeamMember;
 }
 
-export default function TeamBioCard() {
+export default function TeamBioCard({ data }: TeamBioCardProps) {
   return (
     <Box className="member-card">
-      <Image
-        className="member-card__image"
-        alt="profile"
-        src={'https://source.unsplash.com/random?wallpapers'}
-        width={202}
-        height={206}
-      />
+      {data.profile_image_link.length !== 0 ? (
+        <Image
+          className="member-card__image"
+          alt="profile"
+          src={data.profile_image_link}
+          width={202}
+          height={206}
+        />
+      ) : (
+        <Image
+          className="member-card__image"
+          alt="profile"
+          src="/assets/profile-image-placeholder.png"
+          width={202}
+          height={206}
+        />
+      )}
       <Box className="member-card__card-title-container">
-        <Typography className="member-card__card-title">John Doe</Typography>
+        <Typography className="member-card__card-title">{data.name}</Typography>
         <Typography className="member-card__card-text">
-          Sr. Developer
+          {data.job_title}
         </Typography>
       </Box>
-      <Typography className="member-card__card-text">
-        Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque
-        ornare pharetra faucibs arcu. Mauris blandit
-      </Typography>
+      <Typography className="member-card__card-text">{data.bio}</Typography>
       <Box className="member-card__card-link-container">
-        <IconButton className="member-card__link">
+        <IconButton className="member-card__link" href={data.linkedin_link}>
           <svg className="member-card__icon">
             <use xlinkHref={`/assets/github-linkedin-color.svg#linkedin`}></use>
           </svg>
         </IconButton>
-        <IconButton className="member-card__link">
-          <svg className="member-card__icon">
-            <use xlinkHref={`/assets/github-linkedin-color.svg#github`}></use>
-          </svg>
-        </IconButton>
+        {data.github_link ? (
+          <IconButton className="member-card__link" href={data.github_link}>
+            <svg className="member-card__icon">
+              <use xlinkHref={`/assets/github-linkedin-color.svg#github`}></use>
+            </svg>
+          </IconButton>
+        ) : (
+          <></>
+        )}
       </Box>
     </Box>
   );
