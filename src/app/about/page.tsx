@@ -1,11 +1,21 @@
 import TeamBioCard from '@/components/team-bio-card/team-bio-card';
+import { getTeamMemberData } from '@/utils/get-team-members-data/get-team-members-data';
 import { Box, Button, Typography } from '@mui/material';
 import Container from '@mui/material/Container';
 import React from 'react';
 import './about.scss';
-import teamMemberData from './team-member-data';
 
-export default function About() {
+interface TeamMember {
+  name: string;
+  job_title: string;
+  bio?: string;
+  linkedin_link: string;
+  github_link?: string;
+  profile_image_link?: string;
+}
+
+export default async function About() {
+  const teamMemberData = await getTeamMemberData();
   return (
     <Container maxWidth="lg" className="about-page">
       <Box className="about-page__heading-container">
@@ -19,7 +29,7 @@ export default function About() {
         </Typography>
       </Box>
       <Box className="about-page__card-container">
-        {teamMemberData.map((teamMember) => (
+        {teamMemberData.map((teamMember: TeamMember) => (
           <TeamBioCard key={teamMember.name} data={teamMember} />
         ))}
       </Box>
@@ -37,6 +47,7 @@ export default function About() {
           size="large"
           className="join-us-cta-card__button"
           variant="contained"
+          href="mailto:codeforbc@gmail.com"
         >
           Join Us
         </Button>

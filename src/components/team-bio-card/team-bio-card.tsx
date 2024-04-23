@@ -5,10 +5,10 @@ import './team-bio-card.scss';
 interface TeamMember {
   name: string;
   job_title: string;
-  bio: string;
+  bio?: string;
   linkedin_link: string;
-  github_link: string;
-  profile_image_link: string;
+  github_link?: string;
+  profile_image_link?: string;
 }
 
 interface TeamBioCardProps {
@@ -18,7 +18,7 @@ interface TeamBioCardProps {
 export default function TeamBioCard({ data }: TeamBioCardProps) {
   return (
     <Box className="member-card">
-      {data.profile_image_link.length !== 0 ? (
+      {data.profile_image_link ? (
         <Image
           className="member-card__image"
           alt="profile"
