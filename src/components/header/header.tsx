@@ -29,16 +29,16 @@ function Header() {
 
   return (
     <Box component={'header'} className="header-outer-box">
+      <Link href="/" className="title-link">
+        <Image
+          src="./assets/logo.webp"
+          alt="Description"
+          width={64}
+          height={64}
+        />
+      </Link>
       <Box className="header-inner-box">
         <Tabs value={currentPath} onChange={handleChange}>
-          <Link href="/" className="title-link">
-            <Image
-              src="./assets/logo.webp"
-              alt="Description"
-              width={64}
-              height={64}
-            />
-          </Link>
           {headerData.map((tab, index) => (
             <Tab
               key={index}
