@@ -1,7 +1,13 @@
 import { Typography } from '@mui/material';
 import Container from '@mui/material/Container';
+import { Metadata } from 'next';
 import React from 'react';
 import './about.scss';
+
+export const metadata: Metadata = {
+  title: 'About Us | CodeForBC',
+  description: 'A summary of the vision and team at CodeForBC',
+};
 
 export default function About() {
   return (
