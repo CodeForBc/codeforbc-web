@@ -1,7 +1,16 @@
 'use client';
 
 import headerData from '@/components/header/header-data';
-import { Box, Link, Tab, Tabs } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import {
+  Box,
+  IconButton,
+  Link,
+  Menu,
+  MenuItem,
+  Tab,
+  Tabs,
+} from '@mui/material';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
@@ -15,6 +24,18 @@ function Header() {
   const [currentPath, setCurrentPath] = useState(
     pathToEnumMap[pathname] || false
   );
+
+  const [mobileMenuAnchor, setMobileMenuAnchor] = useState<HTMLElement | null>(
+    null
+  );
+  const mobileMenuOpen = Boolean(mobileMenuAnchor);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setMobileMenuAnchor(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setMobileMenuAnchor(null);
+  };
 
   useEffect(() => {
     setCurrentPath(pathToEnumMap[pathname] || false);
@@ -38,7 +59,11 @@ function Header() {
         />
       </Link>
       <Box className="header-inner-box">
-        <Tabs value={currentPath} onChange={handleChange}>
+        <Tabs
+          value={currentPath}
+          onChange={handleChange}
+          className="navigation-tab"
+        >
           {headerData.map((tab, index) => (
             <Tab
               key={index}
@@ -51,6 +76,22 @@ function Header() {
             />
           ))}
         </Tabs>
+        <Box className="mobile-menu-btn">
+          <IconButton onClick={handleClick}>
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            onClose={handleClose}
+            open={mobileMenuOpen}
+            anchorEl={mobileMenuAnchor}
+          >
+            {headerData.map((tab, index) => (
+              <MenuItem onClick={handleClose} key={`menu-item-${index}`}>
+                <Link href={tab.href}>{tab.label}</Link>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Box>
       </Box>
     </Box>
   );

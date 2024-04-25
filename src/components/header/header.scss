@@ -1,6 +1,20 @@
 @use '../../app/globals';
 
 body {
+  .mobile-menu-btn {
+    display: none;
+
+    @include globals.mobile {
+      display: inherit;
+    }
+  }
+
+  .navigation-tab {
+    @include globals.mobile {
+      display: none;
+    }
+  }
+
   .header-outer-box {
     display: flex;
     align-items: center;
@@ -18,6 +32,10 @@ body {
         opacity: 0.25;
       }
     }
+
+    @include globals.mobile {
+      justify-content: space-between;
+    }
   }
 
   .header-inner-box {
@@ -25,7 +43,11 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 0.4rem;
-    align-items: flex-start;
+    align-items: start;
+
+    @include globals.mobile {
+      width: auto;
+    }
   }
 
   .header-title {
