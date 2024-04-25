@@ -86,7 +86,11 @@ function Header() {
             anchorEl={mobileMenuAnchor}
           >
             {headerData.map((tab, index) => (
-              <MenuItem onClick={handleClose} key={`menu-item-${index}`}>
+              <MenuItem
+                onClick={handleClose}
+                key={`menu-item-${index}`}
+                className="header-tab"
+              >
                 <Link href={tab.href}>{tab.label}</Link>
               </MenuItem>
             ))}

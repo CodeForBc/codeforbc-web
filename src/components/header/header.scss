@@ -86,5 +86,12 @@ body {
     .Mui-selected {
       color: globals.$primary-color;
     }
+
+    @include globals.mobile {
+      a {
+        text-decoration: inherit;
+        color: inherit;
+      }
+    }
   }
 }
