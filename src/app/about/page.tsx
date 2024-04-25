@@ -2,6 +2,7 @@ import TeamBioCard from '@/components/team-bio-card/team-bio-card';
 import { getTeamMemberData } from '@/utils/get-team-members-data/get-team-members-data';
 import { Box, Button, Typography } from '@mui/material';
 import Container from '@mui/material/Container';
+import { Metadata } from 'next';
 import React from 'react';
 import './about.scss';
 
@@ -16,6 +17,13 @@ interface TeamMember {
 
 export default async function About() {
   const teamMemberData = await getTeamMemberData();
+
+export const metadata: Metadata = {
+  title: 'About Us | CodeForBC',
+  description: 'A summary of the vision and team at CodeForBC',
+};
+
+export default function About() {
   return (
     <Container maxWidth="lg" className="about-page">
       <Box className="about-page__heading-container">
