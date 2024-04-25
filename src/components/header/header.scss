@@ -1,8 +1,23 @@
 @use '../../app/globals';
 
 body {
+  .mobile-menu-btn {
+    display: none;
+
+    @include globals.mobile {
+      display: inherit;
+    }
+  }
+
+  .navigation-tab {
+    @include globals.mobile {
+      display: none;
+    }
+  }
+
   .header-outer-box {
     display: flex;
+    align-items: center;
     justify-content: center;
     box-shadow:
       0px 4px 6px -1px rgba(16, 24, 40, 0.1),
@@ -17,6 +32,10 @@ body {
         opacity: 0.25;
       }
     }
+
+    @include globals.mobile {
+      justify-content: space-between;
+    }
   }
 
   .header-inner-box {
@@ -25,6 +44,10 @@ body {
     flex-direction: column;
     row-gap: 0.4rem;
     align-items: start;
+
+    @include globals.mobile {
+      width: auto;
+    }
   }
 
   .header-title {
@@ -62,6 +85,13 @@ body {
 
     .Mui-selected {
       color: globals.$primary-color;
+    }
+
+    @include globals.mobile {
+      a {
+        text-decoration: inherit;
+        color: inherit;
+      }
     }
   }
 }
