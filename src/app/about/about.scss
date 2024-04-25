@@ -32,6 +32,10 @@
     gap: 40px;
     margin-top: 60px;
     flex-wrap: wrap;
+    
+    @include mobile {
+      gap: 0px;
+    }
   }
 }
 
