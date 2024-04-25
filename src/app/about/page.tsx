@@ -15,15 +15,14 @@ interface TeamMember {
   profile_image_link?: string;
 }
 
-export default async function About() {
-  const teamMemberData = await getTeamMemberData();
-
 export const metadata: Metadata = {
   title: 'About Us | CodeForBC',
   description: 'A summary of the vision and team at CodeForBC',
 };
 
-export default function About() {
+export default async function About() {
+  const teamMemberData = await getTeamMemberData();
+
   return (
     <Container maxWidth="lg" className="about-page">
       <Box className="about-page__heading-container">
