@@ -47,7 +47,7 @@ export default async function About() {
           </Typography>
           <Typography className="join-us-cta-card__text">
             Contribute to Open Source Projects for BC, from Anywhere, with
-            OpenBC.
+            CodeForBC.
           </Typography>
         </Box>
         <Button
