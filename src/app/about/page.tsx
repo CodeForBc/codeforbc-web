@@ -43,7 +43,7 @@ export default async function About() {
       <Box className="join-us-cta-card">
         <Box className="join-us-cta-card__text-container">
           <Typography className="join-us-cta-card__title">
-            Want to be a part?
+            Want to be a part of the team?
           </Typography>
           <Typography className="join-us-cta-card__text">
             Contribute to Open Source Projects for BC, from Anywhere, with
