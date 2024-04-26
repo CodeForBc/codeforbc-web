@@ -8,6 +8,10 @@
   gap: 16px;
   max-width: 274px;
   height: 472px;
+  
+  @include mobile {
+    height: 400px;
+  }
 
   &__image {
     border-radius: 6px;
