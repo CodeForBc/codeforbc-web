@@ -5,9 +5,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 6rem 2rem;
   gap: 2rem;
+
+  @include tablet {
+    padding: 3rem 2rem;
+  }
+
+  @include mobile {
+    padding: 2rem 1rem;
+  }
 
   &__heading {
     font-size: 44px;
@@ -18,6 +25,10 @@
     font-family: inherit;
     color: $text-color-primary;
     text-align: center;
+
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &__list {

@@ -1,7 +1,12 @@
 @use '../globals.scss' as *;
 
 .join-us {
-
+  @include tablet {
+    padding: 0 2rem;
+  }
+  @include mobile {
+    padding: 0 1rem;
+  }
   &__heading {
     &--primary {
       font-weight: 700;
@@ -19,18 +24,18 @@
   }
 
   &__text {
+    font-size: 1.5rem;
+    letter-spacing: -0.48px;
+    color: $text-color-primary;
     font-family: inherit;
-    font-size: 1.75rem;
-    line-height: 2.1rem;
-    color: $heading-color-secondary;
-
-    @include tablet {
-      font-size: 1.5rem;
-    }
   }
 
   &__button {
     min-width: 184px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 
@@ -43,6 +48,11 @@
 
   @include tablet {
     flex-direction: column-reverse;
+    padding: 3rem 0;
+  }
+
+  @include mobile {
+    padding: 2rem 0;
   }
 
   &__text-container {
@@ -82,9 +92,8 @@
     margin-top: 2.25rem;
 
     @include mobile {
+      width: 100%;
       flex-direction: column;
     }
   }
-
-
 }
