@@ -21,7 +21,7 @@ export default function JoinUsTab() {
     setValue(newValue);
   };
 
-  const smallScreen = useMediaQuery('(max-width: 480px)');
+  const smallScreen = useMediaQuery('(max-width: 786px)');
 
   return (
     <Box className="join-us-tab-section">
@@ -32,8 +32,9 @@ export default function JoinUsTab() {
               <TabList
                 orientation={smallScreen ? 'vertical' : 'horizontal'}
                 onChange={handleChange}
-                centered
+                centered={true}
                 indicatorColor="primary"
+                variant={smallScreen ? 'fullWidth' : 'standard'}
               >
                 <Tab
                   className="join-us-tab__button"
@@ -108,7 +109,7 @@ export default function JoinUsTab() {
                 ))}
               </Box>
               <Button
-                className="banner__button"
+                className="partner-tab__button"
                 variant="contained"
                 size="large"
                 href="mailto:codeforbc@gmail.com"

@@ -2,10 +2,20 @@
 
 .join-us-tab-section {
   background-color: $background-color-secondary;
-  padding: 6rem 0;
+  padding: 3rem 0;
   margin-top: 18.125rem;
   margin-bottom: 12.5rem;
   position: relative;
+
+  @include tablet {
+    padding: 1rem 0;
+    margin-top: 12.5rem;
+    margin-bottom: 9rem;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
 
   &::before {
     position: absolute;
@@ -40,6 +50,10 @@
   &__header {
     border-bottom: 1px solid $divider-color-secondary;
     width: 561px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__button {
@@ -50,7 +64,10 @@
     padding-bottom: 1.5rem;
 
     @include mobile {
-      align-items: center;
+      width: 100%;
+      min-height: auto;
+      overflow: visible;
+      padding: 1rem;
     }
   }
 }
@@ -251,5 +268,19 @@
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.48px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    text-transform: none;
+    font-family: inherit;
+    min-width: 184px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

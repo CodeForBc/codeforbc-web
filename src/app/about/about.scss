@@ -4,6 +4,15 @@
   padding-top: 6rem;
   padding-bottom: 6rem;
 
+  @include tablet {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @include mobile {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   &__heading-container {
     display: flex;
     flex-direction: column;
@@ -32,8 +41,9 @@
     gap: 40px;
     margin-top: 60px;
     flex-wrap: wrap;
-    
+
     @include mobile {
+      flex-direction: column;
       gap: 0px;
     }
   }
@@ -50,6 +60,11 @@
   border-radius: 6px;
   background-color: #f4f8fc;
   margin: 60px auto 0;
+
+  @include mobile {
+    max-width: 100%;
+    margin: 32px 0;
+  }
 
   &__text-container {
     display: flex;
@@ -77,5 +92,8 @@
 
   &__button {
     text-transform: none;
+    @include mobile {
+      width: 100%;
+    }
   }
 }
