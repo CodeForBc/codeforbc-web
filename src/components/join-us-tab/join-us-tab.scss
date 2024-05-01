@@ -65,8 +65,9 @@
 
     @include mobile {
       width: 100%;
-      display: flex;
-      padding: 2rem;
+      min-height: auto;
+      overflow: visible;
+      padding: 1rem;
     }
   }
 }
