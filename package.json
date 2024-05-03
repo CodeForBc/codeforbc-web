@@ -7,7 +7,8 @@
     "start": "next dev",
     "lint": "next lint --fix",
     "lint:check": "next lint",
-    "startProduction": "next start",
+    "startProduction": "npx serve@latest out",
+    "dockerProd": "docker build -t codeforbc-website . && docker run --rm -p 3000:3000 --name codeforbc-website-container codeforbc-website",
     "test": "jest",
     "testWatch": "jest --watch"
   },
