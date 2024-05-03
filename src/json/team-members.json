@@ -4,26 +4,26 @@
     "job_title": "Founder & President",
     "linkedin_link": "https://www.linkedin.com/in/sam-huo-23358233/",
     "github_link": "https://github.com/SamHuo213",
-    "profile_image_link": ""
+    "profile_image_link": "/assets/team-members/sam_huo.jpeg"
   },
   {
     "name": "Correy Lim",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/correy-lim/",
     "github_link": "https://github.com/CorreyL",
-    "profile_image_link": "https://avatars.githubusercontent.com/u/16601729?v=4"
+    "profile_image_link": "/assets/team-members/correy_lim.jpeg"
   },
   {
     "name": "Farshid Azizi",
     "job_title": "Business Data Analysis",
     "linkedin_link": "https://www.linkedin.com/in/farshid-azizi66/",
-    "profile_image_link": ""
+    "profile_image_link": "/assets/team-members/farshid_azizi.jpeg"
   },
   {
     "name": "Chloe Lim",
     "job_title": "Product Designer",
     "linkedin_link": "https://www.linkedin.com/in/chloelim-design/",
-    "profile_image_link": ""
+    "profile_image_link": "/assets/team-members/chloe_lim.jpeg"
   },
   {
     "name": "Alfredo Valdes",
@@ -42,26 +42,33 @@
     "job_title": "Software Engineer",
     "linkedin_link": "https://www.linkedin.com/in/nam-anh-mai/",
     "github_link": "https://github.com/nam-m",
-    "profile_image_link": "https://avatars.githubusercontent.com/u/32988140?v=4"
+    "profile_image_link": "/assets/team-members/nam_mai.jpeg"
   },
   {
     "name": "Ahmad Akhtar",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/ahmadrashidakhtar/",
     "github_link": "https://github.com/Unknown-0perator",
-    "profile_image_link": "https://avatars.githubusercontent.com/u/105146344?s=400&u=117ed46173622f6464535bc3e5ef6c36408c3d1a&v=4"
+    "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg"
   },
   {
     "name": "Mangat Singh Toor",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/immangat/",
     "github_link": "https://github.com/immangat",
-    "profile_image_link": "https://avatars.githubusercontent.com/u/19850401?v=4"
+    "profile_image_link": "/assets/team-members/mangat_toor.jpeg"
   },
   {
     "name": "Katie Hong",
     "job_title": "Product Manager",
     "linkedin_link": "https://www.linkedin.com/in/katiehong8/",
+    "profile_image_link": "/assets/team-members/katie_hong.jpeg"
+  },
+  {
+    "name": "Tony Thawatchai",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/tony-sa/",
+    "github_link": "https://github.com/Tony-Thawatchai",
     "profile_image_link": ""
   }
 ]
