@@ -56,7 +56,10 @@ export default function JoinUsTab() {
                   Ready to contribute to British Columbia through Open source
                   projects?
                 </Typography>
-                <Typography className="volunteer-tab__sub-heading">
+                <Typography
+                  className="volunteer-tab__sub-heading"
+                  variant="body2"
+                >
                   Join us at CodeForBC and become a part of our active and
                   welcoming community.
                 </Typography>
@@ -64,14 +67,23 @@ export default function JoinUsTab() {
               <Box className="volunteer-tab__list-container">
                 {volunteerTabData.map((volunteerTabItem, index) => (
                   <Box key={index} className="volunteer-tab__item">
-                    <Typography className="volunteer-tab__item-number">
+                    <Typography
+                      className="volunteer-tab__item-number"
+                      variant="body2"
+                    >
                       {index + 1}
                     </Typography>
                     <Box className="volunteer-tab__item-text-container">
-                      <Typography className="volunteer-tab__item-heading">
+                      <Typography
+                        className="volunteer-tab__item-heading"
+                        variant="h4"
+                      >
                         {volunteerTabItem.title}
                       </Typography>
-                      <Typography className="volunteer-tab__item-text">
+                      <Typography
+                        className="volunteer-tab__item-text"
+                        variant="body2"
+                      >
                         {volunteerTabItem.description}
                       </Typography>
                     </Box>
@@ -83,10 +95,13 @@ export default function JoinUsTab() {
           <TabPanel value="Become A Partner">
             <Box className="partner-tab">
               <Box className="partner-tab__heading-container">
-                <Typography className="partner-tab__heading">
+                <Typography className="partner-tab__heading" variant="h3">
                   Partner With Us
                 </Typography>
-                <Typography className="partner-tab__sub-heading">
+                <Typography
+                  className="partner-tab__sub-heading"
+                  variant="body1"
+                >
                   Let’s improve British Columbia in meaningful ways
                 </Typography>
               </Box>
@@ -102,7 +117,10 @@ export default function JoinUsTab() {
                       ></use>
                     </svg>
 
-                    <Typography className="partner-tab__item-title">
+                    <Typography
+                      className="partner-tab__item-title"
+                      variant="h4"
+                    >
                       {partnerTabItem.title}
                     </Typography>
                   </Box>

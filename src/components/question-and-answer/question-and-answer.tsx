@@ -20,12 +20,18 @@ export default function QuestionAndAnswer({
       disableGutters
     >
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography className="question-answer-accordion__question">
+        <Typography
+          className="question-answer-accordion__question"
+          variant="body1"
+        >
           {question}
         </Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography className="question-answer-accordion__answer">
+        <Typography
+          className="question-answer-accordion__answer"
+          variant="body2"
+        >
           {answer}
         </Typography>
       </AccordionDetails>

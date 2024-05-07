@@ -26,10 +26,10 @@ export default async function About() {
   return (
     <Container maxWidth="lg" className="about-page">
       <Box className="about-page__heading-container">
-        <Typography className="page-heading about-page__heading">
+        <Typography className="page-heading about-page__heading" variant="h1">
           Meet Our Team
         </Typography>
-        <Typography className="about-page__text">
+        <Typography className="about-page__text" variant="body1">
           We are volunteer developers, designers, project managers, engineers,
           marketers, organizers, strategists, and citizens committed to our
           vision, and driven by our mission.
@@ -42,10 +42,10 @@ export default async function About() {
       </Box>
       <Box className="join-us-cta-card">
         <Box className="join-us-cta-card__text-container">
-          <Typography className="join-us-cta-card__title">
+          <Typography className="join-us-cta-card__title" variant="body1">
             Want to be a part of the team?
           </Typography>
-          <Typography className="join-us-cta-card__text">
+          <Typography className="join-us-cta-card__text" variant="body2">
             Contribute to Open Source Projects for BC, from Anywhere, with
             CodeForBC.
           </Typography>
