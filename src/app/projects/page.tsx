@@ -23,17 +23,13 @@ export default async function Projects() {
   const localProjectData = await getLocalProjectData();
 
   return (
-    <Container className="projects-container" component="main">
+    <Container className="project-page-container" component="main">
       <CssBaseline />
-      <Box>
-        <Typography
-          className="projects-heading"
-          variant="h4"
-          sx={{ fontWeight: '700' }}
-        >
+      <Box className="project-page">
+        <Typography className="project-page__heading page-heading" variant="h1">
           Our Projects
         </Typography>
-        <Container className="projects-cards">
+        <Container className="project-page__cards-container">
           <Grid
             container
             spacing={4}
@@ -43,14 +39,14 @@ export default async function Projects() {
             {localProjectData.map((project: ProjectInterface) => (
               <Grid
                 item
-                className="project-card-item"
+                className="project-page__item"
                 key={project.title}
                 xs={12}
-                sm={6}
-                md={4}
+                sm={12}
+                md={6}
               >
                 <Chip
-                  className="project-card-status-label"
+                  className="project-page__status-label"
                   label={project.status}
                   sx={{
                     bgcolor: getProjectStatusColor(project.status),

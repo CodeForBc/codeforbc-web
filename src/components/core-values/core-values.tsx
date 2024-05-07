@@ -8,7 +8,10 @@ export default function CoreValues() {
   return (
     <Container className="core-value">
       <Box className="core-value__text-container">
-        <Typography className="page-heading page-heading--secondary">
+        <Typography
+          className="page-heading page-heading--secondary"
+          variant="h2"
+        >
           Core Value
         </Typography>
         <Box className="core-value__list">
@@ -22,10 +25,10 @@ export default function CoreValues() {
                 </svg>
               </Box>
               <Box className="core-value__item-text-container">
-                <Typography className="core-value__item-title">
+                <Typography className="core-value__item-title" variant="h3">
                   {coreValueItem.title}
                 </Typography>
-                <Typography className="core-value__item-detail">
+                <Typography className="core-value__item-detail" variant="body2">
                   {coreValueItem.description}
                 </Typography>
               </Box>

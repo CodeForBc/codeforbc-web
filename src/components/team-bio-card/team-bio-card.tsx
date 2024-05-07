@@ -36,12 +36,16 @@ export default function TeamBioCard({ data }: TeamBioCardProps) {
         />
       )}
       <Box className="member-card__card-title-container">
-        <Typography className="member-card__card-title">{data.name}</Typography>
-        <Typography className="member-card__card-text">
+        <Typography className="member-card__card-title" variant="body1">
+          {data.name}
+        </Typography>
+        <Typography className="member-card__card-text" variant="body1">
           {data.job_title}
         </Typography>
       </Box>
-      <Typography className="member-card__card-text">{data.bio}</Typography>
+      <Typography className="member-card__card-text" variant="body1">
+        {data.bio}
+      </Typography>
       <Box className="member-card__card-link-container">
         <IconButton className="member-card__link" href={data.linkedin_link}>
           <svg className="member-card__icon">

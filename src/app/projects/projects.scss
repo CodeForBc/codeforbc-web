@@ -1,25 +1,46 @@
-body {
-  .projects-container {
-    margin-top: 32px;
+@use '../globals.scss' as *;
+
+.project-page-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @include tablet {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
-  .projects-heading {
+  @include mobile {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  &__heading {
     text-align: center;
   }
 
-  .projects-cards {
-    margin-top: 32px;
+  &__cards-container {
+    display: flex;
   }
 
-  .project-card-item {
+  &__item {
     position: relative;
   }
 
-  .project-card-status-label {
+  &__status-label {
     position: absolute;
-    top: 40px;
-    right: 8px;
+    top: 48px;
+    right: 16px;
     color: white;
     border-radius: 6px;
   }
+
+
 }
