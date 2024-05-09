@@ -3,6 +3,7 @@ import { getTeamMemberData } from '@/utils/get-team-members-data/get-team-member
 import { Box, Button, Typography } from '@mui/material';
 import Container from '@mui/material/Container';
 import { Metadata } from 'next';
+import Head from 'next/head';
 import React from 'react';
 import './about.scss';
 
@@ -25,6 +26,22 @@ export default async function About() {
 
   return (
     <Container maxWidth="lg" className="about-page">
+      <Head>
+        {teamMemberData.map((teamMember: TeamMember, index: number) => (
+          <script type="application/ld+json" key={index}>
+            {`{
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "${teamMember.name}",
+              "jobTitle": "${teamMember.job_title}",
+              "description": "${teamMember.bio || ''}",
+              "url": "https://codeforbc-web.vercel.app/about",
+              "image": "https://codeforbc-web.vercel.app${teamMember.profile_image_link || ''}",
+              "sameAs": ["${teamMember.linkedin_link}", "${teamMember.github_link || ''}"]
+            }`}
+          </script>
+        ))}
+      </Head>
       <Box className="about-page__heading-container">
         <Typography className="page-heading about-page__heading" variant="h1">
           Meet Our Team
