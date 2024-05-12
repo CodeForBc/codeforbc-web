@@ -35,7 +35,7 @@ export default async function About() {
               "name": "${teamMember.name}",
               "jobTitle": "${teamMember.job_title}",
               "description": "${teamMember.bio || ''}",
-              "url": "https://codeforbc-web.vercel.app/about",
+              "url": "https://www.codeforbc.ca/about",
               "image": "https://codeforbc-web.vercel.app${teamMember.profile_image_link || ''}",
               "sameAs": ["${teamMember.linkedin_link}", "${teamMember.github_link || ''}"]
             }`}

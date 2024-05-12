@@ -19,7 +19,7 @@ export default function JoinUs() {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "CodeForBC",
-          "url": "https://codeforbc-web.vercel.app/",
+          "url": "https://www.codeforbc.ca/",
           "description": "At CodeForBC, our mission is to bring together individuals passionate about technology, civic engagement, and community development to address the unique challenges and opportunities faced by our province.",
           "sameAs": [
             "https://www.linkedin.com/company/code-for-bc/"

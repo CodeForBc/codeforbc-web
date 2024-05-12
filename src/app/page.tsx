@@ -18,8 +18,8 @@ export default function Home() {
             "@type": "Organization",
             "name": "CodeForBC",
             "legalName": "Code For BC",
-            "url": "https://codeforbc-web.vercel.app/",
-            "logo": "https://codeforbc-web.vercel.app/assets/logo.webp",
+            "url": "https://www.codeforbc.ca/",
+            "logo": "https://www.codeforbc.ca/assets/logo.webp",
             "foundingDate": "2024",
             "founders": [
               {
