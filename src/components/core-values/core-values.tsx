@@ -1,40 +1,34 @@
 import { Box, Container, Typography } from '@mui/material';
-import Head from 'next/head';
 import Image from 'next/image';
+import Script from 'next/script';
 import React from 'react';
 import coreValueData from './core-values-data';
 import './core-values.scss';
 
 export default function CoreValues() {
+  const itemListJson = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Core Values',
+    itemListElement: coreValueData.map((coreValueItem, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Thing',
+        name: coreValueItem.title,
+        description: coreValueItem.description,
+      },
+    })),
+  };
+
   return (
     <>
-      <Head>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "Core Values",
-              "itemListElement": [
-                ${coreValueData
-                  .map(
-                    (coreValueItem, index) =>
-                      `{
-                    "@type": "ListItem",
-                    "position": ${index + 1},
-                    "item": {
-                      "@type": "Thing",
-                      "name": "${coreValueItem.title}",
-                      "description": "${coreValueItem.description}"
-                    }
-                  }`
-                  )
-                  .join(',')}
-              ]
-            }
-          `}
-        </script>
-      </Head>
+      <Script
+        id="jsonLD_core-values"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJson) }}
+      />
+
       <Container className="core-value">
         <Box className="core-value__text-container">
           <Typography

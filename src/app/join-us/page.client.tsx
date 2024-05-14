@@ -13,7 +13,7 @@ export default function JoinUs() {
   return (
     <>
       <Script
-        id="jsonLD"
+        id="jsonLD_join-us-page"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
