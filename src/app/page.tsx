@@ -13,7 +13,7 @@ export default function Home() {
       <HomePage />
 
       <Script
-        id="seo-structured_data"
+        id="jsonLD"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

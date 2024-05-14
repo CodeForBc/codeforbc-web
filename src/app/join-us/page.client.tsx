@@ -4,30 +4,29 @@ import CoreValues from '@/components/core-values/core-values';
 import FrequentlyAskedQuestions from '@/components/faq/faq';
 import JoinUsTab from '@/components/join-us-tab/join-us-tab';
 import { Box, Button, Container, Typography } from '@mui/material';
-import Head from 'next/head';
 import Image from 'next/image';
+import Script from 'next/script';
 import React from 'react';
 import './join-us.scss';
 
 export default function JoinUs() {
   return (
     <>
-      <Head>
-        <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "CodeForBC",
-          "url": "https://www.codeforbc.ca/",
-          "description": "At CodeForBC, our mission is to bring together individuals passionate about technology, civic engagement, and community development to address the unique challenges and opportunities faced by our province.",
-          "sameAs": [
-            "https://www.linkedin.com/company/code-for-bc/"
-          ]
-        }
-      `}
-        </script>
-      </Head>
+      <Script
+        id="jsonLD"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'CodeForBC',
+            url: 'https://www.codeforbc.ca/',
+            description:
+              'At CodeForBC, our mission is to bring together individuals passionate about technology, civic engagement, and community development to address the unique challenges and opportunities faced by our province.',
+            sameAs: ['https://www.linkedin.com/company/code-for-bc/'],
+          }),
+        }}
+      />
       <Box className="join-us-page">
         <Container className="join-us">
           <Box className="join-us-banner">
