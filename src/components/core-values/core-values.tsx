@@ -23,12 +23,9 @@ export default function CoreValues() {
 
   return (
     <>
-      <Script
-        id="jsonLD_core-values"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJson) }}
-      />
-
+      <Script id="jsonLD_core-values" type="application/ld+json">
+        {JSON.stringify(itemListJson)}
+      </Script>
       <Container className="core-value">
         <Box className="core-value__text-container">
           <Typography
