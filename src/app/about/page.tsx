@@ -39,11 +39,9 @@ export default async function About() {
 
   return (
     <Container maxWidth="lg" className="about-page">
-      <Script
-        id="jsonLD_team-member"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamMemberJson) }}
-      />
+      <Script id="jsonLD_team-member" type="application/ld+json">
+        {JSON.stringify(teamMemberJson)}
+      </Script>
       <Box className="about-page__heading-container">
         <Typography className="page-heading about-page__heading" variant="h1">
           Meet Our Team
