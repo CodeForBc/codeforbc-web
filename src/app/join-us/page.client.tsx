@@ -12,21 +12,17 @@ import './join-us.scss';
 export default function JoinUs() {
   return (
     <>
-      <Script
-        id="jsonLD_join-us-page"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'CodeForBC',
-            url: 'https://www.codeforbc.ca/',
-            description:
-              'At CodeForBC, our mission is to bring together individuals passionate about technology, civic engagement, and community development to address the unique challenges and opportunities faced by our province.',
-            sameAs: ['https://www.linkedin.com/company/code-for-bc/'],
-          }),
-        }}
-      />
+      <Script id="jsonLD_join-us-page" type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'CodeForBC',
+          url: 'https://www.codeforbc.ca/',
+          description:
+            'At CodeForBC, our mission is to bring together individuals passionate about technology, civic engagement, and community development to address the unique challenges and opportunities faced by our province.',
+          sameAs: ['https://www.linkedin.com/company/code-for-bc/'],
+        })}
+      </Script>
       <Box className="join-us-page">
         <Container className="join-us">
           <Box className="join-us-banner">
