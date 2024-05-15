@@ -29,11 +29,9 @@ export default function FrequentlyAskedQuestions() {
   };
   return (
     <>
-      <Script
-        id="jsonLD_FAQ"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }}
-      />
+      <Script id="jsonLD_FAQ" type="application/ld+json">
+        {JSON.stringify(faqJson)}
+      </Script>
 
       <Box className="faq">
         <Typography variant="h2" className="faq__heading">
