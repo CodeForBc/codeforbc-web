@@ -4,15 +4,12 @@ import MuiAccordion from '@mui/material/Accordion';
 import React from 'react';
 import './question-and-answer.scss';
 
-interface questionAndAnswerProps {
+interface FAQItem {
   question: string;
   answer: string;
 }
 
-export default function QuestionAndAnswer({
-  question,
-  answer,
-}: questionAndAnswerProps) {
+export default function QuestionAndAnswer({ question, answer }: FAQItem) {
   return (
     <MuiAccordion
       className="question-answer-accordion"
