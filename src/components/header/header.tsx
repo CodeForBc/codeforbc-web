@@ -9,13 +9,10 @@ import {
   MenuItem,
   Link as MuiLink,
 } from '@mui/material';
-import { Lexend } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import './header.scss';
-
-const lexend = Lexend({ subsets: ['latin'] });
 
 function Header() {
   const [mobileMenuAnchor, setMobileMenuAnchor] = useState<HTMLElement | null>(
@@ -44,9 +41,7 @@ function Header() {
         <ul className="nav__header">
           {headerData.map((tab, index) => (
             <li key={`header-link-${index}`} className="nav__list">
-              <Link href={tab.href} className={lexend.className}>
-                {tab.label}
-              </Link>
+              <Link href={tab.href}>{tab.label}</Link>
             </li>
           ))}
         </ul>
@@ -63,7 +58,7 @@ function Header() {
               <MenuItem
                 onClick={handleClose}
                 key={`menu-item-${index}`}
-                className={`header-tab ${lexend.className}`}
+                className="header-tab"
               >
                 <Link href={tab.href}>{tab.label}</Link>
               </MenuItem>
