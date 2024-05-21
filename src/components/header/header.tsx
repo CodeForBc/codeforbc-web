@@ -63,7 +63,7 @@ function Header() {
               <MenuItem
                 onClick={handleClose}
                 key={`menu-item-${index}`}
-                className="header-tab"
+                className={`header-tab ${lexend.className}`}
               >
                 <Link href={tab.href}>{tab.label}</Link>
               </MenuItem>

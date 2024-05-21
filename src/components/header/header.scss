@@ -83,9 +83,7 @@ body {
   }
 
   .header-tab {
-    font-family: 'Lato';
-    font-size: 14px;
-    font-weight: 600;
+    color: globals.$primary-color;
     cursor: pointer;
     border-radius: 6px;
     padding: 0.4rem 0.8rem;
