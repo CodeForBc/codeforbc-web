@@ -33,9 +33,6 @@
   }
 
   &__card {
-    width: 384px;
-    height: 594px;
-
     @media only screen and (max-width: 640px) {
       width: 100%;
     }
