@@ -8,7 +8,7 @@ import './globals.scss';
 
 const lexend = Lexend({
   subsets: ['latin'],
-  weight: ['100', '300', '400', '700', '900'],
+  weight: ['100', '300', '400', '500', '700', '900'],
 });
 
 export default function RootLayout({ children }: any) {
