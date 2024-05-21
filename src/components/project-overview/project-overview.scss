@@ -22,17 +22,19 @@
 
   &__card-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    max-width: 100%;
-
     @media only screen and (max-width: 640px) {
       flex-direction: column;
     }
   }
 
   &__card {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+
     @media only screen and (max-width: 640px) {
       width: 100%;
     }
