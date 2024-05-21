@@ -52,7 +52,7 @@ function Header() {
     <Box component={'header'} className="header-outer-box">
       <Link href="/" className="title-link">
         <Image
-          src="./assets/logo.webp"
+          src="./assets/codeforbc-logo.svg"
           alt="Description"
           width={64}
           height={64}
