@@ -1,4 +1,5 @@
 import { getLocalProjectData } from '@/utils/get-local-project-data/get-local-project-data';
+import { redirect } from 'next/navigation';
 import React from 'react';
 
 export default async function Project({
@@ -9,6 +10,10 @@ export default async function Project({
   const allProjectData = await getLocalProjectData();
 
   const projectData = allProjectData[params.project_id];
+
+  if (!projectData) {
+    redirect('/projects');
+  }
 
   return <section>{params.project_id}</section>;
 }
