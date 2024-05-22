@@ -1,13 +1,12 @@
-'use client';
-
-import { usePathname } from 'next/navigation';
+import { headers } from 'next/headers';
 import React from 'react';
 
 export default function Project() {
-  const pathname = usePathname();
-  const paths = pathname.split('/');
+  const headersList = headers();
+  const fullUrl = headersList.get('referer') || '';
+  const paths = fullUrl.split('/');
 
   const projectId = paths[paths.length - 1];
 
-  return <div>{projectId}</div>;
+  return <section>{projectId}</section>;
 }
