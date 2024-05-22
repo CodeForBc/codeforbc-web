@@ -1,12 +1,14 @@
-import { headers } from 'next/headers';
+import { getLocalProjectData } from '@/utils/get-local-project-data/get-local-project-data';
 import React from 'react';
 
-export default function Project() {
-  const headersList = headers();
-  const fullUrl = headersList.get('referer') || '';
-  const paths = fullUrl.split('/');
+export default async function Project({
+  params,
+}: {
+  params: { project_id: string };
+}) {
+  const allProjectData = await getLocalProjectData();
 
-  const projectId = paths[paths.length - 1];
+  const projectData = allProjectData[params.project_id];
 
-  return <section>{projectId}</section>;
+  return <section>{params.project_id}</section>;
 }
