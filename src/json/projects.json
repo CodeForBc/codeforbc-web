@@ -1,5 +1,5 @@
-[
-  {
+{
+  "codeforbc-web": {
     "title": "CodeForBC Website",
     "description": "CodeForBC is a volunteer-driven organization that brings together technologists, designers, data analysts, and community members to work on projects that address civic and social challenges in BC using technology and innovation. They host hackathons, workshops, and events where participants collaborate to create solutions for local issues.",
     "links": [
@@ -24,4 +24,4 @@
       "Ahmad Akhtar"
     ]
   }
-]
+}
