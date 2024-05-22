@@ -10,6 +10,7 @@ import {
   Typography,
 } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import './project-card.scss';
 
@@ -21,6 +22,7 @@ export default function Project({
   tools,
   technologies,
   programAreas, // status
+  projectKey,
 }: ProjectInterface) {
   return (
     <Card className="project-card project-overview__card">
@@ -109,6 +111,10 @@ export default function Project({
             </Typography>
           </Typography>
         )}
+
+        <Typography component="div" variant="body2" mt={1}>
+          <Link href={`/projects/${projectKey}`}>View Project</Link>
+        </Typography>
       </CardContent>
     </Card>
   );

@@ -24,6 +24,7 @@ export default async function ProjectOverview() {
                   description={project.description}
                   links={project.links}
                   status={project.status}
+                  projectKey={projectKey}
                 />
               </Fragment>
             );
