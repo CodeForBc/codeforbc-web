@@ -8,6 +8,20 @@ import { redirect } from 'next/navigation';
 import React from 'react';
 import './project.scss';
 
+function ProjectOverview(/*projectData: ProjectInterface*/) {
+  return (
+    <section>
+      <div>
+        <h1>Project Overview</h1>
+        <h2>Problem Statement</h2>
+        <h2>Project Objectives</h2>
+        <h2>Project Lead</h2>
+        <h2>We Are Looking For</h2>
+      </div>
+    </section>
+  );
+}
+
 function Technologies(projectData: ProjectInterface) {
   const { languages, links, tools } = projectData;
 
@@ -50,6 +64,7 @@ export default async function Project({
 
   return (
     <Container maxWidth="lg" className="project-box">
+      {ProjectOverview(/*projectData*/)}
       {Technologies(projectData)}
     </Container>
   );
