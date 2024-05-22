@@ -19,7 +19,7 @@ export default function Home() {
           name: 'CodeForBC',
           legalName: 'Code For BC',
           url: 'https://www.codeforbc.ca/',
-          logo: 'https://www.codeforbc.ca/assets/logo.webp',
+          logo: 'https://www.codeforbc.ca/assets/codeforbc-logo.svg',
           foundingDate: '2024',
           founders: [
             {

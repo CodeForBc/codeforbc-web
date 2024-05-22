@@ -22,26 +22,22 @@
 
   &__card-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    max-width: 100%;
-
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width: 640px) {
       flex-direction: column;
     }
-
   }
 
   &__card {
-    width: 384px;
-    height: 594px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width: 640px) {
       width: 100%;
-
     }
-
   }
 
   &__cta-container {
@@ -54,11 +50,10 @@
     border-top: 1.6px solid #bebebe;
     text-align: center;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width: 640px) {
       width: 100%;
       padding: 1.5rem 0;
     }
-
   }
 
   &__cta-text-container {
@@ -67,7 +62,6 @@
     align-items: center;
     justify-self: center;
     gap: 1rem;
-
   }
 
   &__cta-text {
@@ -87,7 +81,7 @@
     font-family: inherit;
     text-transform: none;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width: 640px) {
       width: 100%;
     }
   }

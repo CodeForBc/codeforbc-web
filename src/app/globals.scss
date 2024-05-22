@@ -1,6 +1,6 @@
-@import url("https://use.typekit.net/qnx3faq.css");
+@import url('https://use.typekit.net/qnx3faq.css');
 
-$primary-color: #2563eb;
+$primary-color: #15345e;
 $secondary-color: #ffffff;
 $tertiary-color: #e7e5e4;
 $gray-color: #878787;
@@ -9,9 +9,9 @@ $text-color-primary: #424242;
 $heading-color-primary: #424242;
 $heading-color-secondary: #404040;
 $text-color-secondary: #707070;
-$divider-color: #E1E1E1;
-$divider-color-secondary: #BEBEBE;
-$background-color-secondary: #F4F8FC;
+$divider-color: #e1e1e1;
+$divider-color-secondary: #bebebe;
+$background-color-secondary: #f4f8fc;
 
 @mixin tablet {
   @media only screen and (max-width: 1280px) {
@@ -42,7 +42,6 @@ body {
 }
 
 .page-heading {
-  font-family: "Source Serif Pro";
   font-size: 56px;
   font-weight: 700;
   letter-spacing: -1.12px;

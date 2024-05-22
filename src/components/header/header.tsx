@@ -5,26 +5,19 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {
   Box,
   IconButton,
-  Link,
   Menu,
   MenuItem,
-  Tab,
-  Tabs,
+  Link as MuiLink,
 } from '@mui/material';
+import { Lexend } from 'next/font/google';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
-import HeaderEnum from '../../enum/header-enum';
-import generateHeaderData from '../../utils/header-map/header-map';
+import Link from 'next/link';
+import React, { useState } from 'react';
 import './header.scss';
 
-function Header() {
-  const pathToEnumMap = generateHeaderData();
-  const pathname = usePathname();
-  const [currentPath, setCurrentPath] = useState(
-    pathToEnumMap[pathname] || false
-  );
+const lexend = Lexend({ subsets: ['latin'] });
 
+function Header() {
   const [mobileMenuAnchor, setMobileMenuAnchor] = useState<HTMLElement | null>(
     null
   );
@@ -37,45 +30,24 @@ function Header() {
     setMobileMenuAnchor(null);
   };
 
-  useEffect(() => {
-    setCurrentPath(pathToEnumMap[pathname] || false);
-  }, [pathToEnumMap, pathname]);
-
-  const handleChange = (
-    event: React.ChangeEvent<any>,
-    newValue: HeaderEnum
-  ) => {
-    setCurrentPath(newValue);
-  };
-
   return (
     <Box component={'header'} className="header-outer-box">
-      <Link href="/" className="title-link">
+      <MuiLink href="/" className="title-link">
         <Image
-          src="./assets/logo.webp"
+          src="./assets/codeforbc-logo.svg"
           alt="Description"
           width={64}
           height={64}
         />
-      </Link>
+      </MuiLink>
       <Box className="header-inner-box">
-        <Tabs
-          value={currentPath}
-          onChange={handleChange}
-          className="navigation-tab"
-        >
+        <ul className="nav__header">
           {headerData.map((tab, index) => (
-            <Tab
-              key={index}
-              label={tab.label}
-              value={tab.value}
-              href={tab.href}
-              role="button"
-              className="header-tab"
-              component={Link}
-            />
+            <li key={`header-link-${index}`} className="nav__list">
+              <Link href={tab.href}>{tab.label}</Link>
+            </li>
           ))}
-        </Tabs>
+        </ul>
         <Box className="mobile-menu-btn">
           <IconButton onClick={handleClick}>
             <MenuIcon />
@@ -89,9 +61,11 @@ function Header() {
               <MenuItem
                 onClick={handleClose}
                 key={`menu-item-${index}`}
-                className="header-tab"
+                className={`header-tab ${lexend.className}`}
               >
-                <Link href={tab.href}>{tab.label}</Link>
+                <Link key={`menu-item-${index}`} href={tab.href}>
+                  {tab.label}
+                </Link>
               </MenuItem>
             ))}
           </Menu>
