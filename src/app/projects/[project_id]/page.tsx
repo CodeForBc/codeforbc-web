@@ -2,6 +2,7 @@ import { Link as LinkInterface } from '@/app/dataModels/link';
 import { Project as ProjectInterface } from '@/app/dataModels/project';
 import { getLocalProjectData } from '@/utils/get-local-project-data/get-local-project-data';
 import { IconButton } from '@mui/material';
+import Container from '@mui/material/Container';
 import Image from 'next/image';
 import { redirect } from 'next/navigation';
 import React from 'react';
@@ -47,5 +48,9 @@ export default async function Project({
     redirect('/projects');
   }
 
-  return <main>{Technologies(projectData)}</main>;
+  return (
+    <Container maxWidth="lg" className="project-box">
+      {Technologies(projectData)}
+    </Container>
+  );
 }
