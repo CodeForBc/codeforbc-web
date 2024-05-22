@@ -49,7 +49,6 @@
 
   &__header {
     border-bottom: 1px solid $divider-color-secondary;
-    width: 561px;
 
     @include mobile {
       width: 100%;
