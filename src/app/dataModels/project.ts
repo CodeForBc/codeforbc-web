@@ -12,4 +12,5 @@ export interface Project {
   location?: string;
   status?: ProjectStatusEnum;
   contributors?: string[];
+  projectKey: string;
 }
