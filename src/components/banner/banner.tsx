@@ -11,7 +11,8 @@ function Banner() {
       <Container className="banner">
         <Box className="banner__text-container">
           <Typography variant="h1" className="banner__title page-heading">
-            Be a Force For Good in BC!
+            Be a <span className="alt-text-color">Force</span> For{' '}
+            <span className="alt-text-color">Good</span> in BC!
           </Typography>
           <Typography variant="body1" className="banner__text">
             Do you have design, writing, or coding skills? You have the power to

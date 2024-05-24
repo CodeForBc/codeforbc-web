@@ -1,5 +1,9 @@
 @use '../../app/globals' as *;
 
+.alt-text-color {
+  color: $alt-text-color-primary;
+}
+
 .banner-container {
   width: 100%;
   padding-top: 6rem;
