@@ -11,7 +11,8 @@ function Banner() {
       <Container className="banner">
         <Box className="banner__text-container">
           <Typography variant="h1" className="banner__title page-heading">
-            Be a Force For Good in BC!
+            Be a <span className="alt-text-color">Force</span> For
+            <span className="alt-text-color"> Good</span> in BC!
           </Typography>
           <Typography variant="body1" className="banner__text">
             Do you have design, writing, or coding skills? You have the power to
@@ -40,7 +41,7 @@ function Banner() {
           <Image
             src="/assets/hero-Image.png"
             alt="banner image"
-            width={1500}
+            width={517}
             height={440}
             className="banner__image"
           />
