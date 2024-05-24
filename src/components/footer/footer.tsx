@@ -17,7 +17,10 @@ function Footer() {
               <Link href="/about" className="footer__button">
                 About
               </Link>
-              <Link href="/join-us" className="footer__button">
+              <Link
+                href="/join-us"
+                className="footer__button footer__button--highlight"
+              >
                 Join Us!
               </Link>
               <Link href="#" className="footer__button">

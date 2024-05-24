@@ -1,3 +1,5 @@
+@use '../../app/globals' as *;
+
 .footer-container {
   background-color: #fafafa;
   margin-top: 2rem;
@@ -73,9 +75,7 @@
     }
 
     &--highlight {
-      border-radius: 20px;
-      padding: 0.25rem 1.25rem;
-      background-color: #e1e1e1;
+      color: $alt-text-color-primary;
     }
   }
 
