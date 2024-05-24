@@ -15,13 +15,13 @@ export default function CodeOfConduct() {
             Our Commitment
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
-            OpenBC is a volunteer-driven organization committed to leveraging
+            CodeforBC is a volunteer-driven organization committed to leveraging
             technology for the betterment of British Columbia. We aim to create
             a positive impact and contribute to our community's growth and
             development through technology, collaboration, and innovation. Below
-            is the full text of the OpenBC Code of Conduct. For any questions or
-            clarifications regarding this Code of Conduct, please feel free to
-            reach out
+            is the full text of the CodeforBC Code of Conduct. For any questions
+            or clarifications regarding this Code of Conduct, please feel free
+            to reach out
           </Typography>
         </Box>
         <Box className="code-of-conduct__wrapper">
@@ -29,7 +29,7 @@ export default function CodeOfConduct() {
             Code of Conduct
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
-            In all OpenBC activities, events, and digital forums, we expect
+            In all CodeforBC activities, events, and digital forums, we expect
             participants to:
           </Typography>
           <ol className="code-of-conduct__list">
@@ -102,7 +102,7 @@ export default function CodeOfConduct() {
             Anti-Harassment Policy
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
-            OpenBC is committed to a harassment-free experience for everyone,
+            CodeforBC is committed to a harassment-free experience for everyone,
             regardless of identity. We do not tolerate harassment in any form,
             including but not limited to:
           </Typography>
@@ -136,11 +136,38 @@ export default function CodeOfConduct() {
                 variant="body2"
                 className="code-of-conduct__list-text"
               >
-                Contact OpenBC leadership at openbc.ca@gmail.com
+                Contact CodeForBC leadership at codeforbc@gmail.com
               </Typography>
             </li>
           </ul>
+          <Typography
+            variant="h3"
+            className="code-of-conduct__tertiary-heading"
+          >
+            Reporting Template for Anti-Harassment
+          </Typography>
+          <Box className="code-of-conduct__reporting-template">
+            <Typography variant="body2" className="code-of-conduct__list-text">
+              <strong>Subject:</strong> Harassment Report at [EVENT NAME]
+            </Typography>
+            <Typography variant="body2" className="code-of-conduct__list-text">
+              <strong>Content:</strong>
+            </Typography>
+            <Typography variant="body2" className="code-of-conduct__list-text">
+              I am reporting an issue of harassment at CodeforBC, [EVENT NAME,
+              LOCATION, DATE]. My contact information is [CONTACT INFO]. Thank
+              you for addressing this matter.
+            </Typography>
+          </Box>
         </Box>
+      </Box>
+      <Box className="code-of-conduct__note">
+        <Typography className="code-of-conduct__note-text">
+          CodeforBC values each member and believes in a community where
+          everyone can contribute in a safe, respectful, and harassment-free
+          environment. These guidelines reflect our commitment to these values
+          and our dedication to upholding them in all our endeavors.
+        </Typography>
       </Box>
     </Container>
   );
