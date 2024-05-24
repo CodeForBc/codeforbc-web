@@ -27,9 +27,10 @@ export default function Project({
   return (
     <Card className="project-card project-overview__card">
       <CardMedia
-        component="div"
+        component="a"
         className="project-card-media"
         image="https://source.unsplash.com/random?wallpapers"
+        href={`/projects/${projectKey}`}
       />
       <CardContent>
         <Typography
