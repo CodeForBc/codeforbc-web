@@ -15,11 +15,11 @@ export default function CodeOfConduct() {
             Our Commitment
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
-            CodeforBC is a volunteer-driven organization committed to leveraging
+            CodeForBC is a volunteer-driven organization committed to leveraging
             technology for the betterment of British Columbia. We aim to create
-            a positive impact and contribute to our community's growth and
+            a positive impact and contribute to our community&apos;s growth and
             development through technology, collaboration, and innovation. Below
-            is the full text of the CodeforBC Code of Conduct. For any questions
+            is the full text of the CodeForBC Code of Conduct. For any questions
             or clarifications regarding this Code of Conduct, please feel free
             to reach out
           </Typography>
@@ -29,7 +29,7 @@ export default function CodeOfConduct() {
             Code of Conduct
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
-            In all CodeforBC activities, events, and digital forums, we expect
+            In all CodeForBC activities, events, and digital forums, we expect
             participants to:
           </Typography>
           <ol className="code-of-conduct__list">
@@ -61,8 +61,8 @@ export default function CodeOfConduct() {
                 className="code-of-conduct__list-text"
               >
                 <strong>Promote Positive Interaction:</strong> We advocate for
-                inclusive language, a "yes/and" approach in discussions, and
-                encourage listening and balanced participation.
+                inclusive language, a &quot;yes/and&quot; approach in
+                discussions, and encourage listening and balanced participation.
               </Typography>
             </li>
             <li className="code-of-conduct__list-item">
@@ -102,7 +102,7 @@ export default function CodeOfConduct() {
             Anti-Harassment Policy
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
-            CodeforBC is committed to a harassment-free experience for everyone,
+            CodeForBC is committed to a harassment-free experience for everyone,
             regardless of identity. We do not tolerate harassment in any form,
             including but not limited to:
           </Typography>
@@ -154,7 +154,7 @@ export default function CodeOfConduct() {
               <strong>Content:</strong>
             </Typography>
             <Typography variant="body2" className="code-of-conduct__list-text">
-              I am reporting an issue of harassment at CodeforBC, [EVENT NAME,
+              I am reporting an issue of harassment at CodeForBC, [EVENT NAME,
               LOCATION, DATE]. My contact information is [CONTACT INFO]. Thank
               you for addressing this matter.
             </Typography>
@@ -163,7 +163,7 @@ export default function CodeOfConduct() {
       </Box>
       <Box className="code-of-conduct__note">
         <Typography className="code-of-conduct__note-text">
-          CodeforBC values each member and believes in a community where
+          CodeForBC values each member and believes in a community where
           everyone can contribute in a safe, respectful, and harassment-free
           environment. These guidelines reflect our commitment to these values
           and our dedication to upholding them in all our endeavors.
