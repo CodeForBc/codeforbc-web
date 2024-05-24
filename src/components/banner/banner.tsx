@@ -40,7 +40,7 @@ function Banner() {
           <Image
             src="/assets/hero-Image.png"
             alt="banner image"
-            width={1500}
+            width={517}
             height={440}
             className="banner__image"
           />
