@@ -61,7 +61,7 @@ export default function JoinUs() {
                   className="join-us__button"
                   variant="contained"
                   size="large"
-                  href="mailto:codeforbc@gmail.com"
+                  href="https://tally.so/embed/w4207A"
                 >
                   Join Us
                 </Button>

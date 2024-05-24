@@ -30,7 +30,7 @@ function Banner() {
               className="banner__button"
               variant="contained"
               size="large"
-              href="mailto:codeforbc@gmail.com"
+              href="https://tally.so/embed/w4207A"
             >
               Join Us
             </Button>
