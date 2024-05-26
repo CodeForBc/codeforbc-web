@@ -15,14 +15,14 @@ describe('Header', () => {
   it('should render navigation buttons', () => {
     render(<Header />);
 
-    const projectNav = screen.getByRole('button', {
-      name: 'Projects',
+    const projectNav = screen.getByRole('link', {
+      name: 'Our Projects',
     });
-    const joinUsNav = screen.getByRole('button', {
-      name: 'Join Us',
+    const joinUsNav = screen.getByRole('link', {
+      name: 'Join Us!',
     });
-    const aboutNav = screen.getByRole('button', {
-      name: 'About',
+    const aboutNav = screen.getByRole('link', {
+      name: 'Who We Are',
     });
 
     expect(projectNav).toBeInTheDocument();
