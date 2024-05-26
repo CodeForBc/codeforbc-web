@@ -5,7 +5,9 @@ import { render, screen } from '@testing-library/react';
 describe('Banner component', () => {
   it('renders banner heading', () => {
     render(<Banner />);
-    const bannerHeading = screen.getByText('Be a Force For Good in BC!');
+    const bannerHeading = screen.getByRole('heading', {
+      name: 'Be a Force For Good in BC!',
+    });
     expect(bannerHeading).toBeInTheDocument();
   });
 
