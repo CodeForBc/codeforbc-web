@@ -28,7 +28,7 @@ export default function JoinUs() {
           <Box className="join-us-banner">
             <Box className="join-us-banner__image-container">
               <Image
-                src="./assets/join-us-hero.png"
+                src="/assets/join-us-hero.png"
                 alt="Description"
                 width={500}
                 height={500}

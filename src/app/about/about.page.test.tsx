@@ -1,12 +1,12 @@
+import About from '@/app/about/page';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import React from 'react';
-import About from '@/app/about/page';
 
 describe('About Page', () => {
-  it('should render title', () => {
-    render(<About />);
-    const title = screen.getByText('About');
+  it('should render title', async () => {
+    // About is an async component, so we need to await it
+    render(await About());
+    const title = screen.getByRole('heading', { name: 'Meet Our Team' });
     expect(title).toBeInTheDocument();
   });
 });
