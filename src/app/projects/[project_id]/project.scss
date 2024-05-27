@@ -23,4 +23,21 @@ div.project-box {
       padding: 1em;
     }
   }
+
+  div.project-banner {
+    a.join-us {
+      &__button {
+        background-color: $button-color-primary;
+        width: 200px;
+        height: 44px;
+        text-transform: none;
+        font-family: inherit;
+
+        @include mobile {
+          width: 160px;
+          height: 32px;
+        }
+      }
+    }
+  }
 }

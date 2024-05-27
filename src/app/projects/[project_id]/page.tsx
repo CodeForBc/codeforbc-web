@@ -1,12 +1,32 @@
 import { Link as LinkInterface } from '@/app/dataModels/link';
 import { Project as ProjectInterface } from '@/app/dataModels/project';
 import { getLocalProjectData } from '@/utils/get-local-project-data/get-local-project-data';
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
 import { redirect } from 'next/navigation';
 import React from 'react';
 import './project.scss';
+
+function ProjectBanner(projectData: ProjectInterface) {
+  const { description, title } = projectData;
+  return (
+    <section>
+      <div className="project-banner">
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <Button
+          className="join-us__button"
+          variant="contained"
+          size="large"
+          href="https://tally.so/embed/w4207A"
+        >
+          Join Us
+        </Button>
+      </div>
+    </section>
+  );
+}
 
 function ProjectOverview(/*projectData: ProjectInterface*/) {
   return (
@@ -64,6 +84,7 @@ export default async function Project({
 
   return (
     <Container maxWidth="lg" className="project-box">
+      {ProjectBanner(projectData)}
       {ProjectOverview(/*projectData*/)}
       {Technologies(projectData)}
     </Container>
