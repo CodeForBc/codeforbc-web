@@ -61,7 +61,7 @@ export default function CoreValues() {
         </Box>
         <Box className="core-value__image-container">
           <Image
-            src="./assets/core-values.png"
+            src="/assets/core-values.png"
             alt="Description"
             width={562}
             height={422}

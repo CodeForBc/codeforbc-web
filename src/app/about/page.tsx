@@ -71,7 +71,7 @@ export default async function About() {
           size="large"
           className="join-us-cta-card__button"
           variant="contained"
-          href="mailto:codeforbc@gmail.com"
+          href="https://tally.so/embed/w4207A"
         >
           Join Us
         </Button>
