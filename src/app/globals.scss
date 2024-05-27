@@ -13,6 +13,7 @@ $text-color-secondary: #707070;
 $divider-color: #e1e1e1;
 $divider-color-secondary: #bebebe;
 $background-color-secondary: #f4f8fc;
+$button-color-primary: #2e71cc;
 
 @mixin tablet {
   @media only screen and (max-width: 1280px) {
