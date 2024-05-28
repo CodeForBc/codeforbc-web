@@ -6,7 +6,7 @@
       { "title": "GitHub", "url": "https://github.com/CodeForBc/codeforbc-web" }
     ],
     "languages": ["TypeScript", "JavaScript", "SCSS"],
-    "tools": ["Figma", "GitHub"],
+    "tools": ["Figma", "GitHub", "Vercel"],
     "technologies": ["Next.js", "Jest", "MUI"],
     "programAreas": ["Civic Tech Infrastructure"],
     "location": "Remote",
