@@ -31,7 +31,7 @@ function ProjectBanner(projectData: ProjectInterface) {
 function ProjectOverview(/*projectData: ProjectInterface*/) {
   return (
     <section>
-      <div className="project-overview">
+      <div className="project-page-overview">
         <h1>Project Overview</h1>
         <h2>Problem Statement</h2>
         <h2>Project Objectives</h2>
