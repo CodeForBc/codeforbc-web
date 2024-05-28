@@ -14,7 +14,15 @@ function ProjectBanner(projectData: ProjectInterface) {
     <section>
       <div className="project-banner">
         <h1>{title}</h1>
-        <p>{description}</p>
+        <div className="project-banner__body">
+          <p>{description}</p>
+          <Image
+            src="/assets/codeforbc-website-project.webp"
+            alt="CodeForBC banner image"
+            width={500}
+            height={323}
+          />
+        </div>
         <Button
           className="join-us__button"
           variant="contained"

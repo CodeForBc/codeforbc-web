@@ -34,6 +34,22 @@ div.project-box {
     font-size: 24px;
   }
 
+  div.project-banner {
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    &__body {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 32px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
   div.project-page-overview {
     div.looking-for-container {
       display: flex;
