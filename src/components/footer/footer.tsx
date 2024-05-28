@@ -14,8 +14,8 @@ function Footer() {
               CodeForBC
             </Link>
             <Box className="footer__buttons">
-              <Link href="/about" className="footer__button">
-                About
+              <Link href="/code-of-conduct" className="footer__button">
+                Code of Conduct
               </Link>
               <Link
                 href="/join-us"

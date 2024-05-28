@@ -1,0 +1,171 @@
+@use '../globals.scss' as *;
+
+.code-of-conduct {
+
+  @include tablet {
+    padding: 0 98px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
+  }
+
+  &__heading-container {
+    padding: 96px 0;
+    text-align: center;
+
+    @include tablet {
+      padding: 48px 0;
+    }
+
+    @include mobile {
+      padding: 32px 0;
+    }
+  }
+
+  &__main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 64px;
+    padding: 64px 0;
+
+    @include tablet {
+      gap: 32px;
+      padding: 48px 0;
+    }
+
+    @include mobile {
+      padding: 32px 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include tablet {
+      gap: 24px;
+    }
+  }
+
+  &__sub-heading {
+    font-family: inherit;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: $heading-color-primary;
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 500;
+    color: $heading-color-secondary;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__list-item {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $heading-color-secondary;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__list-text {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $heading-color-secondary;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__tertiary-heading {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 700;
+    color: $heading-color-secondary;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__reporting-template {
+    max-width: 800px;
+    padding: 16px;
+    box-shadow: 0px 10px 20px -3px rgba(16, 24, 40, 0.10), 0px 4px 6px -4px rgba(16, 24, 40, 0.10);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__note {
+    padding: 96px 0;
+
+    @include tablet {
+      padding: 48px 0;
+    }
+
+    @include mobile {
+      padding: 32px 0;
+    }
+  }
+
+  &__note-text {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 600;
+    color: $text-color-primary;
+    padding-top: 16px;
+    border-top: 1.6px solid $divider-color-secondary;
+  }
+}
