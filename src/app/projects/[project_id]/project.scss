@@ -32,6 +32,23 @@ div.project-box {
     font-size: 24px;
   }
 
+  div.project-page-overview {
+    div.looking-for-container {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+
+      span.looking-for-item {
+        padding: 8px 16px;
+        background-color: $primary-50;
+        border-radius: 12px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $primary-color;
+      }
+    }
+  }
+
   div.project-banner {
     a.join-us {
       &__button {

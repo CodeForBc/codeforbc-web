@@ -30,7 +30,8 @@ function ProjectBanner(projectData: ProjectInterface) {
 
 function ProjectOverview(projectData: ProjectInterface) {
   const { projectOverview } = projectData;
-  const { problemStatement, projectObjectives, projectLead } = projectOverview;
+  const { lookingFor, problemStatement, projectObjectives, projectLead } =
+    projectOverview;
   return (
     <section>
       <div className="project-page-overview">
@@ -41,7 +42,21 @@ function ProjectOverview(projectData: ProjectInterface) {
         <p>{projectObjectives}</p>
         <h2>Project Lead</h2>
         <p>{projectLead}</p>
-        <h2>We Are Looking For</h2>
+        {lookingFor.length > 0 && (
+          <>
+            <h2>We Are Looking For</h2>
+            <div className="looking-for-container">
+              {lookingFor.map((item: string, idx: number) => (
+                <span
+                  className="looking-for-item"
+                  key={`looking-for-item-${idx}`}
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
