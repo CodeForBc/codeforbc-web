@@ -1,5 +1,6 @@
 import Banner from '@/components/banner/banner';
 import FrequentlyAskedQuestions from '@/components/faq/faq';
+import MissionOverview from '@/components/mission-overview/mission-overview';
 import ProjectOverview from '@/components/project-overview/project-overview';
 
 export function HomePage() {
@@ -7,6 +8,7 @@ export function HomePage() {
     <div>
       <Banner />
       <ProjectOverview />
+      <MissionOverview />
       <FrequentlyAskedQuestions />
     </div>
   );

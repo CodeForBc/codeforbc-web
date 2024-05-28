@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+
     @media only screen and (max-width: 640px) {
       flex-direction: column;
     }
@@ -80,8 +81,9 @@
     border: 1.8px solid $text-color-primary;
     font-family: inherit;
     text-transform: none;
+    min-width: 200px;
 
-    @media only screen and (max-width: 640px) {
+    @include mobile {
       width: 100%;
     }
   }
