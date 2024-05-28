@@ -13,4 +13,10 @@ export interface Project {
   status?: ProjectStatusEnum;
   contributors?: string[];
   projectKey: string;
+  projectOverview: {
+    problemStatement: string;
+    projectObjectives: string;
+    projectLead: string;
+    lookingFor: string[];
+  };
 }
