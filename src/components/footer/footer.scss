@@ -70,10 +70,6 @@
     color: #424242;
     transition: all 0.2s;
 
-    &:hover {
-      text-decoration: none;
-    }
-
     &--highlight {
       color: $alt-text-color-primary;
     }
