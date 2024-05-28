@@ -25,8 +25,8 @@
     ],
     "projectOverview": {
       "problemStatement": "",
-      "projectObjectives": "",
-      "projectLead": "",
+      "projectObjectives": "Develop CodeForBC website using NextJS 14 to showcase the organization, values, members and projects",
+      "projectLead": "Sam Huo",
       "lookingFor": []
     }
   }
