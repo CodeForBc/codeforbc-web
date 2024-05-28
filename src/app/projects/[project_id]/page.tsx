@@ -9,7 +9,7 @@ import React from 'react';
 import './project.scss';
 
 function ProjectBanner(projectData: ProjectInterface) {
-  const { description, title } = projectData;
+  const { description, title, projectImage } = projectData;
   return (
     <section>
       <div className="project-banner">
@@ -17,7 +17,7 @@ function ProjectBanner(projectData: ProjectInterface) {
         <div className="project-banner__body">
           <p>{description}</p>
           <Image
-            src="/assets/codeforbc-website-project.webp"
+            src={projectImage}
             alt="CodeForBC banner image"
             width={500}
             height={323}

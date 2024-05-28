@@ -23,6 +23,7 @@
       "Alja Cekada",
       "Ahmad Akhtar"
     ],
+    "projectImage": "/assets/codeforbc-website-project.webp",
     "projectOverview": {
       "problemStatement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "projectObjectives": "Develop CodeForBC website using NextJS 14 to showcase the organization, values, members and projects",
