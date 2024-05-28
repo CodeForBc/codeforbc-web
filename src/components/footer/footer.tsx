@@ -21,7 +21,7 @@ function Footer() {
                 href="/join-us"
                 className="footer__button footer__button--highlight"
               >
-                Join Us!
+                Get Engaged!
               </Link>
               <Link href="#" className="footer__button">
                 Contact Us
