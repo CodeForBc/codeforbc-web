@@ -19,8 +19,8 @@ function ProjectBanner(projectData: ProjectInterface) {
           <Image
             src={projectImage}
             alt="CodeForBC banner image"
-            width={500}
-            height={323}
+            width={0}
+            height={0}
           />
         </div>
         <Button

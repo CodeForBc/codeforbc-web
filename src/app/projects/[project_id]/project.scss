@@ -42,11 +42,28 @@ div.project-box {
 
     &__body {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       align-items: center;
+      justify-content: space-between;
       gap: 32px;
       font-size: 24px;
       font-weight: 600;
+
+      p {
+        width: 50%;
+
+        @include tablet {
+          width: 100%;
+        }
+      }
+      img {
+        width: 45%;
+        height: auto;
+        @include tablet {
+          width: 50%;
+          padding-bottom: 1em;
+        }
+      }
     }
   }
 
