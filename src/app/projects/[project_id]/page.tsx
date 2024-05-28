@@ -28,14 +28,19 @@ function ProjectBanner(projectData: ProjectInterface) {
   );
 }
 
-function ProjectOverview(/*projectData: ProjectInterface*/) {
+function ProjectOverview(projectData: ProjectInterface) {
+  const { projectOverview } = projectData;
+  const { problemStatement, projectObjectives, projectLead } = projectOverview;
   return (
     <section>
       <div className="project-page-overview">
         <h1>Project Overview</h1>
         <h2>Problem Statement</h2>
+        <p>{problemStatement}</p>
         <h2>Project Objectives</h2>
+        <p>{projectObjectives}</p>
         <h2>Project Lead</h2>
+        <p>{projectLead}</p>
         <h2>We Are Looking For</h2>
       </div>
     </section>
@@ -85,7 +90,7 @@ export default async function Project({
   return (
     <Container maxWidth="lg" className="project-box">
       {ProjectBanner(projectData)}
-      {ProjectOverview(/*projectData*/)}
+      {ProjectOverview(projectData)}
       {Technologies(projectData)}
     </Container>
   );
