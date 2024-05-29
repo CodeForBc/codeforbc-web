@@ -10,8 +10,8 @@ export default function MissionOverview() {
           <Image
             src="/assets/join-us-hero.png"
             alt="Description"
-            width={512}
-            height={467}
+            width={544}
+            height={543}
             className="mission-overview__image"
           />
         </Box>

@@ -51,7 +51,7 @@
     border-top: 1.6px solid #bebebe;
     text-align: center;
 
-    @media only screen and (max-width: 640px) {
+    @include mobile {
       width: 100%;
       padding: 1.5rem 0;
     }
