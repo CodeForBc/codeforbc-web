@@ -71,7 +71,7 @@ export default async function About() {
           size="large"
           className="join-us-cta-card__button"
           variant="contained"
-          href="https://tally.so/embed/w4207A"
+          href="https://tally.so/embed/3jMe1x"
         >
           Join Us
         </Button>

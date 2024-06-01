@@ -27,7 +27,7 @@ export default function Project({
       <CardMedia
         component="div"
         className="project-card-media"
-        image="https://source.unsplash.com/random?wallpapers"
+        image="/assets/codeforbc-website-project.webp"
       />
       <CardContent>
         <Typography
