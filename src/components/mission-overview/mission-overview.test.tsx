@@ -25,7 +25,11 @@ describe('MissionOverview Component', () => {
   });
 
   it('should render the learn more link', () => {
-    render(<MissionOverview />);
+    render(
+      <MissionOverview>
+        <a href="/join-us">Learn More</a>
+      </MissionOverview>
+    );
     const link = screen.getByRole('link', { name: /learn more/i });
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', '/join-us');
