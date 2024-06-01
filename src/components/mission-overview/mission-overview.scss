@@ -49,7 +49,6 @@
     object-position: center;
   }
 
-
   &__heading {
     font-size: 44px;
     font-style: normal;
@@ -62,7 +61,6 @@
     @include tablet {
       font-size: 40px;
     }
-
   }
 
   &__text-container {
@@ -80,6 +78,12 @@
     letter-spacing: -0.48px;
     color: $text-color-primary;
     font-family: inherit;
+  }
+
+  &__button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
   }
 
   &__button {

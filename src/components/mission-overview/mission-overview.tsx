@@ -1,8 +1,12 @@
-import { Box, Button, Container, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import Image from 'next/image';
 import './mission-overview.scss';
 
-export default function MissionOverview() {
+interface MissionOverviewProps {
+  children?: React.ReactNode;
+}
+
+export default function MissionOverview({ children }: MissionOverviewProps) {
   return (
     <Container className="mission-overview-container">
       <Box className="mission-overview">
@@ -29,14 +33,7 @@ export default function MissionOverview() {
             development to address the unique challenges and opportunities faced
             by our province.
           </Typography>
-          <Button
-            className="mission-overview__button"
-            variant="outlined"
-            size="large"
-            href="/join-us"
-          >
-            Learn More
-          </Button>
+          <Box className="mission-overview__button-container">{children}</Box>
         </Box>
       </Box>
     </Container>
