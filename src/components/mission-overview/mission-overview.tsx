@@ -1,12 +1,16 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, TypographyVariant } from '@mui/material';
 import Image from 'next/image';
 import './mission-overview.scss';
 
 interface MissionOverviewProps {
+  headerSize?: TypographyVariant;
   children?: React.ReactNode;
 }
 
-export default function MissionOverview({ children }: MissionOverviewProps) {
+export default function MissionOverview({
+  headerSize = 'h1',
+  children,
+}: MissionOverviewProps) {
   return (
     <Container className="mission-overview-container">
       <Box className="mission-overview">
@@ -20,7 +24,10 @@ export default function MissionOverview({ children }: MissionOverviewProps) {
           />
         </Box>
         <Box className="mission-overview__text-container">
-          <Typography className="mission-overview__heading" variant="h2">
+          <Typography
+            className="mission-overview__heading"
+            variant={headerSize}
+          >
             Our Mission
           </Typography>
           <Typography

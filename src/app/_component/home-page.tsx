@@ -9,7 +9,7 @@ export function HomePage() {
     <div>
       <Banner />
       <ProjectOverview />
-      <MissionOverview>
+      <MissionOverview headerSize="h2">
         <Button
           className="mission-overview__button"
           variant="outlined"
