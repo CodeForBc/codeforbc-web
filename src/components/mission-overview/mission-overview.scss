@@ -84,6 +84,11 @@
     display: flex;
     flex-flow: row nowrap;
     gap: 1em;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   &__button {
