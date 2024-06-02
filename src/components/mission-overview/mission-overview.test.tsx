@@ -13,7 +13,16 @@ describe('MissionOverview Component', () => {
     render(<MissionOverview />);
     const heading = screen.getByText('Our Mission');
     expect(heading).toBeInTheDocument();
-    expect(heading.tagName).toBe('H2');
+    expect(heading.tagName).toBe('H1');
+  });
+
+  it('should render the mission heading with an adjusted size', () => {
+    const headerSize = 'h2';
+    render(<MissionOverview headerSize={headerSize} />);
+    const heading = screen.getByText('Our Mission');
+    expect(heading).toBeInTheDocument();
+    // The test library returns the "h2" tag in uppercase as "H2"
+    expect(heading.tagName).toBe(headerSize.toUpperCase());
   });
 
   it('should render the mission text', () => {
