@@ -54,6 +54,14 @@ div.project-box {
     flex-flow: row wrap;
     gap: 24px;
 
+    &__status {
+      background-color: #109152;
+      border-radius: 4px;
+      padding: 8px 16px;
+      color: white;
+      font-size: 18px;
+    }
+
     &__body {
       display: flex;
       flex-flow: column nowrap;

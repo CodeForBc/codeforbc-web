@@ -10,11 +10,12 @@ import React from 'react';
 import './project.scss';
 
 function ProjectBanner(projectData: ProjectInterface) {
-  const { description, title, projectImage } = projectData;
+  const { description, title, projectImage, status } = projectData;
   return (
     <section>
       <div className="project-banner">
         <div className="project-banner__body">
+          <div className="project-banner__status">{status}</div>
           <h1>{title}</h1>
           <p>{description}</p>
           <Button
