@@ -72,6 +72,13 @@ div.project-box {
 
     div.project-banner {
       &__status {
+        /**
+         * @todo Once other project statuses start getting introduced, we may
+         * need to programmatically render different background-colors
+         *
+         * For now, the Figma designs only assume one color for Active, so just
+         * use that for now
+         */
         background-color: #109152;
         border-radius: 4px;
         padding: 8px 16px;
