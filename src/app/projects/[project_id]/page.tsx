@@ -47,12 +47,18 @@ function ProjectOverview(projectData: ProjectInterface) {
     <section>
       <div className="project-page-overview">
         <h1>Project Overview</h1>
-        <h2>Problem Statement</h2>
-        <p>{problemStatement}</p>
-        <h2>Project Objectives</h2>
-        <p>{projectObjectives}</p>
-        <h2>Project Lead</h2>
-        <p>{projectLead}</p>
+        <div className="descriptor">
+          <h2>Problem Statement</h2>
+          <p>{problemStatement}</p>
+        </div>
+        <div className="descriptor">
+          <h2>Project Objectives</h2>
+          <p>{projectObjectives}</p>
+        </div>
+        <div className="descriptor">
+          <h2>Project Lead</h2>
+          <p>{projectLead}</p>
+        </div>
         {lookingFor.length > 0 && (
           <>
             <h2>We Are Looking For</h2>
@@ -80,21 +86,27 @@ function Technologies(projectData: ProjectInterface) {
     <section>
       <div>
         <h1>Technologies Used</h1>
-        <h2>Languages</h2>
-        <p>{languages?.join(', ')}</p>
-        <h2>Tools</h2>
-        <p>{tools?.join(', ')}</p>
-        <h2>Links</h2>
-        {links.map((link: LinkInterface, idx: number) => (
-          <Link href={link.url} key={`project-link-${idx}`}>
-            <Image
-              src="/assets/github-mark.svg"
-              alt={link.title}
-              width={20}
-              height={20}
-            />
-          </Link>
-        ))}
+        <div className="descriptor">
+          <h2>Languages</h2>
+          <p>{languages?.join(', ')}</p>
+        </div>
+        <div className="descriptor">
+          <h2>Tools</h2>
+          <p>{tools?.join(', ')}</p>
+        </div>
+        <div className="descriptor">
+          <h2>Links</h2>
+          {links.map((link: LinkInterface, idx: number) => (
+            <Link href={link.url} key={`project-link-${idx}`}>
+              <Image
+                src="/assets/github-mark.svg"
+                alt={link.title}
+                width={20}
+                height={20}
+              />
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

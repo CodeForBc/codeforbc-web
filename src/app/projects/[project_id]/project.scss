@@ -43,6 +43,12 @@ div.project-box {
     line-height: 30px;
   }
 
+  div.descriptor {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+  }
+
   div.project-banner {
     display: flex;
     flex-flow: row wrap;
