@@ -90,6 +90,10 @@ div.project-box {
         width: 100%;
         height: fit-content;
       }
+
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 
