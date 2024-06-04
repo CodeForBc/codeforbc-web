@@ -61,7 +61,7 @@ div.project-box {
         width: 45%;
         height: auto;
         @include tablet {
-          width: 50%;
+          width: 100%;
           padding-bottom: 1em;
         }
       }
