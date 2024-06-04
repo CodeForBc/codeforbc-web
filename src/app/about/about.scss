@@ -8,6 +8,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
   @include mobile {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -34,13 +35,53 @@
     }
   }
 
+  &__content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 80px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  &__filter-button {
+    padding: 8px 16px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    color: $text-color-secondary;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+
   &__card-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin-top: 60px;
     flex-wrap: wrap;
+
+    @include tablet {
+      width: 100%;
+    }
 
     @include mobile {
       flex-direction: column;
@@ -92,6 +133,7 @@
 
   &__button {
     text-transform: none;
+
     @include mobile {
       width: 100%;
     }

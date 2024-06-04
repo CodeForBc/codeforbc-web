@@ -52,10 +52,22 @@ export default async function About() {
           vision, and driven by our mission.
         </Typography>
       </Box>
-      <Box className="about-page__card-container">
-        {teamMemberData.map((teamMember: TeamMember) => (
-          <TeamBioCard key={teamMember.name} data={teamMember} />
-        ))}
+      <Box className="about-page__content-container">
+        <Box className="about-page__filter">
+          <Button className="about-page__filter-button">All Members</Button>
+          <Button className="about-page__filter-button">Executive</Button>
+          <Button className="about-page__filter-button">Product/UIUX</Button>
+          <Button className="about-page__filter-button">Developers</Button>
+          <Button className="about-page__filter-button">
+            Business Development
+          </Button>
+          <Button className="about-page__filter-button">Data</Button>
+        </Box>
+        <Box className="about-page__card-container">
+          {teamMemberData.map((teamMember: TeamMember) => (
+            <TeamBioCard key={teamMember.name} data={teamMember} />
+          ))}
+        </Box>
       </Box>
       <Box className="join-us-cta-card">
         <Box className="join-us-cta-card__text-container">
