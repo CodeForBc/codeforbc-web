@@ -1,9 +1,10 @@
 import { Link as LinkInterface } from '@/app/dataModels/link';
 import { Project as ProjectInterface } from '@/app/dataModels/project';
 import { getLocalProjectData } from '@/utils/get-local-project-data/get-local-project-data';
-import { Button, IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
+import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import React from 'react';
 import './project.scss';
@@ -85,14 +86,14 @@ function Technologies(projectData: ProjectInterface) {
         <p>{tools?.join(', ')}</p>
         <h2>Links</h2>
         {links.map((link: LinkInterface, idx: number) => (
-          <IconButton href={link.url} key={`project-link-${idx}`}>
+          <Link href={link.url} key={`project-link-${idx}`}>
             <Image
               src="/assets/github-mark.svg"
               alt={link.title}
               width={20}
               height={20}
             />
-          </IconButton>
+          </Link>
         ))}
       </div>
     </section>
