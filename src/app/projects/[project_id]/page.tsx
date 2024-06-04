@@ -13,9 +13,19 @@ function ProjectBanner(projectData: ProjectInterface) {
   return (
     <section>
       <div className="project-banner">
-        <h1>{title}</h1>
         <div className="project-banner__body">
+          <h1>{title}</h1>
           <p>{description}</p>
+          <Button
+            className="join-us__button"
+            variant="contained"
+            size="large"
+            href="https://tally.so/embed/w4207A"
+          >
+            Join Us
+          </Button>
+        </div>
+        <div className="project-banner__image">
           <Image
             src={projectImage}
             alt="CodeForBC banner image"
@@ -23,14 +33,6 @@ function ProjectBanner(projectData: ProjectInterface) {
             height={0}
           />
         </div>
-        <Button
-          className="join-us__button"
-          variant="contained"
-          size="large"
-          href="https://tally.so/embed/w4207A"
-        >
-          Join Us
-        </Button>
       </div>
     </section>
   );
