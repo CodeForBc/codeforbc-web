@@ -18,7 +18,7 @@ div.project-box {
     padding: 0.25em;
     border-radius: 12px;
 
-    & > div {
+    & > div.inner-box {
       display: flex;
       flex-flow: column nowrap;
       gap: 28px;
@@ -49,58 +49,76 @@ div.project-box {
     gap: 1em;
   }
 
-  div.project-banner {
+  section.project-banner {
     display: flex;
     flex-flow: row wrap;
     gap: 24px;
+    padding: 2em 1em;
 
-    &__status {
-      background-color: #109152;
-      border-radius: 4px;
-      padding: 8px 16px;
-      color: white;
-      font-size: 18px;
-    }
+    a.join-us {
+      &__button {
+        background-color: $button-color-primary;
+        width: 200px;
+        height: 44px;
+        text-transform: none;
+        font-family: inherit;
 
-    &__body {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: flex-start;
-      justify-content: space-between;
-      font-size: 28px;
-      font-weight: 400;
-      width: 50%;
-      gap: 24px;
-
-      @include tablet {
-        width: 100%;
-      }
-
-      h1 {
-        font-size: 36px;
-        font-weight: 700;
-      }
-
-      p {
-        @include tablet {
-          font-size: 24px;
-          width: 100%;
+        @include mobile {
+          width: 160px;
+          height: 32px;
         }
       }
     }
 
-    &__image {
-      width: 45%;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      img {
-        width: 100%;
-        height: fit-content;
+    div.project-banner {
+      &__status {
+        background-color: #109152;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: white;
+        font-size: 18px;
       }
 
-      @include tablet {
-        width: 100%;
+      &__body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 28px;
+        font-weight: 400;
+        width: 50%;
+        gap: 24px;
+
+        @include tablet {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        p {
+          @include tablet {
+            font-size: 24px;
+            width: 100%;
+          }
+        }
+      }
+
+      &__image {
+        width: 45%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: fit-content;
+        }
+
+        @include tablet {
+          width: 100%;
+        }
       }
     }
   }
@@ -118,23 +136,6 @@ div.project-box {
         font-weight: 600;
         line-height: 30px;
         color: $primary-color;
-      }
-    }
-  }
-
-  div.project-banner {
-    a.join-us {
-      &__button {
-        background-color: $button-color-primary;
-        width: 200px;
-        height: 44px;
-        text-transform: none;
-        font-family: inherit;
-
-        @include mobile {
-          width: 160px;
-          height: 32px;
-        }
       }
     }
   }

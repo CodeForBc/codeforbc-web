@@ -12,29 +12,27 @@ import './project.scss';
 function ProjectBanner(projectData: ProjectInterface) {
   const { description, title, projectImage, status } = projectData;
   return (
-    <section>
-      <div className="project-banner">
-        <div className="project-banner__body">
-          <div className="project-banner__status">{status}</div>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <Button
-            className="join-us__button"
-            variant="contained"
-            size="large"
-            href="https://tally.so/embed/w4207A"
-          >
-            Join Us
-          </Button>
-        </div>
-        <div className="project-banner__image">
-          <Image
-            src={projectImage}
-            alt="CodeForBC banner image"
-            width={0}
-            height={0}
-          />
-        </div>
+    <section className="project-banner">
+      <div className="project-banner__body">
+        <div className="project-banner__status">{status}</div>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <Button
+          className="join-us__button"
+          variant="contained"
+          size="large"
+          href="https://tally.so/embed/w4207A"
+        >
+          Join Us
+        </Button>
+      </div>
+      <div className="project-banner__image">
+        <Image
+          src={projectImage}
+          alt="CodeForBC banner image"
+          width={0}
+          height={0}
+        />
       </div>
     </section>
   );
@@ -46,7 +44,7 @@ function ProjectOverview(projectData: ProjectInterface) {
     projectOverview;
   return (
     <section>
-      <div className="project-page-overview">
+      <div className="inner-box project-page-overview">
         <h1>Project Overview</h1>
         <div className="descriptor">
           <h2>Problem Statement</h2>
@@ -85,7 +83,7 @@ function Technologies(projectData: ProjectInterface) {
 
   return (
     <section>
-      <div>
+      <div className="inner-box">
         <h1>Technologies Used</h1>
         <div className="descriptor">
           <h2>Languages</h2>
