@@ -53,6 +53,7 @@ div.project-box {
         width: 50%;
 
         @include tablet {
+          font-size: 24px;
           width: 100%;
         }
       }
