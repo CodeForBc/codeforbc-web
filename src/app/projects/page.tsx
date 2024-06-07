@@ -63,6 +63,7 @@ export default async function Projects() {
                     languages={project.languages}
                     technologies={project.technologies}
                     programAreas={project.programAreas}
+                    projectImage={project.projectImage}
                     projectKey={projectKey}
                   />
                 </Grid>
