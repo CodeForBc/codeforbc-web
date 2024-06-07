@@ -1,3 +1,9 @@
+@use '../../app/globals.scss' as *;
+
+* {
+  font-family: inherit;
+}
+
 body {
   .project-card {
     min-width: 275px;
@@ -5,6 +11,14 @@ body {
     display: flex;
     flex-direction: column;
     align-self: stretch;
+  }
+
+  .project-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $alt-text-color-primary;
   }
 
   .project-card-media {

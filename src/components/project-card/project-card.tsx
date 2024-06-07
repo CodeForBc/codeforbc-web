@@ -20,8 +20,6 @@ export default function Project({
   links,
   languages,
   tools,
-  technologies,
-  programAreas, // status
   projectKey,
   projectImage,
 }: ProjectInterface) {
@@ -71,28 +69,6 @@ export default function Project({
           </Typography>
         )}
 
-        {technologies && (
-          <Typography component="div" variant="body2" mt={1}>
-            <Typography variant="body2" sx={{ color: 'grey' }}>
-              Technologies
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: '700' }}>
-              {technologies.join(', ')}
-            </Typography>
-          </Typography>
-        )}
-
-        {programAreas && (
-          <Typography component="div" variant="body2" mt={1}>
-            <Typography variant="body2" sx={{ color: 'grey' }}>
-              Program Areas
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: '700' }}>
-              {programAreas.join(', ')}
-            </Typography>
-          </Typography>
-        )}
-
         {links && (
           <Typography component="div" variant="body2" mt={1}>
             <Typography variant="body2" sx={{ color: 'grey' }}>
@@ -114,7 +90,9 @@ export default function Project({
         )}
 
         <Typography component="div" variant="body2" mt={1}>
-          <Link href={`/projects/${projectKey}`}>View Project</Link>
+          <Link href={`/projects/${projectKey}`} className="project-link">
+            View Project
+          </Link>
         </Typography>
       </CardContent>
     </Card>
