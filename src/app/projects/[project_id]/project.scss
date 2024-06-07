@@ -2,6 +2,8 @@
 
 h1,
 h2,
+h3,
+h5,
 ul,
 p {
   margin: 0;
@@ -158,6 +160,7 @@ div.project-box {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    gap: 2em;
 
     hr {
       width: 590px;
