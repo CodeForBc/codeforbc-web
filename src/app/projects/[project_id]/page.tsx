@@ -40,6 +40,10 @@ function ProjectBanner(projectData: ProjectInterface) {
 
 function ProjectOverview(projectData: ProjectInterface) {
   const { projectOverview } = projectData;
+  if (!projectOverview) {
+    return null;
+  }
+
   const { lookingFor, problemStatement, projectObjectives, projectLead } =
     projectOverview;
   return (
@@ -53,7 +57,7 @@ function ProjectOverview(projectData: ProjectInterface) {
         <div className="descriptor">
           <h2>Project Objectives</h2>
           <ul className="project-objectives__list">
-            {projectObjectives.map((objective, idx) => (
+            {projectObjectives.map((objective: string, idx: number) => (
               <li key={`objective-key-${idx}`}>{objective}</li>
             ))}
           </ul>
