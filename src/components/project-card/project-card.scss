@@ -13,6 +13,18 @@ body {
     align-self: stretch;
   }
 
+  .project-card-content {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+  }
+
+  .project-link-parent {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+
   .project-link {
     font-weight: 500;
     font-size: 18px;

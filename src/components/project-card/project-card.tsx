@@ -30,7 +30,7 @@ export default function Project({
         className="project-card-media"
         image={projectImage}
       />
-      <CardContent>
+      <CardContent className="project-card-content">
         <Typography
           variant="h5"
           component="div"
@@ -89,7 +89,12 @@ export default function Project({
           </Typography>
         )}
 
-        <Typography component="div" variant="body2" mt={1}>
+        <Typography
+          component="div"
+          variant="body2"
+          mt={1}
+          className="project-link-parent"
+        >
           <Link href={`/projects/${projectKey}`} className="project-link">
             View Project
           </Link>
