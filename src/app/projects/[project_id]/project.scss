@@ -13,7 +13,7 @@ div.project-box {
   flex-flow: column nowrap;
   gap: 2em;
   padding: 1em;
-  & > section {
+  & > section.outer-box {
     box-shadow: 0px 1px 2px -1px #1018281a;
     box-shadow: 0px 1px 3px 0px #1018281a;
     padding: 0.25em;

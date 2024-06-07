@@ -12,7 +12,7 @@ import './project.scss';
 function ProjectBanner(projectData: ProjectInterface) {
   const { description, title, projectImage, status } = projectData;
   return (
-    <section className="project-banner">
+    <section className="outer-box project-banner">
       <div className="project-banner__body">
         <div className="project-banner__status">{status}</div>
         <h1>{title}</h1>
@@ -43,7 +43,7 @@ function ProjectOverview(projectData: ProjectInterface) {
   const { lookingFor, problemStatement, projectObjectives, projectLead } =
     projectOverview;
   return (
-    <section>
+    <section className="outer-box">
       <div className="inner-box project-page-overview">
         <h1>Project Overview</h1>
         <div className="descriptor">
@@ -86,7 +86,7 @@ function Technologies(projectData: ProjectInterface) {
   const { languages, links, tools } = projectData;
 
   return (
-    <section>
+    <section className="outer-box">
       <div className="inner-box">
         <h1>Technologies Used</h1>
         <div className="descriptor">
