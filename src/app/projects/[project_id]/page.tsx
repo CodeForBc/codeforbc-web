@@ -9,6 +9,14 @@ import { redirect } from 'next/navigation';
 import React from 'react';
 import './project.scss';
 
+export async function generateStaticParams() {
+  const allProjectData = await getLocalProjectData();
+
+  return Object.keys(allProjectData).map((projectDataKey: string) => ({
+    projectData: allProjectData[projectDataKey],
+  }));
+}
+
 function ProjectBanner(projectData: ProjectInterface) {
   const { description, title, projectImage, status } = projectData;
   return (
@@ -135,11 +143,16 @@ function ProposeProject() {
 export default async function Project({
   params,
 }: {
-  params: { project_id: string };
+  params: { project_id: string; projectData: ProjectInterface };
 }) {
-  const allProjectData = await getLocalProjectData();
+  let projectData;
 
-  const projectData = allProjectData[params.project_id];
+  if (params.projectData) {
+    projectData = params.projectData;
+  } else {
+    const allProjectData = await getLocalProjectData();
+    projectData = allProjectData[params.project_id];
+  }
 
   if (!projectData) {
     redirect('/projects');
