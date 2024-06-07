@@ -176,5 +176,17 @@ div.project-box {
     h5 {
       font-size: 28px;
     }
+
+    .propose-project__button {
+      border: 1.8px solid #424242;
+      border-radius: 6px;
+      color: $text-color-primary;
+      text-transform: none;
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
