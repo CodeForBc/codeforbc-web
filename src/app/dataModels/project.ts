@@ -14,7 +14,7 @@ export interface Project {
   contributors?: string[];
   projectImage: string;
   projectKey: string;
-  projectOverview: {
+  projectOverview?: {
     problemStatement: string;
     projectObjectives: string[];
     projectLead: string;
