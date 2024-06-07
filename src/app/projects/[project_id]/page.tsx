@@ -115,6 +115,17 @@ function Technologies(projectData: ProjectInterface) {
   );
 }
 
+function ProposeProject() {
+  return (
+    <section className="propose-project">
+      <hr />
+      <h5>Have a idea to improve community or civic life in BC? </h5>
+      <h3>We want to hear it!</h3>
+      <Button variant="outlined">Propose A Project</Button>
+    </section>
+  );
+}
+
 export default async function Project({
   params,
 }: {
@@ -133,6 +144,7 @@ export default async function Project({
       {ProjectBanner(projectData)}
       {ProjectOverview(projectData)}
       {Technologies(projectData)}
+      {ProposeProject()}
     </Container>
   );
 }
