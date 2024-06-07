@@ -34,5 +34,41 @@
       "projectLead": "Sherry Wu",
       "lookingFor": []
     }
+  },
+  "homes-for-all": {
+    "title": "Homes for All - Alleviating BC Housing Shortages",
+    "description": "Illegal short-term rental listings are contributing to housing shortage in BC. This initiative focuses on identifying and flagging unauthorized short-term rental listings that contravene British Columbia's rental regulations. This project targets non-compliant accommodations to mitigate their impact on local housing, ensuring residential use aligns with provincial policies and supports community stability and availability for long-term residents.",
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/CodeForBc/airbnb-regulation"
+      }
+    ],
+    "languages": [
+      "JavaScript",
+      "Jupyter Notebook",
+      "Python",
+      "SCSS",
+      "HCL",
+      "HTML"
+    ],
+    "tools": ["Google Suite", "GitHub", "Figma", "Zoom"],
+    "technologies": [""],
+    "programAreas": [""],
+    "location": "Remote",
+    "status": "Active",
+    "contributors": ["Nam Mai", "Mangat Toor"],
+    "projectImage": "/assets/airbnb-project.webp",
+    "projectOverview": {
+      "problemStatement": "Airbnb's presence in major cities, particularly Vancouver, exacerbates the housing shortage by absorbing a significant portion of the housing stock. This issue is compounded by inadequate enforcement of regulations by local and federal governments, partly due to the lack of transparency from Airbnb and insufficient tools for monitoring.",
+      "projectObjectives": [
+        "Determine if Airbnb listing violates BC short-term rental policy",
+        "Generate report on Airbnb listings that violates BC rental policy",
+        "Generate report on a weekly cadence",
+        "Store reports for future analysis"
+      ],
+      "projectLead": "Sam Huo",
+      "lookingFor": []
+    }
   }
 }
