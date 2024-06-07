@@ -158,5 +158,11 @@ div.project-box {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+
+    hr {
+      width: 590px;
+      height: 0px;
+      border: 1.6px solid #bebebe;
+    }
   }
 }
