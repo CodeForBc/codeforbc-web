@@ -23,13 +23,14 @@ export default function Project({
   technologies,
   programAreas, // status
   projectKey,
+  projectImage,
 }: ProjectInterface) {
   return (
     <Card className="project-card project-overview__card">
       <CardMedia
         component="a"
         className="project-card-media"
-        image="/assets/codeforbc-website-project.webp"
+        image={projectImage}
       />
       <CardContent>
         <Typography
