@@ -16,7 +16,7 @@ export interface Project {
   projectKey: string;
   projectOverview: {
     problemStatement: string;
-    projectObjectives: string;
+    projectObjectives: string[];
     projectLead: string;
     lookingFor: string[];
   };

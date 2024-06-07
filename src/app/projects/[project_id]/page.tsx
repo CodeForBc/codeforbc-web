@@ -52,7 +52,11 @@ function ProjectOverview(projectData: ProjectInterface) {
         </div>
         <div className="descriptor">
           <h2>Project Objectives</h2>
-          <p>{projectObjectives}</p>
+          <ul>
+            {projectObjectives.map((objective, idx) => (
+              <li key={`objective-key-${idx}`}>{objective}</li>
+            ))}
+          </ul>
         </div>
         <div className="descriptor">
           <h2>Project Lead</h2>
