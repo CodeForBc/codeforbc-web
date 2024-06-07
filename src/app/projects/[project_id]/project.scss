@@ -2,6 +2,7 @@
 
 h1,
 h2,
+ul,
 p {
   margin: 0;
   color: $text-color-primary;
@@ -47,6 +48,12 @@ div.project-box {
     display: flex;
     flex-flow: column nowrap;
     gap: 1em;
+
+    ul.project-objectives__list {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   section.project-banner {
