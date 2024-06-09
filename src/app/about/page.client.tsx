@@ -14,7 +14,7 @@ interface TeamMember {
   linkedin_link: string;
   github_link?: string;
   profile_image_link?: string;
-  role: [];
+  role: string[];
 }
 
 interface AboutPageProps {
