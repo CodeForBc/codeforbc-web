@@ -4,71 +4,85 @@
     "job_title": "Founder & President",
     "linkedin_link": "https://www.linkedin.com/in/sam-huo-23358233/",
     "github_link": "https://github.com/SamHuo213",
-    "profile_image_link": "/assets/team-members/sam_huo.jpeg"
+    "profile_image_link": "/assets/team-members/sam_huo.jpeg",
+    "role": [
+      "Executive",
+      "Developers"
+    ]
   },
   {
     "name": "Correy Lim",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/correy-lim/",
     "github_link": "https://github.com/CorreyL",
-    "profile_image_link": "/assets/team-members/correy_lim.jpeg"
+    "profile_image_link": "/assets/team-members/correy_lim.jpeg",
+    "role": "Developers"
   },
   {
     "name": "Farshid Azizi",
     "job_title": "Business Data Analysis",
     "linkedin_link": "https://www.linkedin.com/in/farshid-azizi66/",
-    "profile_image_link": "/assets/team-members/farshid_azizi.jpeg"
+    "profile_image_link": "/assets/team-members/farshid_azizi.jpeg",
+    "role": "Business Development"
   },
   {
     "name": "Chloe Lim",
     "job_title": "Product Designer",
     "linkedin_link": "https://www.linkedin.com/in/chloelim-design/",
-    "profile_image_link": "/assets/team-members/chloe_lim.jpeg"
+    "profile_image_link": "/assets/team-members/chloe_lim.jpeg",
+    "role": "Product/UIUX"
   },
   {
     "name": "Alfredo Valdes",
     "job_title": "Technical Support Engineer",
     "linkedin_link": "https://www.linkedin.com/in/alfredov/",
-    "profile_image_link": ""
+    "profile_image_link": "",
+    "role": "Data"
   },
   {
     "name": "Minru Sherry Wu",
     "job_title": "Product Manager",
     "linkedin_link": "https://www.linkedin.com/in/minruwu/",
-    "profile_image_link": ""
+    "profile_image_link": "",
+    "role": "Product/UIUX"
   },
   {
     "name": "Nam Mai",
     "job_title": "Software Engineer",
     "linkedin_link": "https://www.linkedin.com/in/nam-anh-mai/",
     "github_link": "https://github.com/nam-m",
-    "profile_image_link": "/assets/team-members/nam_mai.jpeg"
+    "profile_image_link": "/assets/team-members/nam_mai.jpeg",
+    "role": "Developers"
   },
   {
     "name": "Ahmad Akhtar",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/ahmadrashidakhtar/",
     "github_link": "https://github.com/Unknown-0perator",
-    "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg"
+    "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg",
+    "role": "Developers"
   },
   {
     "name": "Mangat Singh Toor",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/immangat/",
     "github_link": "https://github.com/immangat",
-    "profile_image_link": "/assets/team-members/mangat_toor.jpeg"
+    "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
+    "role": "Developers"
   },
   {
     "name": "Katie Hong",
     "job_title": "Product Manager",
     "linkedin_link": "https://www.linkedin.com/in/katiehong8/",
-    "profile_image_link": "/assets/team-members/katie_hong.jpeg"
+    "profile_image_link": "/assets/team-members/katie_hong.jpeg",
+    "role": "Business Development"
   },
   {
     "name": "Tony Thawatchai",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/tony-sa/",
     "github_link": "https://github.com/Tony-Thawatchai",
-    "profile_image_link": ""
+    "profile_image_link": "",
+    "role": "Developers"
   }
 ]
