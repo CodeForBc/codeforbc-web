@@ -13,6 +13,7 @@ export async function generateStaticParams() {
   const allProjectData = await getLocalProjectData();
 
   return Object.keys(allProjectData).map((projectDataKey: string) => ({
+    projectId: projectDataKey,
     projectData: allProjectData[projectDataKey],
   }));
 }
@@ -143,7 +144,7 @@ function ProposeProject() {
 export default async function Project({
   params,
 }: {
-  params: { project_id: string; projectData: ProjectInterface };
+  params: { projectId: string; projectData: ProjectInterface };
 }) {
   let projectData;
 
@@ -151,7 +152,7 @@ export default async function Project({
     projectData = params.projectData;
   } else {
     const allProjectData = await getLocalProjectData();
-    projectData = allProjectData[params.project_id];
+    projectData = allProjectData[params.projectId];
   }
 
   if (!projectData) {
