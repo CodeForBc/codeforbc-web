@@ -23,16 +23,16 @@ export default function TeamBioCard({ data }: TeamBioCardProps) {
           className="member-card__image"
           alt="profile"
           src={data.profile_image_link}
-          width={202}
-          height={206}
+          width={274}
+          height={250}
         />
       ) : (
         <Image
           className="member-card__image"
           alt="profile"
           src="/assets/profile-image-placeholder.png"
-          width={202}
-          height={206}
+          width={274}
+          height={250}
         />
       )}
       <Box className="member-card__card-title-container">

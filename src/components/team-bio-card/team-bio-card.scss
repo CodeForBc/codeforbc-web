@@ -4,19 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
-  max-width: 274px;
-  height: 472px;
-  
-  @include mobile {
-    height: 400px;
-  }
+  width: 274px;
+  height: 492px;
+
+  // @include mobile {
+  //   height: 400px;
+  // }
 
   &__image {
     border-radius: 6px;
     width: 100%;
     margin-bottom: 16px;
+    height: 250px;
+    aspect-ratio: 1/2;
   }
 
   &__card-title-container {
