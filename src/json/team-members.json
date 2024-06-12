@@ -5,10 +5,7 @@
     "linkedin_link": "https://www.linkedin.com/in/sam-huo-23358233/",
     "github_link": "https://github.com/SamHuo213",
     "profile_image_link": "/assets/team-members/sam_huo.jpeg",
-    "role": [
-      "Executive",
-      "Developers"
-    ]
+    "role": "Executive"
   },
   {
     "name": "Mangat Singh Toor",
@@ -58,8 +55,8 @@
   {
     "name": "Prabh Singh",
     "job_title": "Full Stack Developer",
-    "linkedin_link": "",
-    "github_link": "",
+    "linkedin_link": "https://www.linkedin.com/in/prabh-guron/",
+    "github_link": "https://github.com/prabhguron",
     "profile_image_link": "/assets/team-members/prabh_singh.jpg",
     "role": "Developers"
   },
@@ -89,7 +86,8 @@
   {
     "name": "Xavier Toledo",
     "job_title": "Data Scientist",
-    "linkedin_link": "https://www.linkedin.com/in/xaviertoledo/",
+    "linkedin_link": "https://www.linkedin.com/in/datapro4hire/",
+    "github_link": "https://github.com/datapro4hire",
     "profile_image_link": "/assets/team-members/xavier_toledo.jpg",
     "role": "Data"
   },
@@ -103,15 +101,23 @@
   {
     "name": "Anna Beketova",
     "job_title": "Machine Learning Engineer Team Lead",
-    "linkedin_link": "https://www.linkedin.com/in/annabeketova/",
+    "linkedin_link": "https://www.linkedin.com/in/anna-beketova/",
+    "github_link": "https://github.com/anya-mb",
     "profile_image_link": "/assets/team-members/anna_beketova.jpg",
     "role": "Data"
   },
   {
     "name": "Peter Lorimer",
     "job_title": "Mentor",
-    "linkedin_link": "https://www.linkedin.com/in/peterlorimer/",
+    "linkedin_link": "https://www.linkedin.com/in/peter-l-b4b56640/",
     "profile_image_link": "/assets/team-members/avatar-man.png",
     "role": "Executive"
+  },
+  {
+    "name": "Glauber Martins",
+    "job_title": "Machine Learning Engineer",
+    "linkedin_link": "https://www.linkedin.com/in/glaubermartins/",
+    "profile_image_link": "/assets/team-members/glauber_martins.jpg",
+    "role": "Developers"
   }
 ]
