@@ -79,12 +79,13 @@
   &__card-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    row-gap: 80px;
+    column-gap: 28px;
     flex-wrap: wrap;
 
     @include tablet {
       width: 100%;
+      justify-content: center;
     }
 
     @include mobile {

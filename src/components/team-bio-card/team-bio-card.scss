@@ -6,19 +6,25 @@
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
-  width: 274px;
+  width: 220px;
   height: 492px;
 
-  // @include mobile {
-  //   height: 400px;
-  // }
+  @include mobile {
+    height: 464px;
+    width: 100%;
+  }
 
   &__image {
     border-radius: 6px;
     width: 100%;
     margin-bottom: 16px;
     height: 250px;
-    aspect-ratio: 1/2;
+    object-fit: cover;
+    object-position: center;
+
+    @include mobile {
+      max-width: 358px;
+    }
   }
 
   &__card-title-container {

@@ -13,8 +13,9 @@ interface TeamMember {
   bio?: string;
   linkedin_link: string;
   github_link?: string;
-  profile_image_link?: string;
   role: string[];
+  profile_image_link: string;
+  brief_descriptions?: string;
 }
 
 interface AboutPageProps {
@@ -42,7 +43,7 @@ export default function About({ teamMemberData }: AboutPageProps) {
   };
 
   return (
-    <Container maxWidth="lg" className="about-page">
+    <Container className="about-page">
       <Script id="jsonLD_team-member" type="application/ld+json">
         {JSON.stringify(teamMemberJson)}
       </Script>

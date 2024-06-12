@@ -97,7 +97,7 @@
     "name": "Alfredo Valdes",
     "job_title": "Data & ML Scientist",
     "linkedin_link": "https://www.linkedin.com/in/alfredov/",
-    "profile_image_link": "",
+    "profile_image_link": "/assets/team-members/avatar-man.png",
     "role": "Data"
   },
   {
@@ -111,7 +111,7 @@
     "name": "Peter Lorimer",
     "job_title": "Mentor",
     "linkedin_link": "https://www.linkedin.com/in/peterlorimer/",
-    "profile_image_link": "",
+    "profile_image_link": "/assets/team-members/avatar-man.png",
     "role": "Executive"
   }
 ]
