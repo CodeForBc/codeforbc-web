@@ -1,8 +1,7 @@
 'use client';
 import TeamBioCard from '@/components/team-bio-card/team-bio-card';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Pagination, Stack, Typography } from '@mui/material';
 import Container from '@mui/material/Container';
-
 import Script from 'next/script';
 import React, { useState } from 'react';
 import './about.scss';
@@ -24,6 +23,7 @@ interface AboutPageProps {
 
 export default function About({ teamMemberData }: AboutPageProps) {
   const [filter, setFilter] = useState<string>('All Members');
+  const [page, setPage] = useState<number>(1);
   const teamMemberJson = teamMemberData.map((teamMember: TeamMember) => ({
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -41,6 +41,11 @@ export default function About({ teamMemberData }: AboutPageProps) {
     if (role === 'All Members') return teamMemberData;
     return teamMemberData.filter((member) => member.role.includes(role));
   };
+
+  const filteredMembers = filterMembers(filter);
+
+  const displayedMembers = filteredMembers.slice((page - 1) * 6, page * 6);
+  const totalPages = Math.ceil(filteredMembers.length / 6);
 
   return (
     <Container className="about-page">
@@ -70,16 +75,29 @@ export default function About({ teamMemberData }: AboutPageProps) {
             <Button
               key={role}
               className={`about-page__filter-button ${filter === role ? 'about-page__filter-button--active' : ''}`}
-              onClick={() => setFilter(role)}
+              onClick={() => {
+                setFilter(role);
+                setPage(1);
+              }}
             >
               {role}
             </Button>
           ))}
         </Box>
-        <Box className="about-page__card-container">
-          {filterMembers(filter).map((teamMember: TeamMember) => (
-            <TeamBioCard key={teamMember.name} data={teamMember} />
-          ))}
+        <Box className="about-page__content-wrapper">
+          <Box className="about-page__card-container">
+            {displayedMembers.map((teamMember: TeamMember) => (
+              <TeamBioCard key={teamMember.name} data={teamMember} />
+            ))}
+          </Box>
+          <Pagination
+            count={totalPages}
+            page={page}
+            onChange={(event, value) => setPage(value)}
+            className="about-page__pagination"
+            variant="text"
+            size="large"
+          />
         </Box>
       </Box>
       <Box className="join-us-cta-card">

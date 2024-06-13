@@ -35,6 +35,8 @@
     }
   }
 
+
+
   &__content-container {
     display: flex;
     align-items: flex-start;
@@ -44,6 +46,18 @@
     @include tablet {
       flex-direction: column;
       gap: 32px;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      width: 100%;
+
     }
   }
 
@@ -92,6 +106,10 @@
       flex-direction: column;
       gap: 0px;
     }
+  }
+
+  &__pagination {
+    width: 100%;
   }
 }
 
