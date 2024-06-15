@@ -1,6 +1,12 @@
 'use client';
 import TeamBioCard from '@/components/team-bio-card/team-bio-card';
-import { Box, Button, Pagination, Stack, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Pagination,
+  PaginationItem,
+  Typography,
+} from '@mui/material';
 import Container from '@mui/material/Container';
 import Script from 'next/script';
 import React, { useState } from 'react';
@@ -46,6 +52,11 @@ export default function About({ teamMemberData }: AboutPageProps) {
 
   const displayedMembers = filteredMembers.slice((page - 1) * 6, page * 6);
   const totalPages = Math.ceil(filteredMembers.length / 6);
+
+  const formatPageNumber = (number: number | null) => {
+    if (number === null) return '00';
+    return number.toLocaleString('en-US', { minimumIntegerDigits: 2 });
+  };
 
   return (
     <Container className="about-page">
@@ -99,6 +110,16 @@ export default function About({ teamMemberData }: AboutPageProps) {
             size="large"
             color="primary"
             shape="rounded"
+            renderItem={(item) => (
+              <PaginationItem
+                {...item}
+                page={
+                  item.type === 'page' && item.page !== null
+                    ? formatPageNumber(item.page)
+                    : item.page
+                }
+              />
+            )}
           />
         </Box>
       </Box>
