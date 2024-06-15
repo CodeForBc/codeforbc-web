@@ -61,6 +61,7 @@
     @include tablet {
       width: 100%;
       align-items: center;
+      padding-bottom: 48px;
     }
   }
 
@@ -124,6 +125,10 @@
         &:first-child {
           margin-right: 80px;
 
+          @include tablet {
+            margin-right: 40px;
+          }
+
           button {
             color: #327CE0;
           }
@@ -131,6 +136,10 @@
 
         &:last-child {
           margin-left: 80px;
+
+          @include tablet {
+            margin-left: 40px;
+          }
 
           button {
             color: #327CE0;
@@ -142,6 +151,11 @@
           line-height: 24px;
           font-family: inherit;
           color: #909090;
+
+          @include tablet {
+            font-size: 16px;
+            line-height: 20px;
+          }
 
           &.Mui-selected {
             color: #327CE0;
