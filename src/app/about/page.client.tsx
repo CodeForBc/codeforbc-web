@@ -30,6 +30,7 @@ interface AboutPageProps {
 export default function About({ teamMemberData }: AboutPageProps) {
   const [filter, setFilter] = useState<string>('All Members');
   const [page, setPage] = useState<number>(1);
+
   const teamMemberJson = teamMemberData.map((teamMember: TeamMember) => ({
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -42,6 +43,15 @@ export default function About({ teamMemberData }: AboutPageProps) {
       : '',
     sameAs: [teamMember.linkedin_link, teamMember.github_link || ''],
   }));
+
+  const roles = [
+    'All Members',
+    'Executive',
+    'Product/UIUX',
+    'Developers',
+    'Business Development',
+    'Data',
+  ];
 
   const filterMembers = (role: string) => {
     if (role === 'All Members') return teamMemberData;
@@ -57,6 +67,19 @@ export default function About({ teamMemberData }: AboutPageProps) {
     if (number === null) return '00';
     return number.toLocaleString('en-US', { minimumIntegerDigits: 2 });
   };
+
+  const renderRoleButtons = roles.map((role) => (
+    <Button
+      key={role}
+      className={`about-page__filter-button ${filter === role ? 'about-page__filter-button--active' : ''}`}
+      onClick={() => {
+        setFilter(role);
+        setPage(1);
+      }}
+    >
+      {role}
+    </Button>
+  ));
 
   return (
     <Container className="about-page">
@@ -74,27 +97,7 @@ export default function About({ teamMemberData }: AboutPageProps) {
         </Typography>
       </Box>
       <Box className="about-page__content-container">
-        <Box className="about-page__filter">
-          {[
-            'All Members',
-            'Executive',
-            'Product/UIUX',
-            'Developers',
-            'Business Development',
-            'Data',
-          ].map((role) => (
-            <Button
-              key={role}
-              className={`about-page__filter-button ${filter === role ? 'about-page__filter-button--active' : ''}`}
-              onClick={() => {
-                setFilter(role);
-                setPage(1);
-              }}
-            >
-              {role}
-            </Button>
-          ))}
-        </Box>
+        <Box className="about-page__filter">{renderRoleButtons}</Box>
         <Box className="about-page__content-wrapper">
           <Box className="about-page__card-container">
             {displayedMembers.map((teamMember: TeamMember) => (
