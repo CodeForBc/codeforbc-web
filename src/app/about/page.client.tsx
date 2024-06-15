@@ -97,6 +97,8 @@ export default function About({ teamMemberData }: AboutPageProps) {
             className="about-page__pagination"
             variant="text"
             size="large"
+            color="primary"
+            shape="rounded"
           />
         </Box>
       </Box>

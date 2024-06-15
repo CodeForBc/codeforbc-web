@@ -9,37 +9,11 @@
     "role": "Executive"
   },
   {
-    "name": "Mangat Singh Toor",
-    "job_title": "Full Stack Developer",
-    "linkedin_link": "https://www.linkedin.com/in/immangat/",
-    "github_link": "https://github.com/immangat",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
-    "role": "Developers"
-  },
-  {
     "name": "Sherry Wu",
     "job_title": "Product Manager/UX Designer",
     "linkedin_link": "https://www.linkedin.com/in/minruwu/",
     "brief_descriptions": "",
     "profile_image_link": "/assets/team-members/sherry_wu.jpg",
-    "role": "Product/UIUX"
-  },
-  {
-    "name": "Ahmad Akhtar",
-    "job_title": "Full Stack Developer",
-    "linkedin_link": "https://www.linkedin.com/in/ahmadrashidakhtar/",
-    "github_link": "https://github.com/Unknown-0perator",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg",
-    "role": "Developers"
-  },
-  {
-    "name": "Chloe Lim",
-    "job_title": "UX/UI Designer",
-    "linkedin_link": "https://www.linkedin.com/in/chloelim-design/",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/chloe_lim.jpeg",
     "role": "Product/UIUX"
   },
   {
@@ -60,21 +34,22 @@
     "role": "Business Development"
   },
   {
-    "name": "Prabh Singh",
+    "name": "Ahmad Akhtar",
     "job_title": "Full Stack Developer",
-    "linkedin_link": "https://www.linkedin.com/in/prabh-guron/",
-    "github_link": "https://github.com/prabhguron",
+    "linkedin_link": "https://www.linkedin.com/in/ahmadrashidakhtar/",
+    "github_link": "https://github.com/Unknown-0perator",
     "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/prabh_singh.jpg",
+    "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg",
     "role": "Developers"
   },
   {
-    "name": "Katie Hong",
-    "job_title": "Product Manager",
-    "linkedin_link": "https://www.linkedin.com/in/katiehong8/",
+    "name": "Mangat Singh Toor",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/immangat/",
+    "github_link": "https://github.com/immangat",
     "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/katie_hong.jpeg",
-    "role": "Business Development"
+    "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
+    "role": "Developers"
   },
   {
     "name": "Nam Mai",
@@ -86,12 +61,45 @@
     "role": "Developers"
   },
   {
+    "name": "Katie Hong",
+    "job_title": "Product Manager",
+    "linkedin_link": "https://www.linkedin.com/in/katiehong8/",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/katie_hong.jpeg",
+    "role": "Business Development"
+  },
+  {
+    "name": "Chloe Lim",
+    "job_title": "UX/UI Designer",
+    "linkedin_link": "https://www.linkedin.com/in/chloelim-design/",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/chloe_lim.jpeg",
+    "role": "Product/UIUX"
+  },
+  {
+    "name": "Alfredo Valdes",
+    "job_title": "Data & ML Scientist",
+    "linkedin_link": "https://www.linkedin.com/in/alfredov/",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/avatar-man.png",
+    "role": "Data"
+  },
+  {
     "name": "Tony Thawatchai Saengthamchai",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/tony-sa/",
     "github_link": "https://github.com/Tony-Thawatchai",
     "brief_descriptions": "",
     "profile_image_link": "/assets/team-members/tony_thawatchai.jpg",
+    "role": "Developers"
+  },
+  {
+    "name": "Prabh Singh",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/prabh-guron/",
+    "github_link": "https://github.com/prabhguron",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/prabh_singh.jpg",
     "role": "Developers"
   },
   {
@@ -104,14 +112,6 @@
     "role": "Data"
   },
   {
-    "name": "Alfredo Valdes",
-    "job_title": "Data & ML Scientist",
-    "linkedin_link": "https://www.linkedin.com/in/alfredov/",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/avatar-man.png",
-    "role": "Data"
-  },
-  {
     "name": "Anna Beketova",
     "job_title": "Machine Learning Engineer Team Lead",
     "linkedin_link": "https://www.linkedin.com/in/anna-beketova/",
@@ -121,19 +121,19 @@
     "role": "Data"
   },
   {
-    "name": "Peter Lorimer",
-    "job_title": "Mentor",
-    "linkedin_link": "https://www.linkedin.com/in/peter-l-b4b56640/",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/avatar-man.png",
-    "role": "Executive"
-  },
-  {
     "name": "Glauber Martins",
     "job_title": "Machine Learning Engineer",
     "linkedin_link": "https://www.linkedin.com/in/glaubermartins/",
     "brief_descriptions": "",
     "profile_image_link": "/assets/team-members/glauber_martins.jpg",
     "role": "Developers"
+  },
+  {
+    "name": "Peter Lorimer",
+    "job_title": "Mentor",
+    "linkedin_link": "https://www.linkedin.com/in/peter-l-b4b56640/",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/avatar-man.png",
+    "role": "Executive"
   }
 ]

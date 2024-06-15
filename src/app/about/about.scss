@@ -52,12 +52,15 @@
   &__content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    gap: 80px;
+    width: 100%;
+    padding-bottom: 96px;
 
     @include tablet {
       width: 100%;
-
+      align-items: center;
     }
   }
 
@@ -110,6 +113,44 @@
 
   &__pagination {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .MuiPagination-ul {
+
+
+      li {
+        &:first-child {
+          margin-right: 80px;
+
+          button {
+            color: #327CE0;
+          }
+        }
+
+        &:last-child {
+          margin-left: 80px;
+
+          button {
+            color: #327CE0;
+          }
+        }
+
+        .MuiPaginationItem-root {
+          font-size: 18px;
+          line-height: 24px;
+          font-family: inherit;
+          color: #909090;
+
+          &.Mui-selected {
+            color: #327CE0;
+            background-color: transparent;
+          }
+        }
+      }
+
+    }
   }
 }
 
