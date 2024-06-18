@@ -134,7 +134,7 @@ function ProposeProject() {
   return (
     <section className="propose-project">
       <hr />
-      <h5>Have a idea to improve community or civic life in BC? </h5>
+      <h5>Have an idea to improve community or civic life in BC? </h5>
       <h3>We want to hear it!</h3>
       <Button variant="outlined" className="propose-project__button">
         Propose A Project
