@@ -15,16 +15,21 @@ export default async function ProjectOverview() {
           Our Projects
         </Typography>
         <Box className="project-overview__card-container">
-          {localProjectData.map((project: ProjectInterface) => (
-            <Fragment key={project.title}>
-              <Project
-                title={project.title}
-                description={project.description}
-                links={project.links}
-                status={project.status}
-              />
-            </Fragment>
-          ))}
+          {Object.keys(localProjectData).map((projectKey: string) => {
+            const project: ProjectInterface = localProjectData[projectKey];
+            return (
+              <Fragment key={project.title}>
+                <Project
+                  title={project.title}
+                  description={project.description}
+                  links={project.links}
+                  status={project.status}
+                  projectImage={project.projectImage}
+                  projectKey={projectKey}
+                />
+              </Fragment>
+            );
+          })}
         </Box>
         <Box className="project-overview__cta-container">
           <Box className="project-overview__cta-text-container">

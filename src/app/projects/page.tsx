@@ -36,34 +36,39 @@ export default async function Projects() {
             justifyContent="center"
             alignItems="stretch"
           >
-            {localProjectData.map((project: ProjectInterface) => (
-              <Grid
-                item
-                className="project-page__item"
-                key={project.title}
-                xs={12}
-                sm={12}
-                md={6}
-              >
-                <Chip
-                  className="project-page__status-label"
-                  label={project.status}
-                  sx={{
-                    bgcolor: getProjectStatusColor(project.status),
-                  }}
-                />
-                <Project
-                  title={project.title}
-                  description={project.description}
-                  projectLead={project.projectLead}
-                  links={project.links}
-                  tools={project.tools}
-                  languages={project.languages}
-                  technologies={project.technologies}
-                  programAreas={project.programAreas}
-                />
-              </Grid>
-            ))}
+            {Object.keys(localProjectData).map((projectKey: string) => {
+              const project: ProjectInterface = localProjectData[projectKey];
+              return (
+                <Grid
+                  item
+                  className="project-page__item"
+                  key={project.title}
+                  xs={12}
+                  sm={12}
+                  md={6}
+                >
+                  <Chip
+                    className="project-page__status-label"
+                    label={project.status}
+                    sx={{
+                      bgcolor: getProjectStatusColor(project.status),
+                    }}
+                  />
+                  <Project
+                    title={project.title}
+                    description={project.description}
+                    projectLead={project.projectLead}
+                    links={project.links}
+                    tools={project.tools}
+                    languages={project.languages}
+                    technologies={project.technologies}
+                    programAreas={project.programAreas}
+                    projectImage={project.projectImage}
+                    projectKey={projectKey}
+                  />
+                </Grid>
+              );
+            })}
           </Grid>
         </Container>
       </Box>

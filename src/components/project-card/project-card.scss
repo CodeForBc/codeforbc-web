@@ -1,9 +1,36 @@
+@use '../../app/globals.scss' as *;
+
+* {
+  font-family: inherit;
+}
+
 body {
   .project-card {
     min-width: 275px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    align-self: stretch;
+  }
+
+  .project-card-content {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+  }
+
+  .project-link-parent {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+
+  .project-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: $alt-text-color-primary;
   }
 
   .project-card-media {
