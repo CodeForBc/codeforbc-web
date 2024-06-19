@@ -5,72 +5,79 @@ exports[`Header snapshot test should render header unchanged 1`] = `
   <header
     class="header-outer-box MuiBox-root css-0"
   >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways title-link css-1xylxj1-MuiTypography-root-MuiLink-root"
+      href="/"
+    >
+      <img
+        alt="Description"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="64"
+        src="/assets/codeforbc-logo.svg"
+        style="color: transparent;"
+        width="64"
+      />
+    </a>
     <div
       class="header-inner-box MuiBox-root css-0"
     >
-      <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways title-link css-1xylxj1-MuiTypography-root-MuiLink-root"
-        href="/"
+      <ul
+        class="nav__header"
       >
-        CodeForBC
-      </a>
-      <div
-        class="MuiTabs-root css-1ujnqem-MuiTabs-root"
-      >
-        <div
-          class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
-          style="overflow: hidden; margin-bottom: 0px;"
+        <li
+          class="nav__list"
         >
-          <div
-            class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
-            role="tablist"
+          <a
+            href="/projects"
           >
-            <a
-              aria-selected="false"
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary header-tab css-16hexql-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiTab-root"
-              href="/projects"
-              role="button"
-              tabindex="0"
-            >
-              Projects
-              <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
-            </a>
-            <a
-              aria-selected="false"
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary header-tab css-16hexql-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiTab-root"
-              href="/join-us"
-              role="button"
-              tabindex="-1"
-            >
-              Join Us
-              <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
-            </a>
-            <a
-              aria-selected="false"
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary header-tab css-16hexql-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiTab-root"
-              href="/about"
-              role="button"
-              tabindex="-1"
-            >
-              About
-              <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
-            </a>
-          </div>
+            Our Projects
+          </a>
+        </li>
+        <li
+          class="nav__list"
+        >
+          <a
+            href="/about"
+          >
+            Who We Are
+          </a>
+        </li>
+        <li
+          class="nav__list"
+        >
+          <a
+            href="/join-us"
+          >
+            Join Us!
+          </a>
+        </li>
+      </ul>
+      <div
+        class="mobile-menu-btn MuiBox-root css-0"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="MenuIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+            />
+          </svg>
           <span
-            class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
-            style="left: 0px; width: 0px;"
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
-        </div>
+        </button>
       </div>
-      <nav
-        class="header-nav MuiBox-root css-0"
-      />
     </div>
   </header>
 </div>

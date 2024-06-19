@@ -34,10 +34,11 @@ function Header() {
     <Box component={'header'} className="header-outer-box">
       <MuiLink href="/" className="title-link">
         <Image
-          src="./assets/codeforbc-logo.svg"
+          src="/assets/codeforbc-logo.svg"
           alt="Description"
           width={64}
           height={64}
+          priority={true}
         />
       </MuiLink>
       <Box className="header-inner-box">

@@ -31,7 +31,7 @@ function Banner() {
               className="banner__button"
               variant="contained"
               size="large"
-              href="https://tally.so/embed/w4207A"
+              href="https://tally.so/embed/3jMe1x"
             >
               Join Us
             </Button>

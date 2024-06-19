@@ -1,0 +1,193 @@
+@use '../../globals.scss' as *;
+
+h1,
+h2,
+h3,
+h5,
+ul,
+p {
+  margin: 0;
+  color: $text-color-primary;
+}
+
+div.project-box {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2em;
+  padding: 1em;
+  & > section.outer-box {
+    box-shadow: 0px 1px 2px -1px #1018281a;
+    box-shadow: 0px 1px 3px 0px #1018281a;
+    padding: 0.25em;
+    border-radius: 12px;
+
+    & > div.inner-box {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 28px;
+      box-shadow: 0px 1px 2px -1px #1018281a;
+      box-shadow: 0px 1px 3px 0px #1018281a;
+      margin: 1em;
+      padding: 2em 1em;
+      border-radius: 12px;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  div.descriptor {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+
+    ul.project-objectives__list {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  section.project-banner {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+    padding: 2em 1em;
+
+    a.join-us {
+      &__button {
+        background-color: $button-color-primary;
+        width: 200px;
+        height: 44px;
+        text-transform: none;
+        font-family: inherit;
+
+        @include mobile {
+          width: 160px;
+          height: 32px;
+        }
+      }
+    }
+
+    div.project-banner {
+      &__status {
+        /**
+         * @todo Once other project statuses start getting introduced, we may
+         * need to programmatically render different background-colors
+         *
+         * For now, the Figma designs only assume one color for Active, so just
+         * use that for now
+         */
+        background-color: #109152;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: white;
+        font-size: 18px;
+      }
+
+      &__body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 28px;
+        font-weight: 400;
+        width: 50%;
+        gap: 24px;
+
+        @include tablet {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        p {
+          @include tablet {
+            font-size: 24px;
+            width: 100%;
+          }
+        }
+      }
+
+      &__image {
+        width: 45%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: fit-content;
+        }
+
+        @include tablet {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  div.project-page-overview {
+    div.looking-for-container {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+
+      span.looking-for-item {
+        padding: 8px 16px;
+        background-color: $primary-50;
+        border-radius: 12px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $primary-color;
+      }
+    }
+  }
+
+  section.propose-project {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2em;
+    line-height: 35px;
+    text-align: center;
+
+    hr {
+      width: 70%;
+      height: 0px;
+      border: 1.6px solid #bebebe;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    h5 {
+      font-size: 28px;
+    }
+
+    .propose-project__button {
+      border: 1.8px solid #424242;
+      border-radius: 6px;
+      color: $text-color-primary;
+      text-transform: none;
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

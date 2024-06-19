@@ -12,4 +12,12 @@ export interface Project {
   location?: string;
   status?: ProjectStatusEnum;
   contributors?: string[];
+  projectImage: string;
+  projectKey: string;
+  projectOverview?: {
+    problemStatement: string;
+    projectObjectives: string[];
+    projectLead: string;
+    lookingFor: string[];
+  };
 }
