@@ -38,13 +38,21 @@ export default function TeamBioCard({ data }: TeamBioCardProps) {
         {data.brief_descriptions}
       </Typography>
       <Box className="member-card__card-link-container">
-        <IconButton className="member-card__link" href={data.linkedin_link}>
+        <IconButton
+          className="member-card__link"
+          aria-label="linkedin link"
+          href={data.linkedin_link}
+        >
           <svg className="member-card__icon">
             <use xlinkHref={`/assets/github-linkedin-color.svg#linkedin`}></use>
           </svg>
         </IconButton>
         {data.github_link ? (
-          <IconButton className="member-card__link" href={data.github_link}>
+          <IconButton
+            className="member-card__link"
+            aria-label="github link"
+            href={data.github_link}
+          >
             <svg className="member-card__icon">
               <use xlinkHref={`/assets/github-linkedin-color.svg#github`}></use>
             </svg>
