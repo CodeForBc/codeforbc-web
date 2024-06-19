@@ -127,12 +127,13 @@ export default function About({ teamMemberData }: AboutPageProps) {
         </Box>
       </Box>
       <Box className="join-us-cta-card">
+        <hr className="join-us-cta-card__divider" />
         <Box className="join-us-cta-card__text-container">
           <Typography className="join-us-cta-card__title" variant="body1">
-            Want to be a part of the team?
+            Want to be a part?
           </Typography>
           <Typography className="join-us-cta-card__text" variant="body2">
-            Contribute to Open Source Projects for BC, from Anywhere, with
+            Contribute to Rewarding Projects for BC, from Anywhere, with
             CodeForBC.
           </Typography>
         </Box>
