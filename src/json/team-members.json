@@ -26,14 +26,6 @@
     "role": "Developers"
   },
   {
-    "name": "Farshid Azizi",
-    "job_title": "Business Data Analysis",
-    "linkedin_link": "https://www.linkedin.com/in/farshid-azizi66/",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/farshid_azizi.jpeg",
-    "role": "Business Development"
-  },
-  {
     "name": "Ahmad Akhtar",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/ahmadrashidakhtar/",
@@ -43,21 +35,21 @@
     "role": "Developers"
   },
   {
-    "name": "Mangat Singh Toor",
-    "job_title": "Full Stack Developer",
-    "linkedin_link": "https://www.linkedin.com/in/immangat/",
-    "github_link": "https://github.com/immangat",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
-    "role": "Developers"
-  },
-  {
     "name": "Nam Mai",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/nam-anh-mai/",
     "github_link": "https://github.com/nam-m",
     "brief_descriptions": "",
     "profile_image_link": "/assets/team-members/nam_mai.jpeg",
+    "role": "Developers"
+  },
+  {
+    "name": "Mangat Singh Toor",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/immangat/",
+    "github_link": "https://github.com/immangat",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
     "role": "Developers"
   },
   {
@@ -94,15 +86,6 @@
     "role": "Developers"
   },
   {
-    "name": "Prabh Singh",
-    "job_title": "Full Stack Developer",
-    "linkedin_link": "https://www.linkedin.com/in/prabh-guron/",
-    "github_link": "https://github.com/prabhguron",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/prabh_singh.jpg",
-    "role": "Developers"
-  },
-  {
     "name": "Xavier Toledo",
     "job_title": "Data Scientist",
     "linkedin_link": "https://www.linkedin.com/in/datapro4hire/",
@@ -110,6 +93,15 @@
     "brief_descriptions": "",
     "profile_image_link": "/assets/team-members/xavier_toledo.jpg",
     "role": "Data"
+  },
+  {
+    "name": "Prabh Singh",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/prabh-guron/",
+    "github_link": "https://github.com/prabhguron",
+    "brief_descriptions": "",
+    "profile_image_link": "/assets/team-members/prabh_singh.jpg",
+    "role": "Developers"
   },
   {
     "name": "Anna Beketova",
@@ -127,13 +119,5 @@
     "brief_descriptions": "",
     "profile_image_link": "/assets/team-members/glauber_martins.jpg",
     "role": "Developers"
-  },
-  {
-    "name": "Peter Lorimer",
-    "job_title": "Mentor",
-    "linkedin_link": "https://www.linkedin.com/in/peter-l-b4b56640/",
-    "brief_descriptions": "",
-    "profile_image_link": "/assets/team-members/avatar-man.png",
-    "role": "Executive"
   }
 ]
