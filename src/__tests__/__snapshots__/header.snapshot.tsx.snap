@@ -13,9 +13,9 @@ exports[`Header snapshot test should render header unchanged 1`] = `
         alt="Description"
         data-nimg="1"
         decoding="async"
+        fetchpriority="high"
         height="64"
-        loading="lazy"
-        src="./assets/codeforbc-logo.svg"
+        src="/assets/codeforbc-logo.svg"
         style="color: transparent;"
         width="64"
       />

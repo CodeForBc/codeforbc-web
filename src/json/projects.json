@@ -1,12 +1,12 @@
-[
-  {
+{
+  "codeforbc-web": {
     "title": "CodeForBC Website",
     "description": "CodeForBC is a volunteer-driven organization that brings together technologists, designers, data analysts, and community members to work on projects that address civic and social challenges in BC using technology and innovation. They host hackathons, workshops, and events where participants collaborate to create solutions for local issues.",
     "links": [
       { "title": "GitHub", "url": "https://github.com/CodeForBc/codeforbc-web" }
     ],
     "languages": ["TypeScript", "JavaScript", "SCSS"],
-    "tools": ["Figma", "GitHub"],
+    "tools": ["Figma", "GitHub", "Vercel"],
     "technologies": ["Next.js", "Jest", "MUI"],
     "programAreas": ["Civic Tech Infrastructure"],
     "location": "Remote",
@@ -22,6 +22,53 @@
       "Mangat Toor",
       "Alja Cekada",
       "Ahmad Akhtar"
-    ]
+    ],
+    "projectImage": "/assets/codeforbc-website-project.webp",
+    "projectOverview": {
+      "problemStatement": "CodeForBC lacks a dedicated website, which limits its ability to effectively organize events, engage with the community, and showcase its impact. Without a centralized online presence, it's challenging for potential volunteers, participants, and sponsors to find information and connect. A dedicated website would provide a professional hub to enhance visibility, community engagement, and support the organization's growth and effectiveness in solving local challenges.",
+      "projectObjectives": [
+        "Develop a User-Friendly Website that clearly communicates CodeBC's mission and values",
+        "Provide information and opportunities for volunteers and sponsors with easy contact options",
+        "Optimize for search engines and integrate social media links to enhance visibility and engagement"
+      ],
+      "projectLead": "Sherry Wu",
+      "lookingFor": []
+    }
+  },
+  "homes-for-all": {
+    "title": "Homes for All - Alleviating BC Housing Shortages",
+    "description": "Illegal short-term rental listings are contributing to housing shortage in BC. This initiative focuses on identifying and flagging unauthorized short-term rental listings that contravene British Columbia's rental regulations. This project targets non-compliant accommodations to mitigate their impact on local housing, ensuring residential use aligns with provincial policies and supports community stability and availability for long-term residents.",
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/CodeForBc/airbnb-regulation"
+      }
+    ],
+    "languages": [
+      "JavaScript",
+      "Jupyter Notebook",
+      "Python",
+      "SCSS",
+      "HCL",
+      "HTML"
+    ],
+    "tools": ["Google Suite", "GitHub", "Figma", "Zoom"],
+    "technologies": [""],
+    "programAreas": [""],
+    "location": "Remote",
+    "status": "Active",
+    "contributors": ["Nam Mai", "Mangat Toor"],
+    "projectImage": "/assets/airbnb-project.webp",
+    "projectOverview": {
+      "problemStatement": "Airbnb's presence in major cities, particularly Vancouver, exacerbates the housing shortage by absorbing a significant portion of the housing stock. This issue is compounded by inadequate enforcement of regulations by local and federal governments, partly due to the lack of transparency from Airbnb and insufficient tools for monitoring.",
+      "projectObjectives": [
+        "Determine if Airbnb listing violates BC short-term rental policy",
+        "Generate report on Airbnb listings that violates BC rental policy",
+        "Generate report on a weekly cadence",
+        "Store reports for future analysis"
+      ],
+      "projectLead": "Sam Huo",
+      "lookingFor": []
+    }
   }
-]
+}

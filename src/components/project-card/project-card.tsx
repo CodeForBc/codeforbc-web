@@ -10,6 +10,7 @@ import {
   Typography,
 } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import './project-card.scss';
 
@@ -19,17 +20,17 @@ export default function Project({
   links,
   languages,
   tools,
-  technologies,
-  programAreas, // status
+  projectKey,
+  projectImage,
 }: ProjectInterface) {
   return (
     <Card className="project-card project-overview__card">
       <CardMedia
-        component="div"
+        component="a"
         className="project-card-media"
-        image="/assets/codeforbc-website-project.webp"
+        image={projectImage}
       />
-      <CardContent>
+      <CardContent className="project-card-content">
         <Typography
           variant="h5"
           component="div"
@@ -68,28 +69,6 @@ export default function Project({
           </Typography>
         )}
 
-        {technologies && (
-          <Typography component="div" variant="body2" mt={1}>
-            <Typography variant="body2" sx={{ color: 'grey' }}>
-              Technologies
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: '700' }}>
-              {technologies.join(', ')}
-            </Typography>
-          </Typography>
-        )}
-
-        {programAreas && (
-          <Typography component="div" variant="body2" mt={1}>
-            <Typography variant="body2" sx={{ color: 'grey' }}>
-              Program Areas
-            </Typography>
-            <Typography variant="body2" sx={{ fontWeight: '700' }}>
-              {programAreas.join(', ')}
-            </Typography>
-          </Typography>
-        )}
-
         {links && (
           <Typography component="div" variant="body2" mt={1}>
             <Typography variant="body2" sx={{ color: 'grey' }}>
@@ -109,6 +88,17 @@ export default function Project({
             </Typography>
           </Typography>
         )}
+
+        <Typography
+          component="div"
+          variant="body2"
+          mt={1}
+          className="project-link-parent"
+        >
+          <Link href={`/projects/${projectKey}`} className="project-link">
+            View Project
+          </Link>
+        </Typography>
       </CardContent>
     </Card>
   );

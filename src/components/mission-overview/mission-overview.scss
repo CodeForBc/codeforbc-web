@@ -1,0 +1,112 @@
+@use '../../app/globals.scss' as *;
+
+.mission-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem 0;
+
+  @include tablet {
+    flex-direction: column-reverse;
+    padding: 3rem 0;
+  }
+
+  @include mobile {
+    padding: 2rem 0;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include tablet {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    padding: 0 2rem;
+    max-width: 472px;
+    height: auto;
+    flex-shrink: 0;
+
+    @include tablet {
+      max-width: 544px;
+      height: auto;
+      flex-shrink: 1;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__heading {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    font-family: inherit;
+    color: $text-color-primary;
+
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include tablet {
+      max-width: 655px;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: -0.48px;
+    color: $text-color-primary;
+    font-family: inherit;
+  }
+
+  &__button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    color: $text-color-primary;
+    border: 1.8px solid $text-color-primary;
+    font-family: inherit;
+    text-transform: none;
+    min-width: 200px;
+    margin-top: 2.25rem;
+    align-self: flex-start;
+
+    @include tablet {
+      margin-top: 6px;
+      align-self: center;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
