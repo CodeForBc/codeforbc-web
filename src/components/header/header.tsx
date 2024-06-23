@@ -36,8 +36,8 @@ function Header() {
         <Image
           src="/assets/codeforbc-logo.svg"
           alt="Description"
-          width={64}
-          height={64}
+          width={84}
+          height={76}
           priority={true}
         />
       </MuiLink>
