@@ -12,7 +12,7 @@
   align-items: center;
   gap: 80px;
 
-  @include mobile {
+  @include tablet {
     flex-direction: column;
     gap: 16px;
   }
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @include mobile {
+    @include tablet {
       width: 100%;
     }
   }
@@ -30,20 +30,31 @@
   &__menu-icon {
     display: none;
 
-    @include mobile {
-      display: block;
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  &__logo-container {}
+  &__logo-container {
+    line-height: 0;
+  }
 
   &__logo {}
 
   &__navbar-container {
     display: flex;
+    transition: all .2s;
+
+    @include tablet {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
 
     &--close {
-      @include mobile {
+      @include tablet {
         display: none;
         height: 0;
       }
@@ -58,7 +69,7 @@
     align-items: center;
     gap: 29px;
 
-    @include mobile {
+    @include tablet {
       flex-direction: column;
       gap: 24px;
     }
@@ -73,124 +84,16 @@
     font-size: 20px;
     font-weight: 500;
     color: #15345E;
-  }
+    padding: 7px 0px;
+    line-height: 30px;
+    border-bottom: 3.6px solid #fff;
+    transition: all .2s ease-in-out;
+    letter-spacing: 0;
 
-  &__menu-icon {
-    border: 1.2px solid #BEBEBE;
-    border-radius: 6px;
+
+    &--active {
+      border-bottom: 3.6px solid #24589F;
+      color: #24589F;
+    }
   }
 }
-
-// body {
-//   .mobile-menu-btn {
-//     display: none;
-
-//     @include globals.mobile {
-//       display: inherit;
-//     }
-//   }
-
-//   .nav__header {
-//     @include globals.mobile {
-//       display: none;
-//     }
-
-//     display: flex;
-//     flex-flow: row nowrap;
-//     gap: 2em;
-//   }
-
-//   .nav__list {
-//     display: inline;
-//     text-decoration: none;
-//     color: globals.$primary-color;
-//     font-weight: 500;
-
-//     a,
-//     a:visited,
-//     a:hover,
-//     a:active {
-//       color: inherit;
-//       text-decoration: none;
-//     }
-//   }
-
-//   .header-outer-box {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     box-shadow:
-//       0px 4px 6px -1px rgba(16, 24, 40, 0.1),
-//       0px 2px 4px -2px rgba(16, 24, 40, 0.1);
-//     padding: 1.2rem 2rem;
-//     border-color: globals.$tertiary-color;
-//     gap: 3.33em;
-
-//     .title-link {
-//       transition: opacity 0.25s ease-in-out;
-
-//       &:hover {
-//         opacity: 0.25;
-//       }
-//     }
-
-//     @include globals.mobile {
-//       justify-content: space-between;
-//     }
-//   }
-
-//   .header-inner-box {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 0.4rem;
-//     align-items: flex-start;
-
-//     @include globals.mobile {
-//       width: auto;
-//     }
-//   }
-
-//   .header-title {
-//     font-size: 28px;
-//     font-weight: 800;
-//     color: inherit;
-//     text-decoration: none;
-//   }
-
-//   .header-nav {
-//     display: flex;
-//     align-items: center;
-//     column-gap: 0.4rem;
-//     font-weight: 600;
-//   }
-
-//   .header-tab {
-//     color: globals.$primary-color;
-//     cursor: pointer;
-//     border-radius: 6px;
-//     padding: 0.4rem 0.8rem;
-//     transition: all 240ms cubic-bezier(0.4, 0.4, 0.4, 0.4);
-
-//     &:hover {
-//       transform: translateY(0.4rem);
-//       background-color: globals.$hover-color;
-//       color: globals.$secondary-color;
-//     }
-
-//     &:active {
-//       transform: scale(0.9) translateY(0.4rem);
-//     }
-
-//     .Mui-selected {
-//       color: globals.$primary-color;
-//     }
-
-//     @include globals.mobile {
-//       a {
-//         text-decoration: inherit;
-//         color: inherit;
-//       }
-//     }
-//   }
-// }
