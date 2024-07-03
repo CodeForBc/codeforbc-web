@@ -1,4 +1,4 @@
-import OurTeam from '@/app/out-team/page';
+import OurTeam from '@/app/our-team/page';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 
