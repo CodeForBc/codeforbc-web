@@ -36,10 +36,14 @@ function Header() {
           </MuiLink>
           <IconButton
             onClick={toggleMenu}
-            className="header__menu-icon"
+            className="header__menu-icon-container"
             aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
           >
-            {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
+            {isMobileMenuOpen ? (
+              <CloseIcon className="header__menu-icon" />
+            ) : (
+              <MenuIcon className="header__menu-icon" />
+            )}
           </IconButton>
         </Box>
         <Box

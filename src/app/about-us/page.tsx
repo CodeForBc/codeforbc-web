@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
-import JoinUsClient from './page.client';
+import AboutUsClient from './page.client';
 
 export const metadata: Metadata = {
   title: 'Join Us | CodeForBC',
   description: 'How to join the CodeForBC organization',
 };
 
-export default function JoinUs() {
-  return <JoinUsClient />;
+export default function About() {
+  return <AboutUsClient />;
 }

@@ -27,14 +27,22 @@
     }
   }
 
-  &__menu-icon {
+  &__menu-icon-container {
     display: none;
 
     @include tablet {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1.2px solid #bebebe;
     }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 20px;
   }
 
   &__logo-container {

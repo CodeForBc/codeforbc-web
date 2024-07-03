@@ -7,9 +7,9 @@ import MissionOverview from '@/components/mission-overview/mission-overview';
 import { Box, Button, Container, Typography } from '@mui/material';
 import Script from 'next/script';
 import React from 'react';
-import './join-us.scss';
+import './about-us.scss';
 
-export default function JoinUs() {
+export default function AboutUs() {
   return (
     <>
       <Script id="jsonLD_join-us-page" type="application/ld+json">

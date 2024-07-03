@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import { Metadata } from 'next';
 import Script from 'next/script';
 import React from 'react';
-import './about.scss';
+import './our-team.scss';
 
 interface TeamMember {
   name: string;
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: 'A summary of the vision and team at CodeForBC',
 };
 
-export default async function About() {
+export default async function OurTeam() {
   const teamMemberData = await getTeamMemberData();
 
   const teamMemberJson = teamMemberData.map((teamMember: TeamMember) => ({
