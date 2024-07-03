@@ -17,8 +17,9 @@ interface TeamMember {
 }
 
 export const metadata: Metadata = {
-  title: 'About Us | CodeForBC',
-  description: 'A summary of the vision and team at CodeForBC',
+  title: 'Meet Our Team | CodeForBC',
+  description:
+    'Meet the team members driving innovation and community impact at CodeForBC.',
 };
 
 export default async function OurTeam() {
