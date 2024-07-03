@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import Script from 'next/script';
 import React from 'react';
 import QuestionAndAnswer from '../question-and-answer/question-and-answer';
@@ -45,6 +45,16 @@ export default function FrequentlyAskedQuestions() {
               answer={questionAndAnswer.answer}
             />
           ))}
+        </Box>
+        <Box className="faq__mailto">
+          <Typography className="faq__mailto-title">
+            Still have questions in mind?
+          </Typography>
+          <Typography className="faq__mailto-text">
+            Send us an email at{' '}
+            <Link href="mailto:codeforbc@gmail.com">codeforbc@gmail.com</Link>,
+            and our team will be happy to assist you.
+          </Typography>
         </Box>
       </Box>
     </>
