@@ -17,6 +17,8 @@ $background-color-secondary: #f4f8fc;
 $background-color-tertiary: #f5f5f5;
 $button-color-primary: #2e71cc;
 $primary-50: #ebf2fc;
+$navbar-text-color: #15345e;
+$navbar-active-text-color: #24589f;
 
 @mixin tablet {
   @media only screen and (max-width: 1280px) {

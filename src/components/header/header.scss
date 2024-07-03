@@ -10,11 +10,11 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 5rem;
 
   @include tablet {
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
   }
 
   &__icon-wrapper {
@@ -36,7 +36,7 @@
       align-items: center;
       padding: 8px;
       border-radius: 6px;
-      border: 1.2px solid #bebebe;
+      border: 1.2px solid $divider-color-secondary;
     }
   }
 
@@ -83,11 +83,11 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 29px;
+    gap: 1.8125rem;
 
     @include tablet {
       flex-direction: column;
-      gap: 24px;
+      gap: 1.5rem;
     }
 
   }
@@ -97,17 +97,17 @@
     font-family: inherit;
     font-size: 20px;
     font-weight: 500;
-    color: #15345E;
+    color: $navbar-text-color;
     padding: 7px 0px;
     line-height: 30px;
-    border-bottom: 3.6px solid #fff;
+    border-bottom: 3.6px solid $secondary-color;
     transition: all .2s ease-in-out;
     letter-spacing: 0;
 
 
     &--active {
-      border-bottom: 3.6px solid #24589F;
-      color: #24589F;
+      border-bottom: 3.6px solid $navbar-active-text-color;
+      color: $navbar-active-text-color;
     }
   }
 }
