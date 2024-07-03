@@ -8,7 +8,7 @@ describe('Header', () => {
   it('should render header', () => {
     render(<Header />);
 
-    const header = screen.getByRole('navigation');
+    const header = screen.getByRole('banner');
     expect(header).toBeInTheDocument();
   });
 

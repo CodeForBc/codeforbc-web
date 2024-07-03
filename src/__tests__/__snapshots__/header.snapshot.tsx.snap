@@ -2,7 +2,7 @@
 
 exports[`Header snapshot test should render header unchanged 1`] = `
 <div>
-  <nav
+  <header
     class="header-container MuiBox-root css-0"
   >
     <div
@@ -89,6 +89,6 @@ exports[`Header snapshot test should render header unchanged 1`] = `
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
 </div>
 `;

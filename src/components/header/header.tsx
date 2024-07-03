@@ -17,7 +17,7 @@ function Header() {
   const toggleMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
   return (
-    <Box className="header-container" component="nav">
+    <Box className="header-container" component="header">
       <Container className="header">
         <Box className="header__icon-wrapper">
           <MuiLink
