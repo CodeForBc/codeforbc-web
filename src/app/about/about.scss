@@ -35,8 +35,6 @@
     }
   }
 
-
-
   &__content-container {
     display: flex;
     align-items: flex-start;
@@ -119,8 +117,6 @@
     justify-content: center;
 
     .MuiPagination-ul {
-
-
       li {
         &:first-child {
           margin-right: 5rem;
@@ -163,7 +159,6 @@
           }
         }
       }
-
     }
   }
 }
