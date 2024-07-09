@@ -28,6 +28,14 @@ interface AboutPageProps {
 }
 
 export default function About({ teamMemberData }: AboutPageProps) {
+  const roles = [
+    'All Members',
+    'Executive',
+    'Product/UIUX',
+    'Developers',
+    'Business Development',
+    'Data',
+  ];
   const [filter, setFilter] = useState<string>(roles[0]);
   const [page, setPage] = useState<number>(1);
 
@@ -43,26 +51,21 @@ export default function About({ teamMemberData }: AboutPageProps) {
       : '',
     sameAs: [teamMember.linkedin_link, teamMember.github_link || ''],
   }));
-
-  const roles = [
-    'All Members',
-    'Executive',
-    'Product/UIUX',
-    'Developers',
-    'Business Development',
-    'Data',
-  ];
-
   const filterMembers = (role: string) => {
-    if (role === roles[0] return teamMemberData;
+    if (role === roles[0]) return teamMemberData;
     return teamMemberData.filter((member) => member.role.includes(role));
   };
 
   const filteredMembers = filterMembers(filter);
 
   const numberOfMembersToDisplay = 6;
-  const displayedMembers = filteredMembers.slice((page - 1) * numberOfMembersToDisplay, page * numberOfMembersToDisplay);
-  const totalPages = Math.ceil(filteredMembers.length / numberOfMembersToDisplay);
+  const displayedMembers = filteredMembers.slice(
+    (page - 1) * numberOfMembersToDisplay,
+    page * numberOfMembersToDisplay
+  );
+  const totalPages = Math.ceil(
+    filteredMembers.length / numberOfMembersToDisplay
+  );
 
   const formatPageNumber = (number: number | null) => {
     if (number === null) return '00';
