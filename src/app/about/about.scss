@@ -8,6 +8,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
   @include mobile {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -23,10 +24,10 @@
   }
 
   &__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     letter-spacing: -0.48px;
-    color: #424242;
+    color: $text-color-primary;
     font-family: inherit;
 
     @include tablet {
@@ -34,36 +35,157 @@
     }
   }
 
+  &__content-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3.75rem;
+    gap: 5rem;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+    padding-bottom: 6rem;
+
+    @include tablet {
+      width: 100%;
+      align-items: center;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  &__filter-button {
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: $text-color-secondary;
+    background-color: $filter-button-background-color;
+    border-radius: 12px;
+    white-space: nowrap;
+
+    &--active {
+      background-color: $filter-button-background-color-active;
+      color: $primary-color;
+    }
+  }
+
   &__card-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 60px;
+    row-gap: 5rem;
+    column-gap: 1.75rem;
     flex-wrap: wrap;
+
+    @include tablet {
+      width: 100%;
+      justify-content: center;
+    }
 
     @include mobile {
       flex-direction: column;
       gap: 0px;
     }
   }
+
+  &__pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .MuiPagination-ul {
+      li {
+        &:first-child {
+          margin-right: 5rem;
+
+          @include tablet {
+            margin-right: 2.5rem;
+          }
+
+          button {
+            color: $pagination-color-active;
+          }
+        }
+
+        &:last-child {
+          margin-left: 5rem;
+
+          @include tablet {
+            margin-left: 2.5rem;
+          }
+
+          button {
+            color: $pagination-color-active;
+          }
+        }
+
+        .MuiPaginationItem-root {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+          font-family: inherit;
+          color: $pagination-color-disabled;
+
+          @include tablet {
+            font-size: 1rem;
+            line-height: 1.25rem;
+          }
+
+          &.Mui-selected {
+            color: $pagination-color-active;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
 
 .join-us-cta-card {
-  max-width: 560px;
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5rem;
   border-radius: 6px;
-  background-color: #f4f8fc;
-  margin: 60px auto 0;
+  margin: 3.75rem auto 0;
 
   @include mobile {
     max-width: 100%;
-    margin: 32px 0;
+    margin: 2rem 0;
+  }
+
+  &__divider {
+    width: 50%;
+    height: 0;
+    border: 1.6px solid $divider-color-secondary;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__text-container {
@@ -71,14 +193,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 1rem;
     text-align: center;
   }
 
   &__title {
-    color: #0d3c6b;
+    color: $heading-color-primary;
     font-family: inherit;
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: -0.48px;
   }
@@ -86,12 +208,14 @@
   &__text {
     color: #575757;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
   }
 
   &__button {
     text-transform: none;
+    min-width: 200px;
+
     @include mobile {
       width: 100%;
     }
