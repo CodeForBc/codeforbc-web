@@ -60,8 +60,9 @@ export default function About({ teamMemberData }: AboutPageProps) {
 
   const filteredMembers = filterMembers(filter);
 
-  const displayedMembers = filteredMembers.slice((page - 1) * 6, page * 6);
-  const totalPages = Math.ceil(filteredMembers.length / 6);
+  const numberOfMembersToDisplay = 6;
+  const displayedMembers = filteredMembers.slice((page - 1) * numberOfMembersToDisplay, page * numberOfMembersToDisplay);
+  const totalPages = Math.ceil(filteredMembers.length / numberOfMembersToDisplay);
 
   const formatPageNumber = (number: number | null) => {
     if (number === null) return '00';
