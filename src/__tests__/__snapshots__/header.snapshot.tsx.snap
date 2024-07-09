@@ -3,68 +3,40 @@
 exports[`Header snapshot test should render header unchanged 1`] = `
 <div>
   <header
-    class="header-outer-box MuiBox-root css-0"
+    class="header-container MuiBox-root css-0"
   >
-    <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways title-link css-1xylxj1-MuiTypography-root-MuiLink-root"
-      href="/"
-    >
-      <img
-        alt="Description"
-        data-nimg="1"
-        decoding="async"
-        fetchpriority="high"
-        height="64"
-        src="/assets/codeforbc-logo.svg"
-        style="color: transparent;"
-        width="64"
-      />
-    </a>
     <div
-      class="header-inner-box MuiBox-root css-0"
+      class="MuiContainer-root MuiContainer-maxWidthLg header css-1oqqzyl-MuiContainer-root"
     >
-      <ul
-        class="nav__header"
-      >
-        <li
-          class="nav__list"
-        >
-          <a
-            href="/projects"
-          >
-            Our Projects
-          </a>
-        </li>
-        <li
-          class="nav__list"
-        >
-          <a
-            href="/about"
-          >
-            Who We Are
-          </a>
-        </li>
-        <li
-          class="nav__list"
-        >
-          <a
-            href="/join-us"
-          >
-            Join Us!
-          </a>
-        </li>
-      </ul>
       <div
-        class="mobile-menu-btn MuiBox-root css-0"
+        class="header__icon-wrapper MuiBox-root css-0"
       >
+        <a
+          aria-label="Home"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways header__logo-container css-1xylxj1-MuiTypography-root-MuiLink-root"
+          href="/"
+        >
+          <img
+            alt="Code for BC Logo"
+            class="header__logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="76"
+            src="/assets/codeforbc-logo.svg"
+            style="color: transparent;"
+            width="84"
+          />
+        </a>
         <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          aria-label="Open Menu"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium header__menu-icon-container css-78trlr-MuiButtonBase-root-MuiIconButton-root"
           tabindex="0"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium header__menu-icon css-i4bv87-MuiSvgIcon-root"
             data-testid="MenuIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -77,6 +49,44 @@ exports[`Header snapshot test should render header unchanged 1`] = `
             class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </button>
+      </div>
+      <div
+        class="header__navbar-container header__navbar-container--close MuiBox-root css-0"
+      >
+        <ul
+          class="header__navbar"
+        >
+          <li
+            class="header__navbar-item"
+          >
+            <a
+              class="header__navbar-link "
+              href="/projects"
+            >
+              Our Projects
+            </a>
+          </li>
+          <li
+            class="header__navbar-item"
+          >
+            <a
+              class="header__navbar-link "
+              href="/our-team"
+            >
+              Meet Our Team
+            </a>
+          </li>
+          <li
+            class="header__navbar-item"
+          >
+            <a
+              class="header__navbar-link "
+              href="/about-us"
+            >
+              About Us & Get Engaged
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
