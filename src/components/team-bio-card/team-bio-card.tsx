@@ -23,8 +23,8 @@ export default function TeamBioCard({ data }: TeamBioCardProps) {
         className="member-card__image"
         alt="profile"
         src={data.profile_image_link}
-        width={274}
-        height={250}
+        width={0}
+        height={0}
       />
       <Box className="member-card__card-title-container">
         <Typography className="member-card__card-title" variant="body1">
