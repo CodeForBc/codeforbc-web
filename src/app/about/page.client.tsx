@@ -28,7 +28,7 @@ interface AboutPageProps {
 }
 
 export default function About({ teamMemberData }: AboutPageProps) {
-  const [filter, setFilter] = useState<string>('All Members');
+  const [filter, setFilter] = useState<string>(roles[0]);
   const [page, setPage] = useState<number>(1);
 
   const teamMemberJson = teamMemberData.map((teamMember: TeamMember) => ({
