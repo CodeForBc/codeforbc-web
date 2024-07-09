@@ -10,7 +10,7 @@ import {
 import Container from '@mui/material/Container';
 import Script from 'next/script';
 import React, { useState } from 'react';
-import './about.scss';
+import './our-team.scss';
 
 interface TeamMember {
   name: string;
