@@ -1,0 +1,61 @@
+@use '../globals.scss' as *;
+
+.privacy-page {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  &__heading {
+    font-family: inherit;
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #171717;
+  }
+
+  &__sub-heading {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #15345e;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__content-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__title {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #15345e;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #15345e;
+  }
+}

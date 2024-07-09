@@ -75,7 +75,7 @@ function Footer() {
             <Link href="#" className="footer__link">
               Terms of Service
             </Link>
-            <Link href="#" className="footer__link">
+            <Link href="/privacy-policy" className="footer__link">
               Privacy Policy
             </Link>
           </Box>
