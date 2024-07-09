@@ -54,7 +54,7 @@ export default function About({ teamMemberData }: AboutPageProps) {
   ];
 
   const filterMembers = (role: string) => {
-    if (role === 'All Members') return teamMemberData;
+    if (role === roles[0] return teamMemberData;
     return teamMemberData.filter((member) => member.role.includes(role));
   };
 
