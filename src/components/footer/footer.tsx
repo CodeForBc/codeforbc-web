@@ -18,12 +18,15 @@ function Footer() {
                 Code of Conduct
               </Link>
               <Link
-                href="/join-us"
+                href="/about-us"
                 className="footer__button footer__button--highlight"
               >
                 Get Engaged!
               </Link>
-              <Link href="#" className="footer__button">
+              <Link
+                href="mailto:codeforbc@gmail.com"
+                className="footer__button"
+              >
                 Contact Us
               </Link>
             </Box>
@@ -72,9 +75,6 @@ function Footer() {
             </IconButton>
           </Box>
           <Box className="footer__links">
-            <Link href="#" className="footer__link">
-              Terms of Service
-            </Link>
             <Link href="/privacy-policy" className="footer__link">
               Privacy Policy
             </Link>
