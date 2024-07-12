@@ -1,40 +1,40 @@
 @use '../globals.scss' as *;
 
 .privacy-page {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 
   &__heading-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 32px;
+    gap: 2rem;
   }
 
   &__heading {
     font-family: inherit;
-    font-size: 44px;
-    line-height: 55px;
+    font-size: 2.75rem;
+    line-height: 3.4375rem;
     font-weight: 600;
-    color: #171717;
+    color: $heading-color-primary;
   }
 
   &__sub-heading {
     font-family: inherit;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 24px;
-    color: #15345e;
+    line-height: 1.5rem;
+    color: $navbar-text-color;
   }
 
   &__content-container {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
   }
 
   &__content-item {
@@ -44,21 +44,21 @@
 
   &__title {
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 30px;
-    color: #15345e;
+    line-height: 1.875rem;
+    color: $navbar-text-color;
   }
 
   &__text {
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 30px;
-    color: #15345e;
+    line-height: 1.875rem;
+    color: $navbar-text-color;
 
     &--email {
-      color: #2e71cc;
+      color: $button-color-primary;
       text-decoration: none;
     }
   }
@@ -69,6 +69,4 @@
     flex-direction: column;
     gap: 6px;
   }
-
-  &__list--item {}
 }
