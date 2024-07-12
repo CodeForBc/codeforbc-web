@@ -5,7 +5,7 @@ export default function CodeOfConduct() {
   return (
     <Container className="code-of-conduct">
       <Box className="code-of-conduct__heading-container">
-        <Typography variant="h1" className="page-heading">
+        <Typography variant="h1" className="code-of-conduct__heading">
           CodeForBC is a space for everyone.
         </Typography>
       </Box>

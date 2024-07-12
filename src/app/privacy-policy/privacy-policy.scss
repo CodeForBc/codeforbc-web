@@ -40,7 +40,6 @@
   &__content-item {
     display: flex;
     flex-direction: column;
-    gap: 30px;
   }
 
   &__title {
@@ -57,5 +56,19 @@
     font-weight: 500;
     line-height: 30px;
     color: #15345e;
+
+    &--email {
+      color: #2e71cc;
+      text-decoration: none;
+    }
   }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__list--item {}
 }
