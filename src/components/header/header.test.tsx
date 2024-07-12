@@ -15,26 +15,19 @@ describe('Header', () => {
   it('should render navigation buttons', () => {
     render(<Header />);
 
-    const projectNav = screen.getByRole('link', {
-      name: 'Our Projects',
+    headerData.forEach((tab) => {
+      const navLink = screen.getByRole('link', {
+        name: tab.label,
+      });
+      expect(navLink).toBeInTheDocument();
     });
-    const joinUsNav = screen.getByRole('link', {
-      name: 'Join Us!',
-    });
-    const aboutNav = screen.getByRole('link', {
-      name: 'Who We Are',
-    });
-
-    expect(projectNav).toBeInTheDocument();
-    expect(joinUsNav).toBeInTheDocument();
-    expect(aboutNav).toBeInTheDocument();
   });
 
   it('should have unique href values in headerData', () => {
     const hrefSet = new Set<string>();
     let hasDuplicate = false;
 
-    headerData.forEach((tab: any) => {
+    headerData.forEach((tab) => {
       if (hrefSet.has(tab.href)) {
         hasDuplicate = true;
       }

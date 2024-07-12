@@ -4,19 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
-  max-width: 274px;
-  height: 472px;
-  
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 220px;
+  height: 492px;
+
   @include mobile {
-    height: 400px;
+    height: 464px;
+    width: 100%;
   }
 
   &__image {
     border-radius: 6px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+
+    @include mobile {
+      max-width: 358px;
+    }
   }
 
   &__card-title-container {
@@ -27,18 +35,18 @@
   }
 
   &__card-title {
-    color: var(--Neutral-900, #424242);
+    color: $heading-color-primary;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
 
   &__card-text {
-    color: var(--Neutral-500, #9E9E9E);
+    color: $team-profile-text-color;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -49,8 +57,6 @@
     align-items: center;
     gap: 8px;
   }
-
-  &__link {}
 
   &__icon {
     width: 24px;
