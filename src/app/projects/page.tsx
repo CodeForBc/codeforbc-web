@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Chip,
   Container,
   CssBaseline,
@@ -26,9 +27,38 @@ export default async function Projects() {
     <Container className="project-page-container" component="main">
       <CssBaseline />
       <Box className="project-page">
-        <Typography className="project-page__heading page-heading" variant="h1">
-          Our Projects
-        </Typography>
+        <Box className="project-page__banner">
+          <Box className="project-page__heading-container">
+            <Typography
+              className="project-page__heading page-heading"
+              variant="h1"
+            >
+              Our Projects
+            </Typography>
+            <Typography className="project-page__sub-heading">
+              Empowering Local Communities Through Impactful Projects
+            </Typography>
+          </Box>
+          <Box className="project-page__button-container">
+            <Button
+              className="project-page__button"
+              variant="outlined"
+              size="large"
+              href="mailto:codeforbc@gmail.com"
+            >
+              Propose A Project
+            </Button>
+            <Button
+              className="project-page__button"
+              variant="contained"
+              size="large"
+              href="https://tally.so/embed/3jMe1x"
+            >
+              Join Us
+            </Button>
+          </Box>
+        </Box>
+
         <Container className="project-page__cards-container">
           <Grid
             container
