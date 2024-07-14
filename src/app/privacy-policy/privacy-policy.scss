@@ -1,0 +1,72 @@
+@use '../globals.scss' as *;
+
+.privacy-page {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  &__heading {
+    font-family: inherit;
+    font-size: 2.75rem;
+    line-height: 3.4375rem;
+    font-weight: 600;
+    color: $heading-color-primary;
+  }
+
+  &__sub-heading {
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: $navbar-text-color;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__content-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: $navbar-text-color;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    color: $navbar-text-color;
+
+    &--email {
+      color: $button-color-primary;
+      text-decoration: none;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
