@@ -113,8 +113,8 @@ export default function CodeOfConduct() {
           </Typography>
           <Typography variant="body2" className="code-of-conduct__text">
             Participants exhibiting harassing behavior are expected to comply
-            immediately upon request to stop. OpenBC organizers may take actions
-            like warning or expulsion from events and forums.
+            immediately upon request to stop. CodeForBC organizers may take
+            actions like warning or expulsion from events and forums.
           </Typography>
           <Typography
             variant="h3"
