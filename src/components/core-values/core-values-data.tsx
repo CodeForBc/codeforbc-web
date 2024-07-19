@@ -5,6 +5,12 @@ const coreValueData = [
     description: 'Embrace diversity to fuel innovation and creativity.',
   },
   {
+    icon_id: 'Innovation',
+    title: 'Innovation',
+    description:
+      'Promote a culture of creativity and continuous improvement, inspiring unique solutions and driving change.',
+  },
+  {
     icon_id: 'Empowerment',
     title: 'Empowerment',
     description:
