@@ -187,6 +187,13 @@
       font-size: 1rem;
       line-height: 24px;
     }
+
+    &--link,
+    &--link:visited,
+    &--link:link {
+      color: $alt-text-color-primary;
+      cursor: pointer;
+    }
   }
 }
 

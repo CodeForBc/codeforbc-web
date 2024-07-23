@@ -1,8 +1,20 @@
+import Link from 'next/link';
+
 export const volunteerTabData = [
   {
     title: 'Tell Us About Yourself',
-    description:
-      'Fill out our 2 minute form so we can help match you with opportunities.',
+    description: (
+      <span className="volunteer-tab__item-text">
+        Fill out our{' '}
+        <Link
+          className="volunteer-tab__item-text volunteer-tab__item-text--link"
+          href="https://tally.so/embed/3jMe1x"
+        >
+          2 minute form
+        </Link>{' '}
+        so we can help match you with opportunities.
+      </span>
+    ),
   },
   {
     title: 'Onboarding',
