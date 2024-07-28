@@ -1,6 +1,7 @@
 import { Link as LinkInterface } from '@/app/dataModels/link';
 import { Project as ProjectInterface } from '@/app/dataModels/project';
 import { getLocalProjectData } from '@/utils/get-local-project-data/get-local-project-data';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
@@ -163,6 +164,16 @@ export default async function Project({
 
   return (
     <Container maxWidth="lg" className="project-box">
+      <Button
+        startIcon={
+          <ArrowBackIosIcon className="project-box__back-button-icon" />
+        }
+        className="project-box__back-button"
+        href="./project"
+        variant="text"
+      >
+        Back to project
+      </Button>
       {ProjectBanner(projectData)}
       {ProjectOverview(projectData)}
       {Technologies(projectData)}
