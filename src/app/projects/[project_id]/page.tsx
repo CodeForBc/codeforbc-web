@@ -172,7 +172,7 @@ export default async function Project({
         href="/projects"
         variant="text"
       >
-        Back to project
+        Back to All Projects
       </Button>
       {ProjectBanner(projectData)}
       {ProjectOverview(projectData)}
