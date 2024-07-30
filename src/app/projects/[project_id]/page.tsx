@@ -169,7 +169,7 @@ export default async function Project({
           <ArrowBackIosIcon className="project-box__back-button-icon" />
         }
         className="project-box__back-button"
-        href="./project"
+        href="/projects"
         variant="text"
       >
         Back to project
