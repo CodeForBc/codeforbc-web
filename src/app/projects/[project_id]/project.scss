@@ -15,13 +15,14 @@ div.project-box {
   flex-flow: column nowrap;
   gap: 2em;
   padding: 1em;
-  & > section.outer-box {
+
+  &>section.outer-box {
     box-shadow: 0px 1px 2px -1px #1018281a;
     box-shadow: 0px 1px 3px 0px #1018281a;
     padding: 0.25em;
     border-radius: 12px;
 
-    & > div.inner-box {
+    &>div.inner-box {
       display: flex;
       flex-flow: column nowrap;
       gap: 28px;
@@ -127,6 +128,7 @@ div.project-box {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
+
         img {
           width: 100%;
           height: fit-content;
@@ -189,5 +191,20 @@ div.project-box {
       font-size: 18px;
       line-height: 24px;
     }
+  }
+}
+
+.project-box__back-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #424242;
+  align-self: flex-start;
+  margin: 2rem 0 1rem;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
