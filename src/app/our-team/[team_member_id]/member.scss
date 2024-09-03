@@ -34,6 +34,26 @@
   &__image-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  &__tag {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #15345E;
+    padding: 8px 16px;
+    background-color: #BFD6F5;
+    border-radius: 12px;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;

@@ -7,46 +7,51 @@ export default function MemberDedicatedPage() {
     <div className="member-dedicated-page">
       <Container className="member-dedicated-card">
         <Box className="member-dedicated-card__image-container">
-          <Image
-            alt="profile"
-            src="/assets/team-members/sam_huo.jpeg"
-            className="member-dedicated-card__image"
-            width={420}
-            height={420}
-          ></Image>
-          <Box className="member-dedicated-card__info-wrapper">
-            <Box className="member-dedicated-card__name-wrapper">
-              <Typography className="member-dedicated-card__name">
-                John Doe
-              </Typography>
-              <Typography className="member-dedicated-card__title">
-                Sr. Developer
-              </Typography>
-            </Box>
-            <Box className="member-dedicated-card__link-container">
-              <IconButton
-                className="member-dedicated-card__link"
-                aria-label="linkedin link"
-                href={''}
-              >
-                <svg className="member-dedicated-card__icon">
-                  <use
-                    xlinkHref={`/assets/github-linkedin-color.svg#linkedin`}
-                  ></use>
-                </svg>
-              </IconButton>
+          <Typography className="member-dedicated-card__tag">
+            Developer
+          </Typography>
+          <Box className="member-dedicated-card__image-wrapper">
+            <Image
+              alt="profile"
+              src="/assets/team-members/sam_huo.jpeg"
+              className="member-dedicated-card__image"
+              width={420}
+              height={420}
+            ></Image>
+            <Box className="member-dedicated-card__info-wrapper">
+              <Box className="member-dedicated-card__name-wrapper">
+                <Typography className="member-dedicated-card__name">
+                  John Doe
+                </Typography>
+                <Typography className="member-dedicated-card__title">
+                  Sr. Developer
+                </Typography>
+              </Box>
+              <Box className="member-dedicated-card__link-container">
+                <IconButton
+                  className="member-dedicated-card__link"
+                  aria-label="linkedin link"
+                  href={''}
+                >
+                  <svg className="member-dedicated-card__icon">
+                    <use
+                      xlinkHref={`/assets/github-linkedin-color.svg#linkedin`}
+                    ></use>
+                  </svg>
+                </IconButton>
 
-              <IconButton
-                className="member-dedicated-card__link"
-                aria-label="github link"
-                href={''}
-              >
-                <svg className="member-dedicated-card__icon">
-                  <use
-                    xlinkHref={`/assets/github-linkedin-color.svg#github`}
-                  ></use>
-                </svg>
-              </IconButton>
+                <IconButton
+                  className="member-dedicated-card__link"
+                  aria-label="github link"
+                  href={''}
+                >
+                  <svg className="member-dedicated-card__icon">
+                    <use
+                      xlinkHref={`/assets/github-linkedin-color.svg#github`}
+                    ></use>
+                  </svg>
+                </IconButton>
+              </Box>
             </Box>
           </Box>
         </Box>
