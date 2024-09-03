@@ -1,0 +1,118 @@
+@use '../../globals.scss' as *;
+
+
+.member-dedicated-page {
+  background-image: url('/assets/team-member-bg.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+  margin-bottom: -354px;
+  padding: 100px 0 354px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.member-dedicated-card {
+  box-shadow: 0 10px 40px -3px rgba(16, 24, 40, 0.1);
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 24px 32px;
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-image: linear-gradient(135deg, rgba(230, 240, 252, .8) 0%, rgba(248, 233, 200, .8) 75%, rgba(252, 245, 219, .8) 100%);
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__image {
+    width: 420px;
+    height: 420px;
+    border-radius: 12px;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__name-wrapper {
+    text-align: center;
+  }
+
+  &__name {
+    font-family: inherit;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #1C447B;
+  }
+
+  &__title {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #707070;
+  }
+
+  &__link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__link {}
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__heading {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #1C447B;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #9e9e9e;
+  }
+
+}
