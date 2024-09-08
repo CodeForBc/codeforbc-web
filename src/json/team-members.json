@@ -6,7 +6,8 @@
     "github_link": "https://github.com/SamHuo213",
     "brief_descriptions": "With an extensive career in the software industry. Sam is a skilled engineer & architect. Known for leading impactful projects. Beyond coding. Sam is a data-driven professional interested in storytelling through data analysis, particularly in real estate. With multifaceted skills and passion. Sam is poised to make a significant impact on any collaborative endeavor.",
     "profile_image_link": "/assets/team-members/sam_huo.jpeg",
-    "role": "Executive"
+    "role": "Executive",
+    "member_key": "sam_huo"
   },
   {
     "name": "Sherry Wu",
@@ -14,7 +15,8 @@
     "linkedin_link": "https://www.linkedin.com/in/minruwu/",
     "brief_descriptions": "Sherry is a Product Designer with a strong foundation in Product and Project Management. Passionate about collaboration and innovation in technology and design, she is dedicated to merging strategic, data-driven design with a commitment to creating impactful, user-centric solutions.",
     "profile_image_link": "/assets/team-members/sherry_wu.jpg",
-    "role": "Product/UIUX"
+    "role": "Product/UIUX",
+    "member_key": "sherry_wu"
   },
   {
     "name": "Correy Lim",
@@ -23,7 +25,8 @@
     "github_link": "https://github.com/CorreyL",
     "brief_descriptions": "As a Web Developer with a background in Sales/Solution Engineering and Cybersecurity, Correy aims to bring his collaborative nature to build software that benefits the greater good with like-minded software developers.",
     "profile_image_link": "/assets/team-members/correy_lim.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "correy_lim"
   },
   {
     "name": "Ahmad Akhtar",
@@ -32,7 +35,8 @@
     "github_link": "https://github.com/Unknown-0perator",
     "brief_descriptions": "Full stack developer specializing in JavaScript, driven by a passion to leverage technology for the betterment of the community.",
     "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "ahmad_akhtar"
   },
   {
     "name": "Nam Mai",
@@ -41,7 +45,8 @@
     "github_link": "https://github.com/nam-m",
     "brief_descriptions": "Dedicated engineer with a background in mechatronics, Nam transitioned into software development and seeks creating high impact solutions. With a diverse array of experiences across various industries, Nam thrives on crafting innovative standalond software solutions or tailored to hardware integration. Nam is always on the lookout for opportunities to dive into new challenges and collaborate with fellow enthusiasts.",
     "profile_image_link": "/assets/team-members/nam_mai.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "nam_mai"
   },
   {
     "name": "Mangat Singh Toor",
@@ -50,7 +55,8 @@
     "github_link": "https://github.com/immangat",
     "brief_descriptions": "Currently pursuing a degree in Computer Systems Technology at BCIT, I am passionate about leveraging my programming skills to make a positive impact in my community, particularly in areas related to civic engagement. I am enthusiastic about contributing to projects that aim to enhance public services and improve the lives of those around me.",
     "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "mangat_toor"
   },
   {
     "name": "Katie Hong",
@@ -58,7 +64,8 @@
     "linkedin_link": "https://www.linkedin.com/in/katiehong8/",
     "brief_descriptions": "Katie brings a blended experience from building with small organizations in sectors such as: eldercare, childcare, non-profit, project facilitation, ecommerce, virtual community management, business development, and guerillla marketing. She believes in supporting ecosystem players that work to make Vancouver a place for everyone to settle and thrive.",
     "profile_image_link": "/assets/team-members/katie_hong.jpeg",
-    "role": "Business Development"
+    "role": "Business Development",
+    "member_key": "katie_hong"
   },
   {
     "name": "Chloe Lim",
@@ -66,7 +73,8 @@
     "linkedin_link": "https://www.linkedin.com/in/chloelim-design/",
     "brief_descriptions": "As a UX Designer, Chloe seamlessly integrates expertise in Behavioral Psychology for inventive problem-solving. Possessing a discerning eye for detail and a profound grasp of human behavior, she consistently endeavors to elevate user experiences and cultivate significant engagement.",
     "profile_image_link": "/assets/team-members/chloe_lim.jpeg",
-    "role": "Product/UIUX"
+    "role": "Product/UIUX",
+    "member_key": "chloe_lim"
   },
   {
     "name": "Alfredo Valdes",
@@ -74,7 +82,8 @@
     "linkedin_link": "https://www.linkedin.com/in/alfredov/",
     "brief_descriptions": "I'm transitioning to Gen AI and Automation AI, specializing in technical support engineering with expertise in Microsoft Azure, AWS, and Google Cloud. I streamline operations by automating processes. Staying at the forefront of emerging technologies, I aim to improve system performance and security. My track record in technical support drives me to tackle complex challenges and support innovative AI projects and organizational growth.",
     "profile_image_link": "/assets/team-members/avatar-man.png",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "alfredo_valdes"
   },
   {
     "name": "Tony Thawatchai Saengthamchai",
@@ -83,7 +92,8 @@
     "github_link": "https://github.com/Tony-Thawatchai",
     "brief_descriptions": "Full stack developer with a background in advertising. Passionate in using technology for a better society. Experience with React, Node.js, PHP. ",
     "profile_image_link": "/assets/team-members/tony_thawatchai.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "tony_thawatchai"
   },
   {
     "name": "Xavier Toledo",
@@ -92,7 +102,8 @@
     "github_link": "https://github.com/datapro4hire",
     "brief_descriptions": "IT Generalist transitioning into Data Science. Experienced in software project mangement, tained in web development, and keen to contribute to projects that benefit the community. ",
     "profile_image_link": "/assets/team-members/xavier_toledo.jpg",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "xavier_toledo"
   },
   {
     "name": "Prabh Singh",
@@ -101,7 +112,8 @@
     "github_link": "https://github.com/prabhguron",
     "brief_descriptions": "Computer Science student with a  deep passion for Software Engineering. My interest extend to Artificial Intelligence and full stack development. Eager to learn and make an impact with technology.",
     "profile_image_link": "/assets/team-members/prabh_singh.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "prabh_singh"
   },
   {
     "name": "Anna Beketova",
@@ -110,7 +122,8 @@
     "github_link": "https://github.com/anya-mb",
     "brief_descriptions": "As a ML Engineer specializing in Generative AI, I bring a robust academic background with a Master's degree in Data Science and a wealth of practical experience in building and deploying advanced AI solutions. My expertise spans traditional Machine Learning, Computer Vision and cutting-edge Large Language Models. With a proven ability to design and execute end-to-end projects, I excel in leveraging the power of AWS Cloud to bring innovative ideas to life. ",
     "profile_image_link": "/assets/team-members/anna_beketova.jpg",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "anna_beketova"
   },
   {
     "name": "Glauber Martins",
@@ -118,7 +131,8 @@
     "linkedin_link": "https://www.linkedin.com/in/glaubermartins/",
     "brief_descriptions": "As a passsionate software engineer, Glauber has developed a strong foundation in various programming languages and technologies by designing and developing applications from ground up while leading teams to success. About 9 months ago, he embarked on a career transition into Machine Learning, driven by passion for innovation, problem solving and influenced by his previous experience with VR/AR and game development. Glauber is eager to contribute his skills cutting-edge machine learning projects.",
     "profile_image_link": "/assets/team-members/glauber_martins.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "glauber_martins"
   },
   {
     "name": "Kawin Glomjai",
@@ -126,7 +140,8 @@
     "linkedin_link": "https://www.linkedin.com/in/gkawin/",
     "brief_descriptions": "I have over 10 years of experience in software development in various industries. I focus on finding solutions to business problems and ensuring their impact using data-driven and user-centric methods. I also specialize in leading teams to deliver high-quality software solutions and improving productivity and efficiency through innovative technology. My programming, cloud and DevOps, and project management skills span diverse industries.",
     "profile_image_link": "/assets/team-members/kawin_glomjai.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "kawin_glomjai"
   },
   {
     "name": "Emran Grewal",
@@ -134,7 +149,8 @@
     "linkedin_link": "https://www.linkedin.com/in/emran-grewal/",
     "brief_descriptions": "As a skilled Data Analyst with a strong foundation in Business Intelligence, my journey is enriched with expertise in R, Machine Learning, and statistical analysis, along with professional experience in SQL, Snowflake, AWS Redshift, and Talend. Proficient in data visualization, I specialize in transforming complex data into actionable insights that guide strategic decision-making. I am passionate about uncovering the stories hidden within data, thereby helping organizations make informed decisions that positively impact their goals and stakeholders.",
     "profile_image_link": "/assets/team-members/emran_grewal.jpeg",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "emran_grewal"
   },
   {
     "name": "Payal Jagtap",
@@ -142,7 +158,8 @@
     "linkedin_link": "https://www.linkedin.com/in/payaljagtap/",
     "brief_descriptions": "I am a passionate Full Stack Java Developer with six years of experience in the IT industry. I thrive on turning ideas into tangible solutions through code and aim to contribute to innovative projects that push boundaries. My expertise includes designing, developing, maintaining, and testing software, with real-time experience in end-to-end web/enterprise applications using Java, J2EE technologies/frameworks, Angular, and various cloud platforms. Committed to lifelong learning and community knowledge sharing, I embrace challenges as opportunities and strive to spread positivity in every interaction.",
     "profile_image_link": "/assets/team-members/payal_jagtap.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "payal_jagtap"
   },
   {
     "name": "Parneet Kaur",
@@ -150,7 +167,8 @@
     "linkedin_link": "https://www.linkedin.com/in/parneetkaur-dev/",
     "brief_descriptions": "Full-stack developer with a background in helping teams communicate and collaborate effectively in our current remote-centric world. Loves solving complex problems with unique solutions. Experienced in Vue, Node, and .NET/C#.",
     "profile_image_link": "/assets/team-members/parneet_kaur.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "parneet_kaur"
   },
   {
     "name": "Jaskaran Dhanoa",
@@ -158,6 +176,7 @@
     "linkedin_link": "https://www.linkedin.com/in/jaskaran-dhanoa-862b76234/",
     "brief_descriptions": "I am a passionate Full Stack Developer who thrives on tackling challenges and creating applications that make a difference in people's lives. My focus is on building user-friendly solutions that can be used daily to solve real-world problems. I enjoy collaborating with teams to bring innovative ideas to life, especially in projects that contribute to the greater good. I'm driven by the opportunity to make technology accessible and beneficial for everyone.",
     "profile_image_link": "/assets/team-members/jaskaran_dhanoa.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "jaskaran_dhanoa"
   }
 ]

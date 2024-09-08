@@ -1,5 +1,6 @@
 import { Box, IconButton, Typography } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 import './team-bio-card.scss';
 
 interface TeamMember {
@@ -10,6 +11,7 @@ interface TeamMember {
   github_link?: string;
   profile_image_link: string;
   brief_descriptions?: string;
+  member_key: string;
 }
 
 interface TeamBioCardProps {
@@ -19,24 +21,29 @@ interface TeamBioCardProps {
 export default function TeamBioCard({ data }: TeamBioCardProps) {
   return (
     <Box className="member-card">
-      <Image
-        className="member-card__image"
-        alt="profile"
-        src={data.profile_image_link}
-        width={0}
-        height={0}
-      />
-      <Box className="member-card__card-title-container">
-        <Typography className="member-card__card-title" variant="body1">
-          {data.name}
-        </Typography>
-        <Typography className="member-card__card-text" variant="body1">
-          {data.job_title}
-        </Typography>
-      </Box>
-      {/* <Typography className="member-card__card-text" variant="body1">
+      <Link
+        className="member-card__link-wrapper"
+        href={`our-team/${data.member_key}`}
+      >
+        <Image
+          className="member-card__image"
+          alt="profile"
+          src={data.profile_image_link}
+          width={0}
+          height={0}
+        />
+        <Box className="member-card__card-title-container">
+          <Typography className="member-card__card-title" variant="body1">
+            {data.name}
+          </Typography>
+          <Typography className="member-card__card-text" variant="body1">
+            {data.job_title}
+          </Typography>
+        </Box>
+        {/* <Typography className="member-card__card-text" variant="body1">
         {data.brief_descriptions}
       </Typography> */}
+      </Link>
       <Box className="member-card__card-link-container">
         <IconButton
           className="member-card__link"

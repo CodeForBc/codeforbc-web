@@ -1,9 +1,45 @@
+import { getTeamMemberData } from '@/utils/get-team-members-data/get-team-members-data';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Box, Button, Container, IconButton, Typography } from '@mui/material';
 import Image from 'next/image';
+import { redirect } from 'next/navigation';
 import './member.scss';
 
-export default function MemberDedicatedPage() {
+interface TeamMember {
+  name: string;
+  job_title: string;
+  bio?: string;
+  linkedin_link: string;
+  github_link?: string;
+  role: string[];
+  profile_image_link: string;
+  brief_descriptions?: string;
+  member_key: string;
+}
+
+interface MemberPageParams {
+  params: {
+    team_member_id: string;
+  };
+}
+
+export async function generateStaticParams() {
+  const members = await getTeamMemberData();
+  return members.map((member: TeamMember) => ({
+    memberKey: member.member_key,
+  }));
+}
+
+export default async function MemberDedicatedPage({
+  params,
+}: MemberPageParams) {
+  const members: TeamMember[] = await getTeamMemberData();
+  const member = members.find((m) => m.member_key === params.team_member_id);
+
+  if (!member) {
+    redirect('/our-team');
+  }
+
   return (
     <div className="member-dedicated-page">
       <Button
@@ -27,58 +63,61 @@ export default function MemberDedicatedPage() {
             <path
               d="M13.8 26.5L1.79999 14.5L13.8 2.5"
               stroke="#327CE0"
-              stroke-width="3.34"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3.34"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </Button>
         <Container className="member-dedicated-card">
           <Box className="member-dedicated-card__image-container">
             <Typography className="member-dedicated-card__tag">
-              Developer
+              {member.role}
             </Typography>
             <Box className="member-dedicated-card__image-wrapper">
               <Image
-                alt="profile"
-                src="/assets/team-members/sam_huo.jpeg"
+                alt={`${member.name}'s profile`}
+                src={member.profile_image_link}
                 className="member-dedicated-card__image"
-                width={0}
-                height={0}
-              ></Image>
+                width={300}
+                height={300}
+              />
               <Box className="member-dedicated-card__info-wrapper">
                 <Box className="member-dedicated-card__name-wrapper">
                   <Typography className="member-dedicated-card__name">
-                    John Doe
+                    {member.name}
                   </Typography>
                   <Typography className="member-dedicated-card__title">
-                    Sr. Developer
+                    {member.job_title}
                   </Typography>
                 </Box>
                 <Box className="member-dedicated-card__link-container">
-                  <IconButton
-                    className="member-dedicated-card__link"
-                    aria-label="linkedin link"
-                    href={''}
-                  >
-                    <svg className="member-dedicated-card__icon">
-                      <use
-                        xlinkHref={`/assets/github-linkedin-color.svg#linkedin`}
-                      ></use>
-                    </svg>
-                  </IconButton>
-
-                  <IconButton
-                    className="member-dedicated-card__link"
-                    aria-label="github link"
-                    href={''}
-                  >
-                    <svg className="member-dedicated-card__icon">
-                      <use
-                        xlinkHref={`/assets/github-linkedin-color.svg#github`}
-                      ></use>
-                    </svg>
-                  </IconButton>
+                  {member.linkedin_link && (
+                    <IconButton
+                      className="member-dedicated-card__link"
+                      aria-label="LinkedIn link"
+                      href={member.linkedin_link}
+                    >
+                      <svg className="member-dedicated-card__icon">
+                        <use
+                          xlinkHref={`/assets/github-linkedin-color.svg#linkedin`}
+                        ></use>
+                      </svg>
+                    </IconButton>
+                  )}
+                  {member.github_link && (
+                    <IconButton
+                      className="member-dedicated-card__link"
+                      aria-label="GitHub link"
+                      href={member.github_link}
+                    >
+                      <svg className="member-dedicated-card__icon">
+                        <use
+                          xlinkHref={`/assets/github-linkedin-color.svg#github`}
+                        ></use>
+                      </svg>
+                    </IconButton>
+                  )}
                 </Box>
               </Box>
             </Box>
@@ -86,18 +125,10 @@ export default function MemberDedicatedPage() {
           <Box className="member-dedicated-card__text-container">
             <Box className="member-dedicated-card__text-wrapper">
               <Typography className="member-dedicated-card__heading">
-                Meet John Doe
+                Meet {member.name}
               </Typography>
               <Typography className="member-dedicated-card__text">
-                As a passsionate software engineer, Glauber has developed a
-                strong foundation in various programming languages and
-                technologies by designing and developing applications from
-                ground up while leading teams to success. About 9 months ago, he
-                embarked on a career transition into Machine Learning, driven by
-                passion for innovation, problem solving and influenced by his
-                previous experience with VR/AR and game development. Glauber is
-                eager to contribute his skills cutting-edge machine learning
-                projects.
+                {member.brief_descriptions || 'Biography not available.'}
               </Typography>
             </Box>
             <Box className="member-dedicated-card__text-wrapper">
@@ -105,14 +136,7 @@ export default function MemberDedicatedPage() {
                 “Why did I join Code For BC?”
               </Typography>
               <Typography className="member-dedicated-card__text">
-                As I learned about Code for BC's values and mission, I felt
-                greatly complelled to pursue the opportunity and offer
-                collaboration, bringing the best I can offer to the team. I'm
-                honoured to have been offered a Machine Learning Engineer role
-                which is the next chapter in my career. By leveraging my skills
-                and expertise as well as advocating for teamwork culture, I
-                believe I can give back to the community while setting our team
-                up for success.
+                {member.reason_to_join || 'No description available.'}
               </Typography>
             </Box>
           </Box>
@@ -127,9 +151,9 @@ export default function MemberDedicatedPage() {
             <path
               d="M1.79999 2.5L13.8 14.5L1.79999 26.5"
               stroke="#327CE0"
-              stroke-width="3.34"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3.34"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </Button>
