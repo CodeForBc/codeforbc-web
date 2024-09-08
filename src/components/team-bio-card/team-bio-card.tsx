@@ -34,9 +34,9 @@ export default function TeamBioCard({ data }: TeamBioCardProps) {
           {data.job_title}
         </Typography>
       </Box>
-      <Typography className="member-card__card-text" variant="body1">
+      {/* <Typography className="member-card__card-text" variant="body1">
         {data.brief_descriptions}
-      </Typography>
+      </Typography> */}
       <Box className="member-card__card-link-container">
         <IconButton
           className="member-card__link"
