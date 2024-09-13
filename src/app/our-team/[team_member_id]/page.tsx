@@ -34,11 +34,22 @@ export default async function MemberDedicatedPage({
   params,
 }: MemberPageParams) {
   const members: TeamMember[] = await getTeamMemberData();
-  const member = members.find((m) => m.member_key === params.team_member_id);
 
-  if (!member) {
+  const currentMemberIndex = members.findIndex(
+    (m) => m.member_key === params.team_member_id
+  );
+
+  if (currentMemberIndex === -1) {
     redirect('/our-team');
   }
+
+  const member = members[currentMemberIndex];
+
+  const prevMemberKey =
+    members[(currentMemberIndex - 1 + members.length) % members.length]
+      .member_key;
+  const nextMemberKey =
+    members[(currentMemberIndex + 1) % members.length].member_key;
 
   return (
     <div className="member-dedicated-page">
@@ -53,7 +64,10 @@ export default async function MemberDedicatedPage({
         Back to Team
       </Button>
       <Box className="member-dedicated-page__content-wrapper">
-        <Button className="member-dedicated-page__slide-button">
+        <Button
+          className="member-dedicated-page__slide-button"
+          href={`/our-team/${prevMemberKey}`}
+        >
           <svg
             className="member-dedicated-page__slide-button-icon"
             viewBox="0 0 16 29"
@@ -141,7 +155,10 @@ export default async function MemberDedicatedPage({
             </Box>
           </Box>
         </Container>
-        <Button className="member-dedicated-page__slide-button">
+        <Button
+          className="member-dedicated-page__slide-button"
+          href={`/our-team/${nextMemberKey}`}
+        >
           <svg
             className="member-dedicated-page__slide-button-icon"
             viewBox="0 0 16 29"

@@ -109,6 +109,8 @@
     width: 420px;
     height: 420px;
     border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__info-wrapper {
