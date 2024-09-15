@@ -15,6 +15,7 @@ interface TeamMember {
   profile_image_link: string;
   brief_descriptions?: string;
   member_key: string;
+  join_CodeForBC?: string;
 }
 
 interface MemberPageParams {
@@ -150,7 +151,7 @@ export default async function MemberDedicatedPage({
                 “Why did I join Code For BC?”
               </Typography>
               <Typography className="member-dedicated-card__text">
-                {member.reason_to_join || 'No description available.'}
+                {member.join_CodeForBC || 'No description available.'}
               </Typography>
             </Box>
           </Box>
