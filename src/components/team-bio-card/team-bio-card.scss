@@ -55,6 +55,17 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    &--bio {
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      margin-top: 16px;
+      line-height: 24px;
+
+    }
   }
 
   &__card-link-container {
