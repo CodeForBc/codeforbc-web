@@ -26,6 +26,9 @@
     height: 250px;
     object-fit: cover;
     object-position: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 
     @include mobile {
       max-width: 358px;
@@ -61,9 +64,15 @@
       text-overflow: ellipsis;
       overflow: hidden;
       -webkit-box-orient: vertical;
+      line-clamp: 4;
       -webkit-line-clamp: 4;
       margin-top: 16px;
       line-height: 24px;
+
+      @include mobile {
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+      }
 
     }
   }
