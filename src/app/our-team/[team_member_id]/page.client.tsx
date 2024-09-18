@@ -159,14 +159,16 @@ export default function MemberDedicatedPageClient({
                 {member.brief_descriptions || 'Biography not available.'}
               </Typography>
             </Box>
-            <Box className="member-dedicated-card__text-wrapper">
-              <Typography className="member-dedicated-card__heading">
-                “Why did I join Code For BC?”
-              </Typography>
-              <Typography className="member-dedicated-card__text">
-                {member.join_CodeForBC || 'No description available.'}
-              </Typography>
-            </Box>
+            {member.join_CodeForBC && (
+              <Box className="member-dedicated-card__text-wrapper">
+                <Typography className="member-dedicated-card__heading">
+                  “Why did I join Code For BC?”
+                </Typography>
+                <Typography className="member-dedicated-card__text">
+                  {member.join_CodeForBC}
+                </Typography>
+              </Box>
+            )}
           </Box>
         </Container>
         {!nextHoveredMemberImage ? (
@@ -207,8 +209,8 @@ export default function MemberDedicatedPageClient({
               alt="Hovered Member Image"
               src={nextHoveredMemberImage}
               className="member-dedicated-page__slide-button-hover__image"
-              width={100}
-              height={100}
+              width={0}
+              height={0}
             />
           </Button>
         )}
