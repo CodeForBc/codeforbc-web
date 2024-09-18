@@ -150,7 +150,10 @@ export default function MemberDedicatedPageClient({
           <Box className="member-dedicated-card__text-container">
             <Box className="member-dedicated-card__text-wrapper">
               <Typography className="member-dedicated-card__heading">
-                Meet {member.name}
+                Meet{' '}
+                <span className="member-dedicated-card__heading member-dedicated-card__heading--highlight">
+                  {member.name}
+                </span>
               </Typography>
               <Typography className="member-dedicated-card__text">
                 {member.brief_descriptions || 'Biography not available.'}
