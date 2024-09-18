@@ -24,6 +24,10 @@ $button-color-primary: #2e71cc;
 $primary-50: #ebf2fc;
 $navbar-text-color: #15345e;
 $navbar-active-text-color: #24589f;
+$border-color-primary: #d2d2d2;
+$border-color-secondary: #a1c3f1;
+$member-batch-background-color: #bfd6f5;
+$member-heading-color: #1c447b;
 
 @mixin tablet {
   @media only screen and (max-width: 1280px) {
