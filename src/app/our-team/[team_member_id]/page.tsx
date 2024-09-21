@@ -22,10 +22,12 @@ interface MemberPageParams {
   };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<
+  { team_member_id: string }[]
+> {
   const members = await getTeamMemberData();
   return members.map((member: TeamMember) => ({
-    memberKey: member.member_key,
+    team_member_id: member.member_key,
   }));
 }
 

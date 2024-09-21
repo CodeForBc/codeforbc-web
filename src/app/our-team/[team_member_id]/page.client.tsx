@@ -2,7 +2,6 @@
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Box, Button, Container, IconButton, Typography } from '@mui/material';
 import Image from 'next/image';
-import router from 'next/router';
 import { useState } from 'react';
 import './member.scss';
 
@@ -59,7 +58,6 @@ export default function MemberDedicatedPageClient({
               setPrevHoveredMemberImage(prevMember.profile_image_link)
             }
             onMouseLeave={() => setPrevHoveredMemberImage(null)}
-            onClick={() => router.push(`/team/${prevMemberKey}`)}
           >
             <svg
               className="member-dedicated-page__slide-button-icon"
@@ -150,7 +148,7 @@ export default function MemberDedicatedPageClient({
           <Box className="member-dedicated-card__text-container">
             <Box className="member-dedicated-card__text-wrapper">
               <Typography className="member-dedicated-card__heading">
-                Meet{' '}
+                Meet&nbsp;
                 <span className="member-dedicated-card__heading member-dedicated-card__heading--highlight">
                   {member.name}
                 </span>
@@ -179,7 +177,6 @@ export default function MemberDedicatedPageClient({
               setNextHoveredMemberImage(nextMember.profile_image_link)
             }
             onMouseLeave={() => setNextHoveredMemberImage(null)}
-            onClick={() => router.push(`/team/${nextMemberKey}`)}
           >
             <svg
               className="member-dedicated-page__slide-button-icon"
@@ -209,8 +206,8 @@ export default function MemberDedicatedPageClient({
               alt="Hovered Member Image"
               src={nextHoveredMemberImage}
               className="member-dedicated-page__slide-button-hover__image"
-              width={0}
-              height={0}
+              width={100}
+              height={100}
             />
           </Button>
         )}
