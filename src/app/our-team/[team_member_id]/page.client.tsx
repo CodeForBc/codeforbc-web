@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import './member.scss';
 
-interface TeamMember {
+export interface TeamMember {
   name: string;
   job_title: string;
   bio?: string;
@@ -46,6 +46,7 @@ export default function MemberDedicatedPageClient({
         className="member-dedicated-page__back-button"
         href="/our-team"
         variant="text"
+        aria-label="Back to Team"
       >
         Back to Team
       </Button>
@@ -54,6 +55,7 @@ export default function MemberDedicatedPageClient({
           <Button
             className="member-dedicated-page__slide-button"
             href={`/our-team/${prevMemberKey}`}
+            aria-label="Previous Member"
             onMouseEnter={() =>
               setPrevHoveredMemberImage(prevMember.profile_image_link)
             }
@@ -94,7 +96,7 @@ export default function MemberDedicatedPageClient({
         )}
         <Container className="member-dedicated-card">
           <Box className="member-dedicated-card__image-container">
-            <Typography className="member-dedicated-card__tag">
+            <Typography className="member-dedicated-card__tag" variant="body1">
               {member.role}
             </Typography>
             <Box className="member-dedicated-card__image-wrapper">
@@ -107,10 +109,16 @@ export default function MemberDedicatedPageClient({
               />
               <Box className="member-dedicated-card__info-wrapper">
                 <Box className="member-dedicated-card__name-wrapper">
-                  <Typography className="member-dedicated-card__name">
+                  <Typography
+                    className="member-dedicated-card__name"
+                    variant="h1"
+                  >
                     {member.name}
                   </Typography>
-                  <Typography className="member-dedicated-card__title">
+                  <Typography
+                    className="member-dedicated-card__title"
+                    variant="body1"
+                  >
                     {member.job_title}
                   </Typography>
                 </Box>
@@ -147,22 +155,34 @@ export default function MemberDedicatedPageClient({
           </Box>
           <Box className="member-dedicated-card__text-container">
             <Box className="member-dedicated-card__text-wrapper">
-              <Typography className="member-dedicated-card__heading">
+              <Typography
+                className="member-dedicated-card__heading"
+                variant="h2"
+              >
                 Meet&nbsp;
                 <span className="member-dedicated-card__heading member-dedicated-card__heading--highlight">
                   {member.name}
                 </span>
               </Typography>
-              <Typography className="member-dedicated-card__text">
+              <Typography
+                className="member-dedicated-card__text"
+                variant="body1"
+              >
                 {member.brief_descriptions || 'Biography not available.'}
               </Typography>
             </Box>
             {member.join_CodeForBC && (
               <Box className="member-dedicated-card__text-wrapper">
-                <Typography className="member-dedicated-card__heading">
+                <Typography
+                  className="member-dedicated-card__heading"
+                  variant="h2"
+                >
                   “Why did I join Code For BC?”
                 </Typography>
-                <Typography className="member-dedicated-card__text">
+                <Typography
+                  className="member-dedicated-card__text"
+                  variant="body1"
+                >
                   {member.join_CodeForBC}
                 </Typography>
               </Box>
@@ -173,6 +193,7 @@ export default function MemberDedicatedPageClient({
           <Button
             className="member-dedicated-page__slide-button"
             href={`/our-team/${nextMemberKey}`}
+            aria-label="Next Member"
             onMouseEnter={() =>
               setNextHoveredMemberImage(nextMember.profile_image_link)
             }
