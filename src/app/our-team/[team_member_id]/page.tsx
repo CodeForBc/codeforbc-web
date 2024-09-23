@@ -1,20 +1,7 @@
 import { getTeamMemberData } from '@/utils/get-team-members-data/get-team-members-data';
 import { redirect } from 'next/navigation';
 import './member.scss';
-import MemberDedicatedPageClient from './page.client';
-
-interface TeamMember {
-  name: string;
-  job_title: string;
-  bio?: string;
-  linkedin_link: string;
-  github_link?: string;
-  role: string[];
-  profile_image_link: string;
-  brief_descriptions?: string;
-  member_key: string;
-  join_CodeForBC?: string;
-}
+import MemberDedicatedPageClient, { TeamMember } from './page.client';
 
 interface MemberPageParams {
   params: {

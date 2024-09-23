@@ -71,6 +71,39 @@ describe('Member Dedicated Page', () => {
     expect(profileImage).toBeInTheDocument();
   });
 
+  it('should display LinkedIn and Github links', () => {
+    render(
+      <MemberDedicatedPageClient
+        member={mockMember}
+        prevMember={mockPrevMember}
+        nextMember={mockNextMember}
+      />
+    );
+    const linkedinLink = screen.getByLabelText('LinkedIn link');
+    expect(linkedinLink).toBeInTheDocument();
+    expect(linkedinLink).toHaveAttribute('href', mockMember.linkedin_link);
+    const githubLink = screen.getByLabelText('GitHub link');
+    expect(githubLink).toBeInTheDocument();
+    expect(githubLink).toHaveAttribute('href', mockMember.github_link);
+  });
+
+  it('should not display Github links if github_link is not present', () => {
+    const memberWithoutGithub = {
+      ...mockMember,
+      github_link: undefined,
+    };
+    render(
+      <MemberDedicatedPageClient
+        member={memberWithoutGithub}
+        prevMember={mockPrevMember}
+        nextMember={mockNextMember}
+      />
+    );
+
+    const githubLink = screen.queryByLabelText('GitHub link');
+    expect(githubLink).not.toBeInTheDocument();
+  });
+
   it('should not render join CodeForBC when not present', () => {
     const memberWithoutJoinReason = {
       ...mockMember,
@@ -88,6 +121,19 @@ describe('Member Dedicated Page', () => {
     ).not.toBeInTheDocument();
   });
 
+  it('should initialize previous and next hovered member images to null', () => {
+    render(
+      <MemberDedicatedPageClient
+        member={mockMember}
+        prevMember={mockPrevMember}
+        nextMember={mockNextMember}
+      />
+    );
+    expect(
+      screen.queryByAltText('Hovered Member Image')
+    ).not.toBeInTheDocument();
+  });
+
   it('should display the previous member on hover', () => {
     render(
       <MemberDedicatedPageClient
@@ -98,7 +144,7 @@ describe('Member Dedicated Page', () => {
     );
     const prevButton = screen.getByLabelText('Previous Member');
     fireEvent.mouseEnter(prevButton);
-    const hoverImage = screen.getByAltText('Hovered Member Image');
+    const hoverImage = screen.queryByAltText('Hovered Member Image');
     expect(hoverImage).toBeInTheDocument();
     fireEvent.mouseLeave(prevButton);
     expect(hoverImage).not.toBeInTheDocument();
@@ -114,7 +160,7 @@ describe('Member Dedicated Page', () => {
     );
     const nextButton = screen.getByLabelText('Next Member');
     fireEvent.mouseEnter(nextButton);
-    const hoverImage = screen.getByAltText('Hovered Member Image');
+    const hoverImage = screen.queryByAltText('Hovered Member Image');
     expect(hoverImage).toBeInTheDocument();
     fireEvent.mouseLeave(nextButton);
     expect(hoverImage).not.toBeInTheDocument();
