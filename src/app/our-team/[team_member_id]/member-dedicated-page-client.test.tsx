@@ -47,15 +47,18 @@ describe('Member Dedicated Page', () => {
         nextMember={mockNextMember}
       />
     );
-    const name = screen.getByRole('heading', { level: 1, name: mockMember.name });
+    const name = screen.getByRole('heading', {
+      level: 1,
+      name: mockMember.name,
+    });
     expect(name).toBeInTheDocument();
     const jobTitle = screen.getByText(mockMember.job_title);
     expect(jobTitle).toBeInTheDocument();
-    const description = screen.getByText(mockMember.brief_descriptions);
-    expect(description).toBeInTheDocument();
-    const joinReason = screen.getByText(
-      mockMember.join_CodeForBC
+    const description = screen.getByText(
+      mockMember.brief_descriptions as string
     );
+    expect(description).toBeInTheDocument();
+    const joinReason = screen.getByText(mockMember.join_CodeForBC as string);
     expect(joinReason).toBeInTheDocument();
   });
 
