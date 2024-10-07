@@ -70,5 +70,45 @@
       "projectLead": "Sam Huo",
       "lookingFor": []
     }
+  },
+  "good-bot": {
+    "title": "GoodBot - Canadian Responsible Tech Hub",
+    "description": "The GoodBot non-profit is developing the Canadian Responsible Tech Hub, with assistance from Code for BC. This initiative aims to map Canada’s responsible technology ecosystem, providing a centralized resource for organizations, policymakers, and individuals. The hub will document organizations, policies, scholars, and key resources to support ethical technology practices in Canada.",
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/GoodBotNonProfit/canadian-tech-library"
+      }
+    ],
+    "languages": ["React", "Python", "JavaScript", "SQL"],
+    "tools": ["PostgreSQL", "Supabase", "Google Suite", "GitHub", "Tableau"],
+    "technologies": [
+      "Machine Learning",
+      "Data Visualization",
+      "Policy Summarization"
+    ],
+    "programAreas": ["Ethical Tech", "Policy and Law"],
+    "location": "Remote",
+    "status": "Active",
+    "contributors": ["Sarah Lee", "Mangat Toor"],
+    "projectImage": "/assets/good-bot.webp",
+    "projectOverview": {
+      "problemStatement": "As technology evolves rapidly, there is an urgent need for a responsible tech ecosystem in Canada that can address the ethical implications and societal impacts of new technologies. The Good-Bot non-profit seeks to create a Canadian Responsible Tech Hub to map out the nation's capacity to respond to emerging issues in technology. The lack of transparency, regulatory challenges, and insufficient tools have made it difficult to fully understand the risks and gaps in the tech landscape.",
+      "projectObjectives": [
+        "Map Canada's responsible tech organizations, policies, and key experts",
+        "Develop machine-generated summaries of tech-related policies and litigation",
+        "Create dynamic dashboards visualizing the gaps in responsible tech initiatives",
+        "Facilitate ongoing updates and collaboration through community engagement"
+      ],
+      "projectLead": "Sam Huo",
+      "lookingFor": [
+        "Technology Lead",
+        "Frontend Developers",
+        "Senior Developers",
+        "Data Engineers",
+        "Policy Experts",
+        "Machine Learning Engineers"
+      ]
+    }
   }
 }
