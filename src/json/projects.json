@@ -90,7 +90,12 @@
     "programAreas": ["Ethical Tech", "Policy and Law"],
     "location": "Remote",
     "status": "Active",
-    "contributors": ["Sarah Lee", "Mangat Toor"],
+    "contributors": [
+      "Fauwial Khan",
+      "Ahmad Akhtar",
+      "Glauber Martins",
+      "Jaskaran Dhanoa"
+    ],
     "projectImage": "/assets/good-bot.webp",
     "projectOverview": {
       "problemStatement": "As technology evolves rapidly, there is an urgent need for a responsible tech ecosystem in Canada that can address the ethical implications and societal impacts of new technologies. The Good-Bot non-profit seeks to create a Canadian Responsible Tech Hub to map out the nation's capacity to respond to emerging issues in technology. The lack of transparency, regulatory challenges, and insufficient tools have made it difficult to fully understand the risks and gaps in the tech landscape.",
