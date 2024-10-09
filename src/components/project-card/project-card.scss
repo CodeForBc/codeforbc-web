@@ -6,18 +6,25 @@
 
 body {
   .project-card {
-    width: 100%;
+    min-width: 275px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-self: stretch;
 
     @include tablet {
-      max-width: 655px;
+      width: 100%;
+      min-width: 100%;
     }
 
-    @include mobile {
-      width: 100%;
+    &--home-page {
+      @include tablet {
+        width: 655px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 

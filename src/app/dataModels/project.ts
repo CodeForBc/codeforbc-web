@@ -20,4 +20,5 @@ export interface Project {
     projectLead: string;
     lookingFor: string[];
   };
+  className: string;
 }

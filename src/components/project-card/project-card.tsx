@@ -22,9 +22,10 @@ export default function Project({
   tools,
   projectKey,
   projectImage,
+  className,
 }: ProjectInterface) {
   return (
-    <Card className="project-card project-overview__card">
+    <Card className={`project-card project-overview__card ${className}`}>
       <CardMedia
         component="a"
         className="project-card-media"
