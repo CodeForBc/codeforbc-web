@@ -40,7 +40,7 @@
     padding: 0 2rem;
 
     @include mobile {
-      gap: 0;
+      gap: .5rem;
     }
   }
 
@@ -209,7 +209,8 @@
     }
 
     @include mobile {
-      width: 16.25rem;
+      width: 100%;
+      max-width: 16.25rem;
       height: 16.25rem;
     }
   }
