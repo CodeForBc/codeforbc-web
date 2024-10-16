@@ -104,6 +104,7 @@
       width: 6.25rem;
       height: 6.25rem;
       border-radius: 50%;
+      object-fit: cover;
 
       @include tablet {
         width: 3.75rem;
