@@ -1,0 +1,331 @@
+@use '../../globals.scss' as *;
+
+
+.member-dedicated-page {
+  background-image: url('/assets/team-member-bg.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -6.25rem;
+  margin-bottom: -22.125rem;
+  padding: 6.25rem 0 22.125rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  &__back-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: $text-color-primary;
+    align-self: flex-start;
+    margin: 2rem 0 1rem 2rem;
+    text-transform: none;
+
+    @include mobile {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    @include mobile {
+      gap: .5rem;
+    }
+  }
+
+  &__slide-button {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: $primary-50;
+    border: 2.6px solid $border-color-secondary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    @include tablet {
+      width: 3.75rem;
+      height: 3.75rem;
+      min-width: 3.75rem;
+      max-width: 3.75rem;
+    }
+
+    @include mobile {
+      width: 2.25rem;
+      height: 2.25rem;
+      min-width: 2.25rem;
+      max-width: 2.25rem;
+      border: 1.6px solid $border-color-secondary;
+    }
+
+  }
+
+  &__slide-button-hover {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    border: 4px solid $border-color-primary;
+    object-position: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    @include tablet {
+      min-width: 3.75rem;
+      max-width: 3.75rem;
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+
+    @include mobile {
+      width: 2.25rem;
+      height: 2.25rem;
+      min-width: 2.25rem;
+      max-width: 2.25rem;
+      border: 1.6px solid $border-color-primary;
+    }
+
+    &__image {
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 6.25rem;
+      height: 6.25rem;
+      border-radius: 50%;
+      object-fit: cover;
+
+      @include tablet {
+        width: 3.75rem;
+        height: 3.75rem;
+      }
+
+      @include mobile {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
+    }
+  }
+
+  &__slide-button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.75rem;
+    height: 1.5rem;
+
+    @include tablet {
+      width: 0.5rem;
+      height: 1rem;
+    }
+
+    @include mobile {
+      width: 0.3125rem;
+      height: 0.625rem;
+    }
+  }
+}
+
+.member-dedicated-card {
+  box-shadow: 0 0.625rem 2.5rem -0.1875rem rgba(16, 24, 40, 0.1);
+  border-radius: 1.25rem;
+  background-color: transparent;
+  padding: 1.5rem 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background-image: linear-gradient(135deg, rgba(230, 240, 252, .8) 0%, rgba(248, 233, 200, .8) 75%, rgba(252, 245, 219, .8) 100%);
+
+  @include tablet {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include mobile {
+    padding: 1.5rem 1rem;
+  }
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  &__tag {
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: $primary-color;
+    padding: 0.5rem 1rem;
+    background-color: $member-batch-background-color;
+    border-radius: 12px;
+    align-self: flex-start;
+    justify-self: flex-start;
+
+    @include tablet {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @include mobile {
+      gap: 1rem;
+    }
+  }
+
+  &__image {
+    width: 26.25rem;
+    height: 26.25rem;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+
+    @include tablet {
+      width: 22.5rem;
+      height: 22.5rem;
+    }
+
+    @include mobile {
+      width: 100%;
+      max-width: 16.25rem;
+      height: 16.25rem;
+    }
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__name-wrapper {
+    text-align: center;
+  }
+
+  &__name {
+    font-family: inherit;
+    font-size: 2.25rem;
+    line-height: 2.8125rem;
+    font-weight: 600;
+    color: $member-heading-color;
+
+    @include tablet {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    @include mobile {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+  }
+
+  &__title {
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    color: $text-color-secondary;
+
+    @include tablet {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  &__link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__heading {
+    font-family: inherit;
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    font-weight: 600;
+    color: $member-heading-color;
+
+    @include tablet {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+
+    @include mobile {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    &--highlight {
+      color: $alt-text-color-primary;
+    }
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: $team-profile-text-color;
+
+    @include tablet {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+  }
+
+}

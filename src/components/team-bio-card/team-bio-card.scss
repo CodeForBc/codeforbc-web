@@ -14,6 +14,11 @@
     width: 100%;
   }
 
+  &__link-wrapper {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   &__image {
     border-radius: 6px;
     width: 100%;
@@ -21,6 +26,9 @@
     height: 250px;
     object-fit: cover;
     object-position: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 
     @include mobile {
       max-width: 358px;
@@ -50,6 +58,23 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    &--bio {
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      line-clamp: 4;
+      -webkit-line-clamp: 4;
+      margin-top: 16px;
+      line-height: 24px;
+
+      @include mobile {
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+      }
+
+    }
   }
 
   &__card-link-container {

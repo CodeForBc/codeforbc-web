@@ -4,120 +4,208 @@
     "job_title": "Founder/President",
     "linkedin_link": "https://www.linkedin.com/in/sam-huo-23358233/",
     "github_link": "https://github.com/SamHuo213",
-    "brief_descriptions": "",
+    "brief_descriptions": "With an extensive career in the software industry. Sam is a skilled engineer & architect. Known for leading impactful projects. Beyond coding. Sam is a data-driven professional interested in storytelling through data analysis, particularly in real estate. With multifaceted skills and passion. Sam is poised to make a significant impact on any collaborative endeavor.",
     "profile_image_link": "/assets/team-members/sam_huo.jpeg",
-    "role": "Executive"
+    "role": "Executive",
+    "member_key": "sam_huo",
+    "join_CodeForBC": ""
+  },
+  {
+    "name": "Randeep Bhatia",
+    "job_title": "Board of Directors",
+    "linkedin_link": "https://www.linkedin.com/in/randeepsbhatia/",
+    "brief_descriptions": "With over two decades of experience at companies like Audible, Twitch, Electronic Arts, and DirecTV, Randeep has managed global teams to lead multiple 0-to-1 product launches, international expansion initiatives, enhancing creator experiences and significantly improving operational efficiency. More recently, Randeep has been involved in advancing GEN-AI applications within the entertainment industry, focusing on innovative AI-driven solutions to enhance content creation and user experiences. Beyond his technical expertise, Randeep is passionate about mentorship and motivating others to pursue STEM careers by sharing his expertise and fostering an environment of growth and learning. His previous efforts to increase team inclusivity, contributed to improved team collaboration and innovation. ",
+    "profile_image_link": "/assets/team-members/randeep_bhatia.jpg",
+    "role": "Executive",
+    "member_key": "randeep_bhatia",
+    "join_CodeForBC": "I’m enthusiastic about joining Code for BC to apply my experience in building tech-solutions for our community and mentoring emerging tech talent. I look forward to contributing to Code for BC’s mission of driving impactful change through technology while promoting inclusivity and collaboration."
   },
   {
     "name": "Sherry Wu",
     "job_title": "Product Manager/UX Designer",
     "linkedin_link": "https://www.linkedin.com/in/minruwu/",
-    "brief_descriptions": "",
+    "brief_descriptions": "Sherry is a Product Designer with a strong foundation in Product and Project Management. Passionate about collaboration and innovation in technology and design, she is dedicated to merging strategic, data-driven design with a commitment to creating impactful, user-centric solutions.",
     "profile_image_link": "/assets/team-members/sherry_wu.jpg",
-    "role": "Product/UIUX"
+    "role": "Product/UIUX",
+    "member_key": "sherry_wu",
+    "join_CodeForBC": "Joining CodeForBC offers a unique opportunity to blend my passions for design and product management with meaningful community projects, collaborate with like-minded individuals, and make a real impact in our communities. "
   },
   {
     "name": "Correy Lim",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/correy-lim/",
     "github_link": "https://github.com/CorreyL",
-    "brief_descriptions": "",
+    "brief_descriptions": "As a Web Developer with a background in Sales/Solution Engineering and Cybersecurity, Correy aims to bring his collaborative nature to build software that benefits the greater good with like-minded software developers.",
     "profile_image_link": "/assets/team-members/correy_lim.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "correy_lim",
+    "join_CodeForBC": "To leverage and grow my software development skills with like-minded individuals, and to contribute to projects intended to provide societal benefit in our communities."
   },
   {
     "name": "Ahmad Akhtar",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/ahmadrashidakhtar/",
     "github_link": "https://github.com/Unknown-0perator",
-    "brief_descriptions": "",
+    "brief_descriptions": "Full stack developer specializing in JavaScript, driven by a passion to leverage technology for the betterment of the community.",
     "profile_image_link": "/assets/team-members/ahmad_akhtar.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "ahmad_akhtar",
+    "join_CodeForBC": "Aside from professional development and the opportunity to work with other like-minded individuals, I joined Code for BC to be part of a movement that has a meaningful impact on society and leverages technology for the betterment of British Columbia."
   },
   {
     "name": "Nam Mai",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/nam-anh-mai/",
     "github_link": "https://github.com/nam-m",
-    "brief_descriptions": "",
+    "brief_descriptions": "Dedicated engineer with a background in mechatronics, Nam transitioned into software development and seeks creating high impact solutions. With a diverse array of experiences across various industries, Nam thrives on crafting innovative standalond software solutions or tailored to hardware integration. Nam is always on the lookout for opportunities to dive into new challenges and collaborate with fellow enthusiasts.",
     "profile_image_link": "/assets/team-members/nam_mai.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "nam_mai",
+    "join_CodeForBC": "I want to learn and work with others to build software products for the social good, and CodeForBC is the right community with supportive and open-minded folks"
   },
   {
     "name": "Mangat Singh Toor",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/immangat/",
     "github_link": "https://github.com/immangat",
-    "brief_descriptions": "",
+    "brief_descriptions": "Currently pursuing a degree in Computer Systems Technology at BCIT, I am passionate about leveraging my programming skills to make a positive impact in my community, particularly in areas related to civic engagement. I am enthusiastic about contributing to projects that aim to enhance public services and improve the lives of those around me.",
     "profile_image_link": "/assets/team-members/mangat_toor.jpeg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "mangat_toor",
+    "join_CodeForBC": "I was interested in getting back into volunteering, as I did a lot of it before. I saw CodeForBC as an opportunity to combine my technical skills, learn new skills, and volunteer at the same time to benefit the community at large."
   },
   {
     "name": "Katie Hong",
     "job_title": "Product Manager",
     "linkedin_link": "https://www.linkedin.com/in/katiehong8/",
-    "brief_descriptions": "",
+    "brief_descriptions": "Katie brings a blended experience from building with small organizations in sectors such as: eldercare, childcare, non-profit, project facilitation, ecommerce, virtual community management, business development, and guerillla marketing. She believes in supporting ecosystem players that work to make Vancouver a place for everyone to settle and thrive.",
     "profile_image_link": "/assets/team-members/katie_hong.jpeg",
-    "role": "Business Development"
+    "role": "Business Development",
+    "member_key": "katie_hong",
+    "join_CodeForBC": " In working with Code for BC, I am looking to collaborate and build tools with others that bridge the gap between tech and non-tech industries; especially those that are necessary for better living, but lack the resources to develop. "
   },
   {
     "name": "Chloe Lim",
     "job_title": "UX/UI Designer",
     "linkedin_link": "https://www.linkedin.com/in/chloelim-design/",
-    "brief_descriptions": "",
+    "brief_descriptions": "As a UX Designer, Chloe seamlessly integrates expertise in Behavioral Psychology for inventive problem-solving. Possessing a discerning eye for detail and a profound grasp of human behavior, she consistently endeavors to elevate user experiences and cultivate significant engagement.",
     "profile_image_link": "/assets/team-members/chloe_lim.jpeg",
-    "role": "Product/UIUX"
+    "role": "Product/UIUX",
+    "member_key": "chloe_lim",
+    "join_CodeForBC": "CodeForBC not only providing the oppurnity for my personal career growth, being part of the team can do meaningful work for the community is rewarding."
   },
   {
     "name": "Alfredo Valdes",
     "job_title": "Data & ML Scientist",
     "linkedin_link": "https://www.linkedin.com/in/alfredov/",
-    "brief_descriptions": "",
+    "brief_descriptions": "I'm transitioning to Gen AI and Automation AI, specializing in technical support engineering with expertise in Microsoft Azure, AWS, and Google Cloud. I streamline operations by automating processes. Staying at the forefront of emerging technologies, I aim to improve system performance and security. My track record in technical support drives me to tackle complex challenges and support innovative AI projects and organizational growth.",
     "profile_image_link": "/assets/team-members/avatar-man.png",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "alfredo_valdes",
+    "join_CodeForBC": ""
   },
   {
     "name": "Tony Thawatchai Saengthamchai",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/tony-sa/",
     "github_link": "https://github.com/Tony-Thawatchai",
-    "brief_descriptions": "",
+    "brief_descriptions": "Full stack developer with a background in advertising. Passionate in using technology for a better society. Experience with React, Node.js, PHP. ",
     "profile_image_link": "/assets/team-members/tony_thawatchai.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "tony_thawatchai",
+    "join_CodeForBC": "I believe everybody can contribute to making society better. I am grateful to have volunteered for Code For B.C. This opportunity allowed me to use my skills to contribute to a cause that I believed in."
   },
   {
     "name": "Xavier Toledo",
     "job_title": "Data Scientist",
     "linkedin_link": "https://www.linkedin.com/in/datapro4hire/",
     "github_link": "https://github.com/datapro4hire",
-    "brief_descriptions": "",
+    "brief_descriptions": "IT Generalist transitioning into Data Science. Experienced in software project mangement, tained in web development, and keen to contribute to projects that benefit the community. ",
     "profile_image_link": "/assets/team-members/xavier_toledo.jpg",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "xavier_toledo",
+    "join_CodeForBC": "To leverage my recent learnings, to use new tools, and to collaborate with local folks, all for the beneft of my community. To work in Clean Tech and to ideate startup ideas."
   },
   {
     "name": "Prabh Singh",
     "job_title": "Full Stack Developer",
     "linkedin_link": "https://www.linkedin.com/in/prabh-guron/",
     "github_link": "https://github.com/prabhguron",
-    "brief_descriptions": "",
+    "brief_descriptions": "Computer Science student with a  deep passion for Software Engineering. My interest extend to Artificial Intelligence and full stack development. Eager to learn and make an impact with technology.",
     "profile_image_link": "/assets/team-members/prabh_singh.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "prabh_singh",
+    "join_CodeForBC": ""
   },
   {
     "name": "Anna Beketova",
     "job_title": "Machine Learning Engineer Team Lead",
     "linkedin_link": "https://www.linkedin.com/in/anna-beketova/",
     "github_link": "https://github.com/anya-mb",
-    "brief_descriptions": "",
+    "brief_descriptions": "As a ML Engineer specializing in Generative AI, I bring a robust academic background with a Master's degree in Data Science and a wealth of practical experience in building and deploying advanced AI solutions. My expertise spans traditional Machine Learning, Computer Vision and cutting-edge Large Language Models. With a proven ability to design and execute end-to-end projects, I excel in leveraging the power of AWS Cloud to bring innovative ideas to life. ",
     "profile_image_link": "/assets/team-members/anna_beketova.jpg",
-    "role": "Data"
+    "role": "Data",
+    "member_key": "anna_beketova",
+    "join_CodeForBC": "At Code for BC, I am eager to apply my skills towards creating impactful technologies that foster community advancement and address real-world challenges through intelligent applications."
   },
   {
     "name": "Glauber Martins",
     "job_title": "Machine Learning Engineer",
     "linkedin_link": "https://www.linkedin.com/in/glaubermartins/",
-    "brief_descriptions": "",
+    "brief_descriptions": "As a passsionate software engineer, Glauber has developed a strong foundation in various programming languages and technologies by designing and developing applications from ground up while leading teams to success. About 9 months ago, he embarked on a career transition into Machine Learning, driven by passion for innovation, problem solving and influenced by his previous experience with VR/AR and game development. Glauber is eager to contribute his skills cutting-edge machine learning projects.",
     "profile_image_link": "/assets/team-members/glauber_martins.jpg",
-    "role": "Developers"
+    "role": "Developers",
+    "member_key": "glauber_martins",
+    "join_CodeForBC": "As I learned about Code for BC's values and mission, I felt greatly complelled to pursue the opportunity and offer collaboration, bringing the best I can offer to the team. I'm honoured to have been offered a Machine Learning Engineer role which is the next chapter in my career. By leveraging my skills and expertise as well as advocating for teamwork culture, I believe I can give back to the community while setting our team up for success."
+  },
+  {
+    "name": "Kawin Glomjai",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/gkawin/",
+    "brief_descriptions": "I have over 10 years of experience in software development in various industries. I focus on finding solutions to business problems and ensuring their impact using data-driven and user-centric methods. I also specialize in leading teams to deliver high-quality software solutions and improving productivity and efficiency through innovative technology. My programming, cloud and DevOps, and project management skills span diverse industries.",
+    "profile_image_link": "/assets/team-members/kawin_glomjai.jpeg",
+    "role": "Developers",
+    "member_key": "kawin_glomjai",
+    "join_CodeForBC": "I am keen to join CodeForBC because I want to contribute to and improve the community through volunteering and exploring new solutions to address the community's challenges."
+  },
+  {
+    "name": "Emran Grewal",
+    "job_title": "Data Analyst",
+    "linkedin_link": "https://www.linkedin.com/in/emran-grewal/",
+    "brief_descriptions": "As a skilled Data Analyst with a strong foundation in Business Intelligence, my journey is enriched with expertise in R, Machine Learning, and statistical analysis, along with professional experience in SQL, Snowflake, AWS Redshift, and Talend. Proficient in data visualization, I specialize in transforming complex data into actionable insights that guide strategic decision-making. I am passionate about uncovering the stories hidden within data, thereby helping organizations make informed decisions that positively impact their goals and stakeholders.",
+    "profile_image_link": "/assets/team-members/emran_grewal.jpeg",
+    "role": "Data",
+    "member_key": "emran_grewal",
+    "join_CodeForBC": "I am genuinely excited about the opportunity to contribute to the community through CodeForBC, a platform that fosters collaboration and inclusive knowledge sharing. I believe my work will contribute to creating visible change in society, and I look forward to the positive impact it will make."
+  },
+  {
+    "name": "Payal Jagtap",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/payaljagtap/",
+    "brief_descriptions": "I am a passionate Full Stack Java Developer with six years of experience in the IT industry. I thrive on turning ideas into tangible solutions through code and aim to contribute to innovative projects that push boundaries. My expertise includes designing, developing, maintaining, and testing software, with real-time experience in end-to-end web/enterprise applications using Java, J2EE technologies/frameworks, Angular, and various cloud platforms. Committed to lifelong learning and community knowledge sharing, I embrace challenges as opportunities and strive to spread positivity in every interaction.",
+    "profile_image_link": "/assets/team-members/payal_jagtap.jpg",
+    "role": "Developers",
+    "member_key": "payal_jagtap",
+    "join_CodeForBC": "I want to join Code for BC to use my software development skills for community benefit. I am motivated by the chance to work on projects that improve public services and civic engagement. I hope to contribute to impactful initiatives, apply my expertise in Java and Angular, and collaborate with like-minded volunteers to create positive change."
+  },
+  {
+    "name": "Parneet Kaur",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/parneetkaur-dev/",
+    "brief_descriptions": "Full-stack developer with a background in helping teams communicate and collaborate effectively in our current remote-centric world. Loves solving complex problems with unique solutions. Experienced in Vue, Node, and .NET/C#.",
+    "profile_image_link": "/assets/team-members/parneet_kaur.jpg",
+    "role": "Developers",
+    "member_key": "parneet_kaur",
+    "join_CodeForBC": "I love the idea of using my technical abilities to contribute to a project that is dedicated to helping deal with some of the biggest challenges faced by our province. I'm also very excited to work on a new tech stack which is often not possible professionally, so the opportunity to improve my skills, learn new things, while also applying my over six years of experience is super exciting."
+  },
+  {
+    "name": "Jaskaran Dhanoa",
+    "job_title": "Full Stack Developer",
+    "linkedin_link": "https://www.linkedin.com/in/jaskaran-dhanoa-862b76234/",
+    "brief_descriptions": "I am a passionate Full Stack Developer who thrives on tackling challenges and creating applications that make a difference in people's lives. My focus is on building user-friendly solutions that can be used daily to solve real-world problems. I enjoy collaborating with teams to bring innovative ideas to life, especially in projects that contribute to the greater good. I'm driven by the opportunity to make technology accessible and beneficial for everyone.",
+    "profile_image_link": "/assets/team-members/jaskaran_dhanoa.jpeg",
+    "role": "Developers",
+    "member_key": "jaskaran_dhanoa",
+    "join_CodeForBC": "I joined Code For BC because I am deeply passionate about using my skills as a Full Stack Developer to create meaningful solutions that serve the public. The opportunity to contribute to a nonprofit that focuses on building applications for public service aligns with my desire to make technology accessible and impactful for those who need it most. I am eager to help the team develop innovative use cases and applications that address gaps in services, providing essential tools to individuals and communities who may not currently have access to them. My goal is to leverage technology to solve real-world problems and make a positive difference in people's lives."
   }
 ]

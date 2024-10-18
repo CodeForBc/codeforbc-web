@@ -79,7 +79,7 @@ module.exports = {
     '@typescript-eslint/consistent-indexed-object-style': 'error',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
-      { assertionStyle: 'angle-bracket', objectLiteralTypeAssertions: 'never' },
+      { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' },
     ],
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/method-signature-style': 'error',

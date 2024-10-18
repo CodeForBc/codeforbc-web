@@ -21,6 +21,7 @@ interface TeamMember {
   role: string[];
   profile_image_link: string;
   brief_descriptions?: string;
+  member_key: string;
 }
 
 interface AboutPageProps {
