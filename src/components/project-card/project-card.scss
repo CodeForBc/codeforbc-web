@@ -11,6 +11,21 @@ body {
     display: flex;
     flex-direction: column;
     align-self: stretch;
+
+    @include tablet {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    &--home-page {
+      @include tablet {
+        width: 655px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
   }
 
   .project-card-content {

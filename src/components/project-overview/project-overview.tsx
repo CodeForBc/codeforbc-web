@@ -26,6 +26,7 @@ export default async function ProjectOverview() {
                   status={project.status}
                   projectImage={project.projectImage}
                   projectKey={projectKey}
+                  className="project-card--home-page"
                 />
               </Fragment>
             );
