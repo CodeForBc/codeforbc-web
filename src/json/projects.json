@@ -77,7 +77,7 @@
     "links": [
       {
         "title": "GitHub",
-        "url": "https://github.com/GoodBotNonProfit/canadian-tech-library"
+        "url": "https://github.com/gogoodbot/responsible-tech-repo"
       }
     ],
     "languages": ["React", "Python", "JavaScript", "SQL"],
@@ -98,7 +98,7 @@
     ],
     "projectImage": "/assets/good-bot.webp",
     "projectOverview": {
-      "problemStatement": "As technology evolves rapidly, there is an urgent need for a responsible tech ecosystem in Canada that can address the ethical implications and societal impacts of new technologies. The Good-Bot non-profit seeks to create a Canadian Responsible Tech Hub to map out the nation's capacity to respond to emerging issues in technology. The lack of transparency, regulatory challenges, and insufficient tools have made it difficult to fully understand the risks and gaps in the tech landscape.",
+      "problemStatement": "As technology evolves rapidly, there is an urgent need for a responsible tech ecosystem in Canada that can address the ethical implications and societal impacts of new technologies. The GoodBot non-profit seeks to create a Canadian Responsible Tech Hub to map out the nation's capacity to respond to emerging issues in technology. The lack of transparency, regulatory challenges, and insufficient tools have made it difficult to fully understand the risks and gaps in the tech landscape.",
       "projectObjectives": [
         "Map Canada's responsible tech organizations, policies, and key experts",
         "Develop machine-generated summaries of tech-related policies and litigation",
